@@ -195,9 +195,7 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 
 
 // ==========================
-// VALUE STATEMENT INDEX PAGE
-// and
-// SERVICES INDEX PAGE
+// IMAGE-CARDS
 
 // Image Card 3rd Font Title (Notera)
 div.image-title strong {
@@ -207,17 +205,26 @@ div.image-title strong {
   line-height: 0.5em !important;
 }
 
-// Padding
-#value-statement div.Index-page-content,
-#services-banner div.Index-page-content
- {
- padding: 0;
+// IMAGE-CARDS ON HOMEPAGE Padding
+#value-statement, 
+#services-banner { 
+  div.Index-page-content {
+    padding: 0;
+    }
+  div.image-card * {
+    text-align: center !important;
+  }
 }
 
-#value-statement div.image-card *,  
-#services-banner div.image-card * {
-  text-align: center !important;
+// IMAGE-CARDS ON SUBPAGES Padding
+#@{services-page},
+#@{bio-page} {
+  .Main-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
+
 
 #value-statement, 
 #services-banner,
