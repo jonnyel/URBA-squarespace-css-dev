@@ -1,5 +1,4 @@
 // UH Website CSS 
-#personal-statement {display: none !important;}
 
 // DEFINE page name variables instead of collection id
 @services-page: collection-5e1e35322ee5903aac1cf3c5;
@@ -100,6 +99,7 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 // Set differentiated BACKGROUND COLORS
   #personal-statement {
     background-color:@uh-grey-light !important;
+    background-color:blue !important;
   }
 
 // - H1 - FONT change for a few Index Pages
