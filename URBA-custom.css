@@ -1,5 +1,5 @@
 // UH Website CSS 
-
+#personal-statement {display: none !important;}
 
 // DEFINE page name variables instead of collection id
 @services-page: collection-5e1e35322ee5903aac1cf3c5;
