@@ -1,0 +1,775 @@
+// UH Website CSS 
+
+
+// DEFINE page name variables instead of collection id
+@services-page: collection-5e1e35322ee5903aac1cf3c5;
+@bio-page: collection-5e1e3b0dea1c913c8b171986;
+
+// DEFINE UH Brand Colour variables
+@uh-coral: hsl(354, 85%, 65%);
+@uh-coral-light: hsl(354, 85%, 80%);
+@uh-ochre-bright: hsl(48, 100%, 68%);
+@uh-teal: hsl(164, 38%, 49%);
+@uh-teal-light: hsl(163, 55%, 75%);
+@uh-grey-light: hsl(0, 0%, 96%);
+@uh-grey-dark: #545454;
+@uh-dark-transp: rgba(20,20,20,.75);
+
+// =================================
+// CUSTOM FONTS
+@font-face {font-family: 'Notera';src: url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5dd571e426591d0da6e5feda/1574269412456/Notera.woff2') format('woff2'),url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5dd571dfd8f6e70a23740916/1574269407854/Notera.woff') format('woff');}
+
+@font-face {font-family: 'Notera2Thin';src: url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5e39b0300934747943124a00/1580838960090/Notera2Thin.woff2') format('woff2'),url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5e39b02aa0af01453b5d92aa/1580838954298/Notera2Thin.woff') format('woff');}
+
+h5,
+div.image-title p strong {
+  font-family: 'Notera'; 
+  font-size: 3.5em; 
+  font-style: normal;
+  font-weight:100; 
+  letter-spacing:0em;
+  line-height:0.8em; 
+  margin-top: 0.25em; 
+  margin-bottom:0em !important;
+  text-transform: none;
+}
+
+// HIGHLIGHTER
+// ===============================
+// HIGHLIGHTER effect on h2 italic
+#personal-statement h2 em,
+#personal-statement h2 strong,
+#personal-statement h2 strong em {
+  font-style: initial !important;
+  font-weight: inherit !important;
+  background: linear-gradient(to top, @uh-ochre-bright 45%, #f7f7f7 45%);
+}
+#personal-statement h2 strong {
+  background: linear-gradient(to top, @uh-coral-light 45%, #f7f7f7 45%); 
+}
+#personal-statement h2 strong em {
+  background: linear-gradient(to top, @uh-teal-light 45%, #f7f7f7 45%); 
+}
+
+// Fix h2 Sqr reduction of letterspacing on mobile
+@media screen and (max-width:640px) {
+  h2 {
+    letter-spacing:.08em;
+  }
+}
+
+
+// HEADER margin fix
+.Header-inner--top {
+  padding-bottom: 0px;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+// MOBILE HEADER
+// Drop Shadow Mobile Header
+  .Mobile-bar--top {
+    -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+-moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+    padding-bottom: 0px !important;
+  }
+
+  .Mobile-bar-branding, .Mobile-bar-search, .Mobile-bar-menu, .Mobile-bar .Cart {
+    padding-bottom: 0px;
+}
+
+
+
+// =================================
+// =================================
+// NEW HOME INDEX PAGE 
+
+// Banner with image - Text Style override
+
+
+// no hyphenation
+.Index-page--has-image {
+  hyphens: none !important; 
+  -webkit-hyphens: none !important; 
+  -ms-hyphens: none  !important; 
+}
+
+
+// ===========
+// INDEX PAGES 
+// Set differentiated BACKGROUND COLORS
+  #personal-statement {
+    background-color:@uh-grey-light !important;
+  }
+
+// - H1 - FONT change for a few Index Pages
+#personal-statement h1, #featured-products h1, #testimonials h1, #featured-blog-posts h1, #newsletter-sign-up h1 {
+  font-family: haboro-soft;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+  
+
+
+
+// =================================
+// WELCOME BANNER 
+
+
+// Text transformation & Font Colours
+#welcome-banner {
+  font-size:1.5em; line-height:1.6em;
+  text-transform: none;
+  color: white;
+  }
+@media only screen and (max-width: 850px) { 
+  #welcome-banner {
+    font-size:1.2em; line-height:1.6em;
+  }
+}
+
+#welcome-banner .Index-page-content.sqs-alternate-block-style-container {
+  padding-bottom: 0;
+}
+
+
+// ==========================
+// PERSONAL-STATEMENT Banner
+#personal-statement h2 {
+  font-size: 2.75em;
+  line-height: 1.45em;
+  letter-spacing: 0.05em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  // no hyphenation
+  hyphens: none !important; 
+  -webkit-hyphens: none !important; 
+  -ms-hyphens: none  !important; 
+}
+
+
+// ==============
+// FEATURED PRODUCTS - Link styles
+
+#featured-products div.image-caption p {
+  margin: 0.5em 0 0 0;
+// background: green;
+}
+
+#featured-products div.image-caption, #featured-products div.image-caption a, #featured-products div.image-caption strong, #featured-products div.image-caption a strong  {
+  font-family: haboro-soft-extended;
+  color: @uh-grey-dark;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: .1em;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: none;
+  text-decoration: none;
+  //background: yellow;
+}
+
+#featured-products div.image-caption strong, #featured-products div.image-caption a strong {
+  font-family: haboro-soft-condensed;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.4em;
+  //background: red;
+}
+
+#featured-products div.image-caption p, #featured-products div.image-caption p a {
+  font-family: haboro-soft-extended;
+  font-size: 11px !important;
+  font-weight: 400;
+  //line-height: 1.1em !important;
+  color: #737373;
+  //background: blue;
+}
+
+
+
+
+
+
+
+
+// ==========================
+// VALUE STATEMENT INDEX PAGE
+// and
+// SERVICES INDEX PAGE
+
+// Image Card 3rd Font Title (Notera)
+div.image-title strong {
+  display:block;
+  font-family: 'Notera2Thin';
+  font-size: 1.5em !important;
+  line-height: 0.5em !important;
+}
+
+// Padding
+#value-statement div.Index-page-content,
+#services-banner div.Index-page-content
+ {
+ padding: 0;
+}
+
+#value-statement div.image-card *,  
+#services-banner div.image-card * {
+  text-align: center !important;
+}
+
+#value-statement, 
+#services-banner,
+#@{services-page},
+#@{bio-page} {
+  div.image-card-wrapper {
+    background: @uh-grey-light !important;
+    padding-bottom: 1em;
+    width: calc(50%);
+  }
+}
+
+// Desktop & Tablet only - widen L&R padding on card Text
+@media screen and (min-width: 641px) {
+  #value-statement,
+  #services-banner {
+    div.image-title-wrapper, 
+    div.image-subtitle-wrapper, 
+    div.image-button-wrapper {
+      padding-left: 125px; 
+      padding-right: 125px;
+    }
+  }
+}
+
+
+#value-statement, 
+#services-banner {
+  div.image-title,
+  div.image-subtitle,
+  div.image-button {
+    text-align: center !important;
+  } 
+}
+
+// Image-card Title margins
+#value-statement,
+#services-banner {
+  div.image-title p,
+  div.image-title p strong {
+    margin-bottom: .34em !important;
+    display: block;
+  }
+}
+
+// Image-card Title (Notera h5 strong) - size redefined:
+#value-statement,
+#services-banner {
+  div.image-title p {
+    margin-bottom: .5em !important;
+    display: block;
+    line-height: 1.3em !important; 
+  }
+}
+
+
+// Force An Image Card to Stack on Tablet
+
+@media screen and (max-width: 850px) {
+
+  .sqs-block-image .design-layout-card:not(.sqs-narrow-width) {
+      display: block!important;
+  }
+  .sqs-block-image .design-layout-card:not(.sqs-narrow-width) .image-card-wrapper {
+      width: 100% !important;
+  }
+  .sqs-block-image .design-layout-card:not(.sqs-narrow-width)>div:first-child {
+      width: 100% !important;
+  }
+
+  #value-statement,
+  #services-banner,
+  #@{services-page},
+  #@{bio-page}  {
+    div.image-card-wrapper  { 
+      width: 100% !important;
+    }
+  }
+
+  #value-statement,
+  #services-banner,
+  #@{services-page},
+  #@{bio-page}  {
+    div.image-title p strong /* Notera script font */ {
+      line-height: 0.8em !important; 
+    }
+    div.image-title p /* regular title font */ {
+      line-height: 1.2em !important; 
+      padding-bottom: 1em !important;
+    }
+    div.image-title /* title margin */ {
+      padding-bottom: 1em !important;
+    }
+  }
+
+}
+
+
+
+/*
+.sqs-block-image .design-layout-card:not(.sqs-narrow-width) > div:first-child,
+.sqs-block-image .design-layout-card:not(.sqs-narrow-width) .image-card-wrapper {
+  width: 100%;
+}
+*/
+
+
+
+
+///////////////////////////////////
+// FEATURED BLOG POST INDEX PAGE
+#featured-blog-posts .sqs-block-image .design-layout-collage .intrinsic {
+  left: 0;
+  width: 100%;
+}
+
+#featured-blog-posts .sqs-block-image .design-layout-collage .image-card-wrapper {
+  width: 100%;
+  margin-top: inherit;
+}
+
+#featured-blog-posts .sqs-block-image .design-layout-collage .image-card {
+  padding: 10px 0 0 0;
+  background-color: rgba(255,255,255,0);
+}
+
+#featured-blog-posts .sqs-block.image-block.sqs-block-image.sqs-text-ready {
+  padding-bottom: 0 !important;
+}
+
+#featured-blog-posts h3 a, #featured-blog-posts p a {
+  border: none;
+}
+
+
+
+// Blog post Headline font
+#featured-blog-posts h3, #featured-blog-posts h3 a,
+#featured-blog-posts h6, #featured-blog-posts h6 a {
+  font-family: haboro-soft-condensed;
+  font-weight: 600;
+  font-size: 15px;
+  //line-height: 1.4em;
+  letter-spacing: .1em;
+  //background: red;
+}
+
+
+
+// Blog post Category font
+#featured-blog-posts h6, #featured-blog-posts h6 a {
+  text-transform: uppercase;
+  font-family: haboro-soft-extended;
+  font-size: 11px !important;
+  font-weight: 400;
+  color: #737373;
+  margin: 0 0 0.5em;
+}
+
+// Blog post Category spacing (markdown)
+#featured-blog-posts div .markdown-block {
+  margin-top: -9px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: yellow !important;
+}
+
+// remove spacing from Blog Headline
+#featured-blog-posts div h3 {
+  margin-top: -9px;
+  margin-bottom: 0px;
+}
+
+// remove spacing from 'read more'
+#featured-blog-posts div.sqs-block-content p, 
+#featured-blog-posts div.sqs-block-content p a {
+  margin-top: .25em;
+}
+
+
+
+
+
+///////////////////////////////////
+// =====================
+// NEWSLETTER FORM BLOCK: Side-by-side fields
+///////////////////////////////////
+
+
+#newsletter-sign-up {
+background-color:@uh-ochre-bright !important;
+}
+
+#newsletter-sign-up .sqs-block-form {
+  padding-top: 0;
+}
+
+
+#newsletter-sign-up div.Index-page-content {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+#newsletter-sign-up h2 {
+  font-family: 'Notera';
+  font-size: 3em;
+  line-height: 0.5em;
+  font-style: normal;
+  font-weight:100; 
+  letter-spacing:0em;
+  margin-top: 0.25em; 
+  margin-bottom:0em !important;
+  text-transform: none;
+  padding-top: 12px;
+}
+
+// change inherent margins above heading and subhead block
+#block-5df1830890c9a20b873a46f0 p {
+  margin-top: .75em;
+  margin-bottom: .75em;
+}
+
+// remove sqs field labels above each field box
+#newsletter-sign-up label.title {
+  display:none !important;
+}
+
+// field contents font
+#newsletter-sign-up form input.field-element {
+  font-family: 'Nunito' !important;  
+  font-size: 0.9em !important;
+  border: none !important;
+  border-radius: 0px !important;
+  border: none;
+  height: 45px;
+}
+
+// Submit Button
+#newsletter-sign-up form input.button {
+//  border: none !important;
+//  border-radius: 3px !important;
+  font-weight: 700;
+  font-size: 12.5px;
+  background-color: @uh-teal;
+  height: 45px;
+}
+
+
+// margin below each field
+#newsletter-sign-up .form-wrapper .field-list .field,
+#newsletter-sign-up .form-button-wrapper {
+  margin-bottom: 12px !important;
+}
+
+// margin above each field element
+#newsletter-sign-up .form-wrapper .field-list .field-element {  margin-top: 0px !important;
+}
+
+
+// Form error colour
+#newsletter-sign-up .field-error {
+  background: @uh-coral url('//assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png') no-repeat 9px 50%;
+}
+
+// DESKTOP only  -  fields side by side /////////////
+@media only screen and (min-width: 851px) {
+  #newsletter-sign-up .form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;  
+  }
+
+  #newsletter-sign-up .sqs-block-form {
+  width: 100%;
+  }
+  #newsletter-sign-up .field-list.clear {
+    text-align:right;
+    display:inline-block;
+    width:74.5%;
+  }
+  #newsletter-sign-up .form-item.field.email, #newsletter-sign-up .form-item.field.text  {
+   display: inline-block;
+   min-width: 47.5%;
+    text-align:left;
+    margin: 0 0;
+    margin-right: 2%;
+  }
+  #newsletter-sign-up .form-item.field.email {
+  min-width: 47.5%;
+  margin-right: 2%;
+  }
+  #newsletter-sign-up .form-button-wrapper {
+    width:25%;
+    margin: 0;
+    float:right;
+    text-align: left;
+  }
+}
+///////////////////
+
+
+// =================================
+// =================================
+// HEADER: reduce padding for nav
+// (didn't help)
+// .Header-inner {padding-left: 36px  !important; padding-right: 36px  !important;}
+
+// PAGE: Home Page
+// News-Latest-Posts background colour
+#section-news-latest-posts {
+  background-color: #F8F8F7 !important;
+}
+
+
+// PAGE: Home Page
+// HEALING WITH HERBS text header 
+// links: remove underlines
+h2 a { border-bottom-style: none !important; }
+// padding reduction
+#block-yui_3_17_2_5_1509555956994_4640 { margin-top: -20px !important; margin-bottom: -10px }
+// change only this h2 header link size
+#block-yui_3_17_2_5_1509555956994_4640 h2 {font-size:133%;} 
+// change only on mobile 
+@media only screen and (max-width: 740px) { 
+  #block-yui_3_17_2_5_1509555956994_4640 h2 {font-size:105%;} 
+  #block-yui_3_17_2_5_1509555956994_4640  { margin-top: -33px !important;} 
+
+}
+
+
+// PAGE: Latest News Page
+// News-Latest-Posts background colour
+#news-latest-posts {
+//  background-color: #f2f2f2 !important;
+}
+
+
+// PAGE: Healing Herbal Medicine
+// links: remove underlines
+
+#block-yui_3_17_2_2_1508949894256_9134 h2 a,
+#block-yui_3_17_2_2_1508949894256_9134 p a {
+      border-bottom-style: none !important;
+}
+
+#block-yui_3_17_2_2_1508949894256_9134 p a {
+  color: inherit !important;
+}
+
+
+
+// PAGE: Home Page
+// Newsletter box
+#subscribe-newsletter {
+  padding-top: 16px !important;
+}
+
+// =============================
+// BLOG ========================
+// BLOG ENTRY Padding (desktop & mobile)
+  .BlogItem {
+    padding-left: 21.8%;
+    padding-right: 21.8%;
+  }
+@media screen and (max-width: 1189px) {
+  .BlogItem {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+}  
+@media screen and (max-width: 1127px) {
+  .BlogItem {
+    padding-left: 13%;
+    padding-right: 13%;
+  }
+}  
+@media screen and (max-width: 480px) {
+  .BlogItem {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}  
+
+
+// =================================
+// FOOTER
+.Footer-blocks--top { display: none !important }
+
+.sqs-licensed-asset-preview-bar { display: none !important }
+
+.Footer-blocks--middle { padding: 1px !important; }
+
+
+
+// PAGE: News
+// Blog list padding top
+.Main--blog-list  {
+  padding-top: 20px !important;
+}
+
+
+
+
+// ==================================
+// ==================================
+// TESTIMONIAL SLIDER from SquareStud.io
+.sqs-gallery-thumbnails.sqs-gallery-design-strip {
+    left: 0 !important;
+    width: auto !important;
+    .sqs-wrapper {
+        display: block !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        -ms-transform: translateX(-50%) !important;
+        -moz-transform: translateX(-50%) !important;
+        -webkit-transform: translateX(-50%) !important;
+        float: left !important;
+        width: auto !important;
+    }
+    img {
+        height: 10px !important;
+        width: 10px !important;
+        margin-right: 5px;
+        border-radius: 100%;
+        -webkit-filter: brightness(0);
+        -moz-filter: brightness(0);
+        -ms-filter: brightness(0);
+        filter: brightness(0);
+    }
+}
+
+.sqs-gallery-block-slideshow:before {
+    content: "x";
+    font-size: 0px;
+    height: 46px;
+    width: 46px;
+    background: url('http://static1.squarespace.com/static/54dcf1f3e4b03174c3dc75f5/t/56ccc38001dbaeafab2370bd/1456259968882/quotemarks.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    letter-spacing: -1px;
+    display: block;
+    position: absolute;
+    text-align: center !important;
+    width: 100% !important;
+    top: 0 !important;
+}
+
+.sqs-gallery-block-slideshow {
+    padding-top: 40px;
+    background: none;
+    max-height: 180px !important;
+    overflow: hidden !important;
+    .slide {
+        max-height: 180px;
+    }
+    .sqs-gallery-design-stacked-slide {
+        overflow: hidden;
+        img {
+            display: none;
+        }
+    }
+    .meta {
+        background: none !important;
+        width: 60% !important;
+        text-align: center;
+        left: 50% !important;
+        transform: translate(-50%, 0%) !important;
+        -moz-transform: translate(-50%, 0%) !important;
+        -ms-transform: translate(-50%, 0%) !important;
+        -webkit-transform: translate(-50%, 0%) !important;
+        top: 0px !important;
+        .meta-inside {
+            padding: 0 !important;
+            position: absolute;
+            width: 80% !important;
+            overflow: hidden !important;
+            top: 50% !important;
+            left: 50% !important;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .meta-title {
+            color: #444;
+            font-weight: 200;
+            letter-spacing: 1.2px;
+            line-height: 24px;
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+        .meta-description p {
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+            font-size: 12px;
+        }
+    }
+    .sqs-gallery-controls {
+        .previous,
+        .next {
+            background: none;
+            color: #888 !important;
+            top: 40% !important;
+            width: 10px !important;
+            transition: all ease-in-out 400ms !important;
+        }
+        .previous:before,
+        .next:before {
+            font-size: 16px;
+        }
+        .previous:hover,
+        .next:hover {
+            background: none !important;
+            color: #000 !important;
+        }
+    }
+}
+
+@media (min-width:668px) and (max-width:1024px) {
+    .sqs-gallery-block-slideshow {
+        max-height: 210px !important;
+        .slide {
+            max-height: 210px !important;
+        }
+        .meta {
+            display: block !important;
+            max-width: 100% !important;
+            height: 100% !important;
+            width: 80% !important;
+        }
+    }
+}
+
+@media (max-width:667px) {
+    .sqs-gallery-block-slideshow {
+        .sqs-gallery-design-stacked {
+            height: 260px !important;
+        }
+        max-height: 260px !important;
+        .slide {
+            max-height: 260px !important;
+        }
+        .meta {
+            display: block !important;
+            max-width: 100% !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+    }
+}
