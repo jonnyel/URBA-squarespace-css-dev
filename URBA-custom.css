@@ -1,10 +1,5 @@
 // UH Website CSS 
 
-
-// DEFINE page name variables instead of collection id
-@services-page: collection-5e1e35322ee5903aac1cf3c5;
-@bio-page: collection-5e1e3b0dea1c913c8b171986;
-
 // DEFINE UH Brand Colour variables
 @uh-coral: hsl(354, 85%, 65%);
 @uh-coral-light: hsl(354, 85%, 80%);
@@ -22,7 +17,7 @@
 @font-face {font-family: 'Notera2Thin';src: url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5e39b0300934747943124a00/1580838960090/Notera2Thin.woff2') format('woff2'),url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5e39b02aa0af01453b5d92aa/1580838954298/Notera2Thin.woff') format('woff');}
 
 h5,
-div.image-title p strong {
+div.image-title strong {
   font-family: 'Notera'; 
   font-size: 3.5em; 
   font-style: normal;
@@ -52,11 +47,7 @@ div.image-title p strong {
 }
 
 // Fix h2 Sqr reduction of letterspacing on mobile
-@media screen and (max-width:640px) {
-  h2 {
-    letter-spacing:.08em;
-  }
-}
+@media screen and (max-width:640px){h2{letter-spacing:.08em;}}
 
 
 // HEADER margin fix
@@ -137,15 +128,10 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 // ==========================
 // PERSONAL-STATEMENT Banner
 #personal-statement h2 {
-  font-size: 2.75em;
-  line-height: 1.45em;
-  letter-spacing: 0.05em;
+  font-size: 3.25em;
+  line-height: 1.5em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  // no hyphenation
-  hyphens: none !important; 
-  -webkit-hyphens: none !important; 
-  -ms-hyphens: none  !important; 
 }
 
 
@@ -221,65 +207,60 @@ div.image-title strong {
   text-align: center !important;
 }
 
-#value-statement, 
-#services-banner,
-#@{services-page},
-#@{bio-page} {
-  div.image-card-wrapper {
-    background: @uh-grey-light !important;
-    padding-bottom: 1em;
-    width: calc(50%);
-  }
+#value-statement div.image-card-wrapper, 
+#services-banner div.image-card-wrapper {
+  background: @uh-grey-light !important;
+  padding-bottom: 1em;
+  width: calc(50%);
 }
 
 // Desktop & Tablet only - widen L&R padding on card Text
 @media screen and (min-width: 641px) {
-  #value-statement,
-  #services-banner {
-    div.image-title-wrapper, 
-    div.image-subtitle-wrapper, 
-    div.image-button-wrapper {
-      padding-left: 125px; 
-      padding-right: 125px;
-    }
+  #value-statement div.image-title-wrapper, 
+  #services-banner div.image-title-wrapper,
+  #value-statement div.image-subtitle-wrapper, 
+  #services-banner div.image-subtitle-wrapper,
+  #value-statement div.image-button-wrapper, 
+  #services-banner div.image-button-wrapper {
+    padding-left: 125px; 
+    padding-right: 125px;
   }
+
 }
 
 
-#value-statement, 
-#services-banner {
-  div.image-title,
-  div.image-subtitle,
-  div.image-button {
-    text-align: center !important;
-  } 
+#value-statement div.image-title,
+#value-statement div.image-subtitle,
+#value-statement div.image-button,
+#services-banner div.image-title,
+#services-banner div.image-subtitle,
+#services-banner div.image-button
+ {
+  text-align: center !important;
 }
 
 // Image-card Title margins
-#value-statement,
-#services-banner {
-  div.image-title p,
-  div.image-title p strong {
-    margin-bottom: .34em !important;
-    display: block;
-  }
+#value-statement div.image-title p,
+#value-statement div.image-title p strong,
+#services-banner div.image-title p, 
+#services-banner div.image-title p strong {
+  margin-bottom: .34em !important;
+  display: block;
 }
 
 // Image-card Title (Notera h5 strong) - size redefined:
-#value-statement,
-#services-banner {
-  div.image-title p {
-    margin-bottom: .5em !important;
-    display: block;
+#value-statement div.image-title p,
+#services-banner div.image-title p {
+  margin-bottom: .5em !important;
+  display: block;
     line-height: 1.3em !important; 
-  }
+
 }
 
 
 // Force An Image Card to Stack on Tablet
 
 @media screen and (max-width: 850px) {
-
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width) {
       display: block!important;
   }
@@ -290,30 +271,16 @@ div.image-title strong {
       width: 100% !important;
   }
 
-  #value-statement,
-  #services-banner,
-  #@{services-page},
-  #@{bio-page}  {
-    div.image-card-wrapper  { 
-      width: 100% !important;
-    }
+  #value-statement div.image-card-wrapper,
+  #services-banner div.image-card-wrapper  { 
+  width: 100% !important;
+  }
+  #value-statement div.image-title p strong,
+    #services-banner div.image-title p strong {
+    line-height: 0.8em !important; 
   }
 
-  #value-statement,
-  #services-banner,
-  #@{services-page},
-  #@{bio-page}  {
-    div.image-title p strong /* Notera script font */ {
-      line-height: 0.8em !important; 
-    }
-    div.image-title p /* regular title font */ {
-      line-height: 1.2em !important; 
-      padding-bottom: 1em !important;
-    }
-    div.image-title /* title margin */ {
-      padding-bottom: 1em !important;
-    }
-  }
+
 
 }
 
