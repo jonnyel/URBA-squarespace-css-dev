@@ -332,6 +332,12 @@ div.image-title strong {
 */
 
 
+///////////////////////////////////
+// SUMMARY BLOCK AS PAGE TITLES
+// Remove links and restyle font (medium size)
+
+// #pages, #pages, #pages {...
+// .summary-title > a { pointer-events: none; cursor: default;}
 
 
 ///////////////////////////////////
