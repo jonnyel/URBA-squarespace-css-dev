@@ -1,10 +1,10 @@
-// UH Website CSS 
+/* UH Website CSS */  
 
-// DEFINE page name variables instead of collection id
+/* DEFINE page name variables instead of collection id */
 @services-page: collection-5e1e35322ee5903aac1cf3c5;
 @bio-page: collection-5e1e3b0dea1c913c8b171986;
 
-// DEFINE UH Brand Colour variables
+/* DEFINE UH Brand Colour variables */
 @uh-coral: hsl(354, 85%, 65%);
 @uh-coral-light: hsl(354, 85%, 80%);
 @uh-ochre-bright: hsl(48, 100%, 68%);
@@ -14,8 +14,8 @@
 @uh-grey-dark: #545454;
 @uh-dark-transp: rgba(20,20,20,.75);
 
-// =================================
-// CUSTOM FONTS
+/* =================================
+   CUSTOM FONTS */
 @font-face {font-family: 'Notera';src: url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5dd571e426591d0da6e5feda/1574269412456/Notera.woff2') format('woff2'),url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5dd571dfd8f6e70a23740916/1574269407854/Notera.woff') format('woff');}
 
 @font-face {font-family: 'Notera2Thin';src: url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5e39b0300934747943124a00/1580838960090/Notera2Thin.woff2') format('woff2'),url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5e39b02aa0af01453b5d92aa/1580838954298/Notera2Thin.woff') format('woff');}
@@ -33,9 +33,9 @@ div.image-title p strong {
   text-transform: none;
 }
 
-// HIGHLIGHTER
-// ===============================
-// HIGHLIGHTER effect on h2 italic
+/* HIGHLIGHTER
+   ===============================
+   HIGHLIGHTER effect on h2 italic */
 #personal-statement h2 em,
 #personal-statement h2 strong,
 #personal-statement h2 strong em {
@@ -50,7 +50,7 @@ div.image-title p strong {
   background: linear-gradient(to top, @uh-teal-light 45%, #f7f7f7 45%); 
 }
 
-// Fix h2 Sqr reduction of letterspacing on mobile
+/* Fix h2 Sqr reduction of letterspacing on mobile */
 @media screen and (max-width:640px) {
   h2 {
     letter-spacing:.08em;
@@ -58,14 +58,14 @@ div.image-title p strong {
 }
 
 
-// HEADER margin fix
+/* HEADER margin fix */
 .Header-inner--top {
   padding-bottom: 0px;
   padding-top: 20px;
   margin-bottom: 0px;
 }
-// MOBILE HEADER
-// Drop Shadow Mobile Header
+/* MOBILE HEADER
+   Drop Shadow Mobile Header */
   .Mobile-bar--top {
     -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 -moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
@@ -79,14 +79,14 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 
 
 
-// =================================
-// =================================
-// NEW HOME INDEX PAGE 
+/* =================================
+   =================================
+   NEW HOME INDEX PAGE 
 
-// Banner with image - Text Style override
+   Banner with image - Text Style override */
 
 
-// no hyphenation
+/* no hyphenation */
 .Index-page--has-image {
   hyphens: none !important; 
   -webkit-hyphens: none !important; 
@@ -94,14 +94,14 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 }
 
 
-// ===========
-// INDEX PAGES 
-// Set differentiated BACKGROUND COLORS
+/* ===========
+   INDEX PAGES 
+   Set differentiated BACKGROUND COLORS */
   #personal-statement {
     background-color:@uh-grey-light !important;
   }
 
-// - H1 - FONT change for a few Index Pages
+/* - H1 - FONT change for a few Index Pages */
 #personal-statement h1, #featured-products h1, #testimonials h1, #featured-blog-posts h1, #newsletter-sign-up h1 {
   font-family: haboro-soft;
   font-size: 14px;
@@ -112,11 +112,11 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 
 
 
-// =================================
-// WELCOME BANNER 
+/* =================================
+   WELCOME BANNER  */
 
 
-// Text transformation & Font Colours
+/* Text transformation & Font Colours */
 #welcome-banner {
   font-size:1.5em; line-height:1.6em;
   text-transform: none;
@@ -133,8 +133,8 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 }
 
 
-// ==========================
-// PERSONAL-STATEMENT Banner
+/* ==========================
+   PERSONAL-STATEMENT Banner */
 #personal-statement h2 {
   font-size: 3.25em;
   line-height: 1.5em;
@@ -147,8 +147,8 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 }
 
 
-// ==============
-// FEATURED PRODUCTS - Link styles
+/* ==============
+   FEATURED PRODUCTS - Link styles */
 
 #featured-products div.image-caption p {
   margin: 0.5em 0 0 0;
@@ -194,10 +194,10 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 
 
 
-// ==========================
-// IMAGE-CARDS
+/* ==========================
+   IMAGE-CARDS */
 
-// Image Card 3rd Font Title (Notera)
+/* Image Card 3rd Font Title (Notera) */
 div.image-title strong {
   display:block;
   font-family: 'Notera2Thin';
@@ -205,7 +205,7 @@ div.image-title strong {
   line-height: 0.5em !important;
 }
 
-// IMAGE-CARDS ON HOMEPAGE Padding
+/* IMAGE-CARDS ON HOMEPAGE Padding */
 #value-statement, 
 #services-banner { 
   div.Index-page-content {
@@ -216,7 +216,7 @@ div.image-title strong {
   }
 }
 
-// IMAGE-CARDS ON SUBPAGES Padding
+/* IMAGE-CARDS ON SUBPAGES Padding */
 #@{services-page},
 #@{bio-page} {
   .Main-content {
@@ -237,7 +237,7 @@ div.image-title strong {
   }
 }
 
-// Desktop & Tablet only - widen L&R padding on card Text
+/* Desktop & Tablet only - widen L&R padding on card Text */
 @media screen and (min-width: 641px) {
   #value-statement,
   #services-banner {
@@ -260,7 +260,7 @@ div.image-title strong {
   } 
 }
 
-// Image-card Title margins
+/* Image-card Title margins */
 #value-statement,
 #services-banner {
   div.image-title p,
@@ -270,7 +270,7 @@ div.image-title strong {
   }
 }
 
-// Image-card Title (Notera h5 strong) - size redefined:
+/* Image-card Title (Notera h5 strong) - size redefined: */
 #value-statement,
 #services-banner {
   div.image-title p {
@@ -281,7 +281,7 @@ div.image-title strong {
 }
 
 
-// Force An Image Card to Stack on Tablet
+/* Force An Image Card to Stack on Tablet */
 
 @media screen and (max-width: 850px) {
 
@@ -332,16 +332,15 @@ div.image-title strong {
 */
 
 
-///////////////////////////////////
-// SUMMARY BLOCK AS PAGE TITLES
-// Remove links and restyle font (medium size)
+/* ///////////////////////////////////
+   SUMMARY BLOCK AS PAGE TITLES
+   Remove links and restyle font (medium size) */
 
-// #pages, #pages, #pages {...
-// .summary-title > a { pointer-events: none; cursor: default;}
+/* #pages, #pages, #pages {...
+   .summary-title > a { pointer-events: none; cursor: default;} */
 
-
-///////////////////////////////////
-// FEATURED BLOG POST INDEX PAGE
+/* ///////////////////////////////////
+   FEATURED BLOG POST INDEX PAGE */
 #featured-blog-posts .sqs-block-image .design-layout-collage .intrinsic {
   left: 0;
   width: 100%;
@@ -367,7 +366,7 @@ div.image-title strong {
 
 
 
-// Blog post Headline font
+/* Blog post Headline font */
 #featured-blog-posts h3, #featured-blog-posts h3 a,
 #featured-blog-posts h6, #featured-blog-posts h6 a {
   font-family: haboro-soft-condensed;
@@ -380,7 +379,7 @@ div.image-title strong {
 
 
 
-// Blog post Category font
+/* Blog post Category font */
 #featured-blog-posts h6, #featured-blog-posts h6 a {
   text-transform: uppercase;
   font-family: haboro-soft-extended;
@@ -390,7 +389,7 @@ div.image-title strong {
   margin: 0 0 0.5em;
 }
 
-// Blog post Category spacing (markdown)
+/* Blog post Category spacing (markdown)  */
 #featured-blog-posts div .markdown-block {
   margin-top: -9px;
   padding-top: 0;
@@ -398,13 +397,13 @@ div.image-title strong {
   color: yellow !important;
 }
 
-// remove spacing from Blog Headline
+/* remove spacing from Blog Headline  */
 #featured-blog-posts div h3 {
   margin-top: -9px;
   margin-bottom: 0px;
 }
 
-// remove spacing from 'read more'
+/* remove spacing from 'read more'  */
 #featured-blog-posts div.sqs-block-content p, 
 #featured-blog-posts div.sqs-block-content p a {
   margin-top: .25em;
@@ -414,10 +413,10 @@ div.image-title strong {
 
 
 
-///////////////////////////////////
-// =====================
-// NEWSLETTER FORM BLOCK: Side-by-side fields
-///////////////////////////////////
+/*  ///////////////////////////////////
+    =====================
+    NEWSLETTER FORM BLOCK: Side-by-side fields
+    /////////////////////////////////// */
 
 
 #newsletter-sign-up {
@@ -447,18 +446,18 @@ background-color:@uh-ochre-bright !important;
   padding-top: 12px;
 }
 
-// change inherent margins above heading and subhead block
+/* change inherent margins above heading and subhead block  */
 #block-5df1830890c9a20b873a46f0 p {
   margin-top: .75em;
   margin-bottom: .75em;
 }
 
-// remove sqs field labels above each field box
+/* remove sqs field labels above each field box */
 #newsletter-sign-up label.title {
   display:none !important;
 }
 
-// field contents font
+/* field contents font */
 #newsletter-sign-up form input.field-element {
   font-family: 'Nunito' !important;  
   font-size: 0.9em !important;
@@ -468,7 +467,7 @@ background-color:@uh-ochre-bright !important;
   height: 45px;
 }
 
-// Submit Button
+/* Submit Button */
 #newsletter-sign-up form input.button {
 //  border: none !important;
 //  border-radius: 3px !important;
@@ -479,23 +478,23 @@ background-color:@uh-ochre-bright !important;
 }
 
 
-// margin below each field
+/* margin below each field */
 #newsletter-sign-up .form-wrapper .field-list .field,
 #newsletter-sign-up .form-button-wrapper {
   margin-bottom: 12px !important;
 }
 
-// margin above each field element
+/* margin above each field element */
 #newsletter-sign-up .form-wrapper .field-list .field-element {  margin-top: 0px !important;
 }
 
 
-// Form error colour
+/* Form error colour */
 #newsletter-sign-up .field-error {
   background: @uh-coral url('//assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png') no-repeat 9px 50%;
 }
 
-// DESKTOP only  -  fields side by side /////////////
+/* DESKTOP only  -  fields side by side ///////////// */
 @media only screen and (min-width: 851px) {
   #newsletter-sign-up .form {
     display: inline-block;
@@ -529,31 +528,32 @@ background-color:@uh-ochre-bright !important;
     text-align: left;
   }
 }
-///////////////////
+/* //////////////////////////////////////////////// */
 
 
-// =================================
-// =================================
-// HEADER: reduce padding for nav
-// (didn't help)
+/* =================================
+   =================================
+   HEADER: reduce padding for nav
+   (didn't help) */
+
 // .Header-inner {padding-left: 36px  !important; padding-right: 36px  !important;}
 
-// PAGE: Home Page
-// News-Latest-Posts background colour
+/* PAGE: Home Page
+   News-Latest-Posts background colour */
 #section-news-latest-posts {
   background-color: #F8F8F7 !important;
 }
 
 
-// PAGE: Home Page
-// HEALING WITH HERBS text header 
-// links: remove underlines
+/* PAGE: Home Page
+   HEALING WITH HERBS text header 
+   links: remove underlines */
 h2 a { border-bottom-style: none !important; }
-// padding reduction
+/* padding reduction */
 #block-yui_3_17_2_5_1509555956994_4640 { margin-top: -20px !important; margin-bottom: -10px }
-// change only this h2 header link size
+/* change only this h2 header link size */
 #block-yui_3_17_2_5_1509555956994_4640 h2 {font-size:133%;} 
-// change only on mobile 
+/* change only on mobile  */
 @media only screen and (max-width: 740px) { 
   #block-yui_3_17_2_5_1509555956994_4640 h2 {font-size:105%;} 
   #block-yui_3_17_2_5_1509555956994_4640  { margin-top: -33px !important;} 
@@ -561,15 +561,15 @@ h2 a { border-bottom-style: none !important; }
 }
 
 
-// PAGE: Latest News Page
-// News-Latest-Posts background colour
+/* PAGE: Latest News Page
+   News-Latest-Posts background colour */
 #news-latest-posts {
 //  background-color: #f2f2f2 !important;
 }
 
 
-// PAGE: Healing Herbal Medicine
-// links: remove underlines
+/* PAGE: Healing Herbal Medicine
+   links: remove underlines */
 
 #block-yui_3_17_2_2_1508949894256_9134 h2 a,
 #block-yui_3_17_2_2_1508949894256_9134 p a {
@@ -582,15 +582,15 @@ h2 a { border-bottom-style: none !important; }
 
 
 
-// PAGE: Home Page
-// Newsletter box
+/* PAGE: Home Page
+   Newsletter box */
 #subscribe-newsletter {
   padding-top: 16px !important;
 }
 
-// =============================
-// BLOG ========================
-// BLOG ENTRY Padding (desktop & mobile)
+/* =============================
+   BLOG ========================
+   BLOG ENTRY Padding (desktop & mobile) */
   .BlogItem {
     padding-left: 21.8%;
     padding-right: 21.8%;
@@ -615,8 +615,8 @@ h2 a { border-bottom-style: none !important; }
 }  
 
 
-// =================================
-// FOOTER
+/* =================================
+   FOOTER */
 .Footer-blocks--top { display: none !important }
 
 .sqs-licensed-asset-preview-bar { display: none !important }
@@ -625,8 +625,8 @@ h2 a { border-bottom-style: none !important; }
 
 
 
-// PAGE: News
-// Blog list padding top
+/* PAGE: News
+   Blog list padding top  */
 .Main--blog-list  {
   padding-top: 20px !important;
 }
@@ -634,9 +634,9 @@ h2 a { border-bottom-style: none !important; }
 
 
 
-// ==================================
-// ==================================
-// TESTIMONIAL SLIDER from SquareStud.io
+/* ==================================
+   ==================================
+   TESTIMONIAL SLIDER from SquareStud.io  */
 .sqs-gallery-thumbnails.sqs-gallery-design-strip {
     left: 0 !important;
     width: auto !important;
