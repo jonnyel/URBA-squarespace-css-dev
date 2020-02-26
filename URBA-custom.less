@@ -10,6 +10,7 @@
 @uh-ochre-bright: hsl(48, 100%, 68%);
 @uh-teal: hsl(164, 38%, 49%);
 @uh-teal-light: hsl(163, 55%, 75%);
+@uh-teal-bg: hsl(164, 37.3%, 49.4%);
 @uh-grey-light: hsl(0, 0%, 96%);
 @uh-grey-dark: #545454;
 @uh-dark-transp: rgba(20,20,20,.75);
@@ -20,8 +21,7 @@
 
 @font-face {font-family: 'Notera2Thin';src: url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5e39b0300934747943124a00/1580838960090/Notera2Thin.woff2') format('woff2'),url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5e39b02aa0af01453b5d92aa/1580838954298/Notera2Thin.woff') format('woff');}
 
-h5,
-div.image-title p strong {
+h5 {
   font-family: 'Notera'; 
   font-size: 3.5em; 
   font-style: normal;
@@ -99,6 +99,9 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
    Set differentiated BACKGROUND COLORS */
   #personal-statement {
     background-color:@uh-grey-light !important;
+  }
+  #testimonials {
+    background-color: @uh-teal-bg !important;
   }
 
 /* - H1 - FONT change for a few Index Pages */
@@ -207,29 +210,36 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 
 
 
-/* ==========================
-   IMAGE-CARDS */
+/*===================================
+=            IMAGE-CARDS            =
+===================================*/
 
-/* Image Card 3rd Font Title (Notera) */
-div.image-title strong {
-  display:block;
-  font-family: 'Notera2Thin';
+
+
+/* Image Card 3rd Font Title (Notera2Thin) */
+div.image-title p strong {
+  display: block;
+  font-family: 'Notera2Thin' !important;
   font-size: 1.5em !important;
-  line-height: 0.5em !important;
+  font-style: normal;
+  font-weight:100; 
+  letter-spacing:0em;
+  line-height: 0.7em !important;
+  text-transform: none;
 }
 
-/* IMAGE-CARDS ON HOMEPAGE Padding */
+/* IMAGE-CARDS ON HOMEPAGE Section Padding */
 #value-statement, 
 #services-banner { 
   div.Index-page-content {
     padding: 0;
     }
-  div.image-card * {
-    text-align: center !important;
+    .design-layout-card .image-card {
+    padding: 3em 0;
   }
 }
 
-/* IMAGE-CARDS ON SUBPAGES Padding */
+/* IMAGE-CARDS ON SUBPAGES Section Padding */
 #@{services-page},
 #@{bio-page} {
   .Main-content {
@@ -245,10 +255,14 @@ div.image-title strong {
 #@{bio-page} {
   div.image-card-wrapper {
     background: @uh-grey-light !important;
-    padding-bottom: 1em;
     width: calc(50%);
   }
 }
+
+div#block-yui_3_17_2_1_1576107302498_3756 /* My Commitment image-card block */,
+div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
+    padding: 0 !important;
+  }
 
 /* Desktop & Tablet only - widen L&R padding on card Text */
 @media screen and (min-width: 641px) {
@@ -257,39 +271,9 @@ div.image-title strong {
     div.image-title-wrapper, 
     div.image-subtitle-wrapper, 
     div.image-button-wrapper {
-      padding-left: 125px; 
-      padding-right: 125px;
+      padding-left: 18%; 
+      padding-right: 18%;
     }
-  }
-}
-
-
-#value-statement, 
-#services-banner {
-  div.image-title,
-  div.image-subtitle,
-  div.image-button {
-    text-align: center !important;
-  } 
-}
-
-/* Image-card Title margins */
-#value-statement,
-#services-banner {
-  div.image-title p,
-  div.image-title p strong {
-    margin-bottom: .34em !important;
-    display: block;
-  }
-}
-
-/* Image-card Title (Notera h5 strong) - size redefined: */
-#value-statement,
-#services-banner {
-  div.image-title p {
-    margin-bottom: .5em !important;
-    display: block;
-    line-height: 1.3em !important; 
   }
 }
 
@@ -326,7 +310,7 @@ div.image-title strong {
     }
     div.image-title p /* regular title font */ {
       line-height: 1.2em !important; 
-      padding-bottom: 1em !important;
+      // padding-bottom: 1em !important;
     }
     div.image-title /* title margin */ {
       padding-bottom: 1em !important;
@@ -336,13 +320,8 @@ div.image-title strong {
 }
 
 
+/*=====  End of IMAGE-CARDS  ======*/
 
-/*
-.sqs-block-image .design-layout-card:not(.sqs-narrow-width) > div:first-child,
-.sqs-block-image .design-layout-card:not(.sqs-narrow-width) .image-card-wrapper {
-  width: 100%;
-}
-*/
 
 
 /* ///////////////////////////////////
@@ -423,13 +402,24 @@ div.image-title strong {
 }
 
 
+/*============================================
+=            TESTIMONIALS SECTION            =
+============================================*/
+
+#testimonials { div, h1, .p 
+  {
+    color: white !important;
+  }
+}
+
+/*=====  End of TESTIMONIALS SECTION  ======*/
 
 
+/*=============================================
+=            NEWSLETTER FORM BLOCK            =
+=============================================*/
 
-/*  ///////////////////////////////////
-    =====================
-    NEWSLETTER FORM BLOCK: Side-by-side fields
-    /////////////////////////////////// */
+/*----------  Side-by-side fields  ----------*/
 
 
 #newsletter-sign-up {
@@ -507,7 +497,8 @@ background-color:@uh-ochre-bright !important;
   background: @uh-coral url('//assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png') no-repeat 9px 50%;
 }
 
-/* DESKTOP only  -  fields side by side ///////////// */
+/*----------  DESKTOP only  -  fields side by side  ----------*/
+
 @media only screen and (min-width: 851px) {
   #newsletter-sign-up .form {
     display: inline-block;
@@ -541,7 +532,9 @@ background-color:@uh-ochre-bright !important;
     text-align: left;
   }
 }
-/* //////////////////////////////////////////////// */
+
+/*=====  End of NEWSLETTER FORM BLOCK  ======*/
+
 
 
 /* =================================
