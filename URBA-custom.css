@@ -105,9 +105,13 @@ h5 {
 /* =================================
    WELCOME BANNER  */
 /* Text transformation & Font Colours */
-#welcome-banner {
-  font-size: 1.5em;
+#welcome-banner p {
+  font-size: 1.33em;
   line-height: 1.6em;
+  color: white;
+}
+#welcome-banner h5 {
+  font-size: 5.25em;
   text-transform: none;
   color: white;
 }
