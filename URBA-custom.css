@@ -106,7 +106,7 @@ h5 {
    WELCOME BANNER  */
 /* Text transformation & Font Colours */
 #welcome-banner p {
-  font-size: 1.33em;
+  font-size: 1em;
   line-height: 1.6em;
   color: white;
 }
