@@ -8,12 +8,14 @@
 @uh-coral: hsl(354, 85%, 65%);
 @uh-coral-light: hsl(354, 85%, 80%);
 @uh-ochre-bright: hsl(48, 100%, 68%);
+@uh-ochre-light: hsl(48, 100%, 80%);
 @uh-teal: hsl(164, 38%, 49%);
-@uh-teal-light: hsl(163, 55%, 75%);
+@uh-teal-light: hsl(163, 55%, 82%);
 @uh-teal-bg: hsl(164, 37.3%, 49.4%);
 @uh-grey-light: hsl(0, 0%, 96%);
 @uh-grey-dark: #545454;
 @uh-dark-transp: rgba(20,20,20,.75);
+@uh-transp: hsla(0,0%,100%,0);
 
 /* =================================
    CUSTOM FONTS */
@@ -33,22 +35,25 @@ h5 {
   text-transform: none;
 }
 
-/* HIGHLIGHTER
-   ===============================
-   HIGHLIGHTER effect on h2 italic */
-#personal-statement h2 em,
-#personal-statement h2 strong,
-#personal-statement h2 strong em {
+/*============================================================
+=            HIGHLIGHTER effect on h2 bold-italic            =
+============================================================*/
+h2 strong, h2 strong em {
   font-style: initial !important;
   font-weight: inherit !important;
-  background: linear-gradient(to top, @uh-ochre-bright 45%, #f7f7f7 45%);
+  background: linear-gradient(to top, @uh-ochre-light 45%, @uh-transp 45%);
 }
-#personal-statement h2 strong {
-  background: linear-gradient(to top, @uh-coral-light 45%, #f7f7f7 45%); 
+
+h2 strong {
+  background: linear-gradient(to top, @uh-teal-light 45%, @uh-transp 45%);
 }
+
 #personal-statement h2 strong em {
-  background: linear-gradient(to top, @uh-teal-light 45%, #f7f7f7 45%); 
+  background: linear-gradient(to top, @uh-ochre-bright 45%, @uh-grey-light 45%);
 }
+/*=====  End of HIGHLIGHTER effect on h2 bold-italic  ======*/
+
+
 
 /* Fix h2 Sqr reduction of letterspacing on mobile */
 @media screen and (max-width:640px) {
@@ -269,19 +274,9 @@ div.image-title p strong {
   }
 }
 
-/*----------  Image Card on sub-pages fonts  ----------*/
-/*#@{services-page},
-#@{bio-page} {
-  div.image-title p {
-    font-size: 1.55em !important;
-    // line-height: 0.7em !important;
-  }
-  div.image-subtitle p {
-    font-size: 0.85em !important;
-  }
-}*/
 
-/* IMAGE-CARDS ON HOMEPAGE Section Padding */
+/*----------  IMAGE-CARDS ON HOMEPAGE Section Padding   ----------*/
+
 #value-statement, 
 #services-banner { 
   div.Index-page-content {
@@ -292,7 +287,8 @@ div.image-title p strong {
   }
 }
 
-/* IMAGE-CARDS ON SUBPAGES Section Padding */
+/*----------  IMAGE-CARDS ON SUBPAGES Section Padding  ----------*/
+
 #@{services-page},
 #@{bio-page} {
   .Main-content {
@@ -317,7 +313,8 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
     padding: 0 !important;
   }
 
-/* Desktop & Tablet only - widen L&R padding on card Text */
+/*----------  Desktop & Tablet only - widen L&R padding on card Text  ----------*/
+
 @media screen and (min-width: 641px) {
   #value-statement,
   #services-banner {
@@ -331,7 +328,8 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
 }
 
 
-/* Force An Image Card to Stack on Mobile & tablet*/
+/*----------  Force An Image Card to Stack on Mobile & tablet  ----------*/
+
 
 @media screen and (max-width: 850px) {
 
@@ -357,8 +355,8 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
   }
 }
 
-
 /*=====  End of IMAGE-CARDS  ======*/
+
 
 
 /*====================================================================
@@ -390,17 +388,27 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
     
 }
 
-
 /*=====  End of FINAL LANDING PAGES for SERVICES & BIO pages  ======*/
 
 
 
-/* ///////////////////////////////////
-   SUMMARY BLOCK AS PAGE TITLES
-   Remove links and restyle font (medium size) */
+
+/*====================================================
+=            SUMMARY BLOCKS AS PAGE TITLES            =
+====================================================*/
+
+/*----------  Remove links and restyle font (medium size)  ----------*/
 
 /* #pages, #pages, #pages {...
    .summary-title > a { pointer-events: none; cursor: default;} */
+
+/*=====  End of SUMMARY BLOCK AS PAGE TITLES  ======*/
+
+
+
+
+
+
 
 /* ///////////////////////////////////
    FEATURED BLOG POST INDEX PAGE */

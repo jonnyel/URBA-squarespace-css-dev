@@ -22,22 +22,22 @@ h5 {
   margin-bottom: 0em !important;
   text-transform: none;
 }
-/* HIGHLIGHTER
-   ===============================
-   HIGHLIGHTER effect on h2 italic */
-#personal-statement h2 em,
-#personal-statement h2 strong,
-#personal-statement h2 strong em {
+/*============================================================
+=            HIGHLIGHTER effect on h2 bold-italic            =
+============================================================*/
+h2 strong,
+h2 strong em {
   font-style: initial !important;
   font-weight: inherit !important;
-  background: linear-gradient(to top, hsl(48, 100%, 68%) 45%, #f7f7f7 45%);
+  background: linear-gradient(to top, hsl(48, 100%, 80%) 45%, hsla(0, 0%, 100%, 0) 45%);
 }
-#personal-statement h2 strong {
-  background: linear-gradient(to top, hsl(354, 85%, 80%) 45%, #f7f7f7 45%);
+h2 strong {
+  background: linear-gradient(to top, hsl(163, 55%, 82%) 45%, hsla(0, 0%, 100%, 0) 45%);
 }
 #personal-statement h2 strong em {
-  background: linear-gradient(to top, hsl(163, 55%, 75%) 45%, #f7f7f7 45%);
+  background: linear-gradient(to top, hsl(48, 100%, 68%) 45%, hsl(0, 0%, 96%) 45%);
 }
+/*=====  End of HIGHLIGHTER effect on h2 bold-italic  ======*/
 /* Fix h2 Sqr reduction of letterspacing on mobile */
 @media screen and (max-width: 640px) {
   h2 {
@@ -198,18 +198,7 @@ div.image-title p strong {
   padding-top: 0.5em !important;
   padding-bottom: 0.5em !important;
 }
-/*----------  Image Card on sub-pages fonts  ----------*/
-/*#@{services-page},
-#@{bio-page} {
-  div.image-title p {
-    font-size: 1.55em !important;
-    // line-height: 0.7em !important;
-  }
-  div.image-subtitle p {
-    font-size: 0.85em !important;
-  }
-}*/
-/* IMAGE-CARDS ON HOMEPAGE Section Padding */
+/*----------  IMAGE-CARDS ON HOMEPAGE Section Padding   ----------*/
 #value-statement div.Index-page-content,
 #services-banner div.Index-page-content {
   padding: 0;
@@ -218,7 +207,7 @@ div.image-title p strong {
 #services-banner .design-layout-card .image-card {
   padding: 3em 0;
 }
-/* IMAGE-CARDS ON SUBPAGES Section Padding */
+/*----------  IMAGE-CARDS ON SUBPAGES Section Padding  ----------*/
 #collection-5e1e35322ee5903aac1cf3c5 .Main-content,
 #collection-5e1e3b0dea1c913c8b171986 .Main-content {
   padding-left: 0 !important;
@@ -235,7 +224,7 @@ div#block-yui_3_17_2_1_1576107302498_3756,
 div#block-b1d3723d172f7b9c33cc {
   padding: 0 !important;
 }
-/* Desktop & Tablet only - widen L&R padding on card Text */
+/*----------  Desktop & Tablet only - widen L&R padding on card Text  ----------*/
 @media screen and (min-width: 641px) {
   #value-statement div.image-title-wrapper,
   #services-banner div.image-title-wrapper,
@@ -247,7 +236,7 @@ div#block-b1d3723d172f7b9c33cc {
     padding-right: 18%;
   }
 }
-/* Force An Image Card to Stack on Mobile & tablet*/
+/*----------  Force An Image Card to Stack on Mobile & tablet  ----------*/
 @media screen and (max-width: 850px) {
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width) {
     display: block !important;
@@ -306,11 +295,13 @@ div#block-b1d3723d172f7b9c33cc {
   padding-right: 0 !important;
 }
 /*=====  End of FINAL LANDING PAGES for SERVICES & BIO pages  ======*/
-/* ///////////////////////////////////
-   SUMMARY BLOCK AS PAGE TITLES
-   Remove links and restyle font (medium size) */
+/*====================================================
+=            SUMMARY BLOCKS AS PAGE TITLES            =
+====================================================*/
+/*----------  Remove links and restyle font (medium size)  ----------*/
 /* #pages, #pages, #pages {...
    .summary-title > a { pointer-events: none; cursor: default;} */
+/*=====  End of SUMMARY BLOCK AS PAGE TITLES  ======*/
 /* ///////////////////////////////////
    FEATURED BLOG POST INDEX PAGE */
 #featured-blog-posts .sqs-block-image .design-layout-collage .intrinsic {
