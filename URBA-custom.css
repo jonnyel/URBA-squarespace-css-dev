@@ -137,8 +137,10 @@ h5 {
     letter-spacing: 0.0675em;
   }
 }
-/* ==============
-   FEATURED PRODUCTS - Link styles */
+/*=========================================
+=            FEATURED PRODUCTS            =
+=========================================*/
+/*----------  FEATURED PRODUCTS - Link styles  ----------*/
 #featured-products div.image-caption p {
   margin: 0.5em 0 0 0;
 }
@@ -148,7 +150,7 @@ h5 {
 #featured-products div.image-caption a strong {
   font-family: haboro-soft-extended;
   color: #545454;
-  font-size: 15px;
+  font-size: 1.3em;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.1em;
@@ -162,16 +164,13 @@ h5 {
 #featured-products div.image-caption a strong {
   font-family: haboro-soft-condensed;
   font-weight: 600;
-  font-size: 15px;
-  line-height: 1.4em;
 }
 #featured-products div.image-caption p,
 #featured-products div.image-caption p a {
-  font-family: haboro-soft-extended;
   font-size: 11px !important;
-  font-weight: 400;
   color: #737373;
 }
+/*=====  End of FEATURED PRODUCTS  ======*/
 /*===================================
 =            IMAGE-CARDS            =
 ===================================*/
@@ -179,13 +178,25 @@ h5 {
 div.image-title p strong {
   display: block;
   font-family: 'Notera2Thin' !important;
-  font-size: 1.5em !important;
+  font-size: 1.4em !important;
   font-style: normal;
   font-weight: 100;
   letter-spacing: 0em;
   line-height: 0.7em !important;
   text-transform: none;
+  margin-bottom: 0.25em;
 }
+/*----------  Image Card on sub-pages fonts  ----------*/
+/*#@{services-page},
+#@{bio-page} {
+  div.image-title p {
+    font-size: 1.55em !important;
+    // line-height: 0.7em !important;
+  }
+  div.image-subtitle p {
+    font-size: 0.85em !important;
+  }
+}*/
 /* IMAGE-CARDS ON HOMEPAGE Section Padding */
 #value-statement div.Index-page-content,
 #services-banner div.Index-page-content {
@@ -224,10 +235,10 @@ div#block-b1d3723d172f7b9c33cc {
     padding-right: 18%;
   }
 }
-/* Force An Image Card to Stack on Tablet */
+/* Force An Image Card to Stack on Mobile & tablet*/
 @media screen and (max-width: 850px) {
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width) {
-    display: block!important;
+    display: block !important;
   }
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width) .image-card-wrapper {
     width: 100% !important;
@@ -240,24 +251,8 @@ div#block-b1d3723d172f7b9c33cc {
   #collection-5e1e35322ee5903aac1cf3c5 div.image-card-wrapper,
   #collection-5e1e3b0dea1c913c8b171986 div.image-card-wrapper {
     width: 100% !important;
-  }
-  #value-statement div.image-title p strong,
-  #services-banner div.image-title p strong,
-  #collection-5e1e35322ee5903aac1cf3c5 div.image-title p strong,
-  #collection-5e1e3b0dea1c913c8b171986 div.image-title p strong {
-    line-height: 0.8em !important;
-  }
-  #value-statement div.image-title p,
-  #services-banner div.image-title p,
-  #collection-5e1e35322ee5903aac1cf3c5 div.image-title p,
-  #collection-5e1e3b0dea1c913c8b171986 div.image-title p {
-    line-height: 1.2em !important;
-  }
-  #value-statement div.image-title,
-  #services-banner div.image-title,
-  #collection-5e1e35322ee5903aac1cf3c5 div.image-title,
-  #collection-5e1e3b0dea1c913c8b171986 div.image-title {
-    padding-bottom: 1em !important;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
   }
 }
 /*=====  End of IMAGE-CARDS  ======*/
@@ -324,15 +319,6 @@ div#block-b1d3723d172f7b9c33cc {
 #featured-blog-posts div.sqs-block-content p a {
   margin-top: 0.25em;
 }
-/*============================================
-=            TESTIMONIALS SECTION            =
-============================================*/
-#testimonials div,
-#testimonials h1,
-#testimonials .p {
-  color: white !important;
-}
-/*=====  End of TESTIMONIALS SECTION  ======*/
 /*=============================================
 =            NEWSLETTER FORM BLOCK            =
 =============================================*/
@@ -544,10 +530,10 @@ h2 a {
   width: 10px !important;
   margin-right: 5px;
   border-radius: 100%;
-  -webkit-filter: brightness(0);
-  -moz-filter: brightness(0);
-  -ms-filter: brightness(0);
-  filter: brightness(0);
+  -webkit-filter: brightness(100);
+  -moz-filter: brightness(100);
+  -ms-filter: brightness(100);
+  filter: brightness(100);
 }
 .sqs-gallery-block-slideshow:before {
   content: "x";
@@ -564,6 +550,7 @@ h2 a {
   text-align: center !important;
   width: 100% !important;
   top: 0 !important;
+  filter: invert(100%);
 }
 .sqs-gallery-block-slideshow {
   padding-top: 40px;
@@ -605,7 +592,7 @@ h2 a {
 }
 .sqs-gallery-block-slideshow .meta .meta-title {
   color: #444;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 1.2px;
   line-height: 24px;
   font-size: 16px;
@@ -666,3 +653,14 @@ h2 a {
     width: 100% !important;
   }
 }
+/*============================================
+=            TESTIMONIALS SECTION            =
+============================================*/
+#testimonials * {
+  color: white !important;
+}
+#testimonials {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+/*=====  End of TESTIMONIALS SECTION  ======*/

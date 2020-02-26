@@ -163,48 +163,59 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
   }
 }
 
-/* ==============
-   FEATURED PRODUCTS - Link styles */
+
+/*=========================================
+=            FEATURED PRODUCTS            =
+=========================================*/
+
+
+/*----------  FEATURED PRODUCTS - Link styles  ----------*/
 
 #featured-products div.image-caption p {
   margin: 0.5em 0 0 0;
 // background: green;
 }
 
-#featured-products div.image-caption, #featured-products div.image-caption a, #featured-products div.image-caption strong, #featured-products div.image-caption a strong  {
-  font-family: haboro-soft-extended;
-  color: @uh-grey-dark;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: .1em;
-  line-height: 1.4em;
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: none;
-  text-decoration: none;
-  //background: yellow;
+#featured-products { 
+  div.image-caption, 
+  div.image-caption a, 
+  div.image-caption strong,
+  div.image-caption a strong {
+    font-family: haboro-soft-extended;
+    color: @uh-grey-dark;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .1em;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: none;
+    text-decoration: none;
+    //background: yellow;
+  }
 }
 
-#featured-products div.image-caption strong, #featured-products div.image-caption a strong {
-  font-family: haboro-soft-condensed;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 1.4em;
-  //background: red;
+#featured-products {
+  div.image-caption strong, 
+  div.image-caption a strong {
+    font-family: haboro-soft-condensed;
+    font-weight: 600;
+//background: red;
+  }
 }
 
-#featured-products div.image-caption p, #featured-products div.image-caption p a {
-  font-family: haboro-soft-extended;
-  font-size: 11px !important;
-  font-weight: 400;
-  //line-height: 1.1em !important;
-  color: #737373;
-  //background: blue;
+#featured-products {
+  div.image-caption p,
+  div.image-caption p a {
+    font-size: 11px !important;
+    color: #737373;
+    //background: blue;
+  }
 }
 
 
-
+/*=====  End of FEATURED PRODUCTS  ======*/
 
 
 
@@ -220,13 +231,26 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 div.image-title p strong {
   display: block;
   font-family: 'Notera2Thin' !important;
-  font-size: 1.5em !important;
+  font-size: 1.4em !important;
   font-style: normal;
   font-weight:100; 
   letter-spacing:0em;
   line-height: 0.7em !important;
   text-transform: none;
+  margin-bottom: 0.25em;
 }
+
+/*----------  Image Card on sub-pages fonts  ----------*/
+/*#@{services-page},
+#@{bio-page} {
+  div.image-title p {
+    font-size: 1.55em !important;
+    // line-height: 0.7em !important;
+  }
+  div.image-subtitle p {
+    font-size: 0.85em !important;
+  }
+}*/
 
 /* IMAGE-CARDS ON HOMEPAGE Section Padding */
 #value-statement, 
@@ -278,12 +302,12 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
 }
 
 
-/* Force An Image Card to Stack on Tablet */
+/* Force An Image Card to Stack on Mobile & tablet*/
 
 @media screen and (max-width: 850px) {
 
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width) {
-      display: block!important;
+      display: block !important;
   }
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width) .image-card-wrapper {
       width: 100% !important;
@@ -298,25 +322,10 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
   #@{bio-page}  {
     div.image-card-wrapper  { 
       width: 100% !important;
+      padding-top: 1.5em;
+      padding-bottom: 1.5em; 
     }
   }
-
-  #value-statement,
-  #services-banner,
-  #@{services-page},
-  #@{bio-page}  {
-    div.image-title p strong /* Notera script font */ {
-      line-height: 0.8em !important; 
-    }
-    div.image-title p /* regular title font */ {
-      line-height: 1.2em !important; 
-      // padding-bottom: 1em !important;
-    }
-    div.image-title /* title margin */ {
-      padding-bottom: 1em !important;
-    }
-  }
-
 }
 
 
@@ -402,17 +411,6 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
 }
 
 
-/*============================================
-=            TESTIMONIALS SECTION            =
-============================================*/
-
-#testimonials { div, h1, .p 
-  {
-    color: white !important;
-  }
-}
-
-/*=====  End of TESTIMONIALS SECTION  ======*/
 
 
 /*=============================================
@@ -661,10 +659,10 @@ h2 a { border-bottom-style: none !important; }
         width: 10px !important;
         margin-right: 5px;
         border-radius: 100%;
-        -webkit-filter: brightness(0);
-        -moz-filter: brightness(0);
-        -ms-filter: brightness(0);
-        filter: brightness(0);
+        -webkit-filter: brightness(100);
+        -moz-filter: brightness(100);
+        -ms-filter: brightness(100);
+        filter: brightness(100);
     }
 }
 
@@ -683,6 +681,7 @@ h2 a { border-bottom-style: none !important; }
     text-align: center !important;
     width: 100% !important;
     top: 0 !important;
+      filter: invert(100%);
 }
 
 .sqs-gallery-block-slideshow {
@@ -723,7 +722,7 @@ h2 a { border-bottom-style: none !important; }
         }
         .meta-title {
             color: #444;
-            font-weight: 200;
+            font-weight: 400;
             letter-spacing: 1.2px;
             line-height: 24px;
             font-size: 16px;
@@ -790,3 +789,21 @@ h2 a { border-bottom-style: none !important; }
         }
     }
 }
+
+
+/*============================================
+=            TESTIMONIALS SECTION            =
+============================================*/
+
+#testimonials { * {
+    color: white !important;
+  }
+}
+#testimonials {
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+/*=====  End of TESTIMONIALS SECTION  ======*/
+
+
