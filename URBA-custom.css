@@ -267,6 +267,14 @@ div#block-b1d3723d172f7b9c33cc {
 =            FINAL LANDING PAGES for SERVICES & BIO pages            =
 ====================================================================*/
 /*----------  Highlighter title font for em (italic)  ----------*/
+#collection-5e39b9749234572a14d9b8aa,
+#collection-5e39b9a59234572a14d9ca78,
+#collection-5e43425618e6e3448f09e57f,
+#collection-5e4331f5383ee71bf8193c3e,
+#collection-5e433289e1841065260285e6,
+#collection-5e4333f8f0d10522284cb551 {
+  /*----------  Fonts  ----------*/
+}
 #collection-5e39b9749234572a14d9b8aa div.image-title p em,
 #collection-5e39b9a59234572a14d9ca78 div.image-title p em,
 #collection-5e43425618e6e3448f09e57f div.image-title p em,
@@ -276,6 +284,21 @@ div#block-b1d3723d172f7b9c33cc {
   font-style: initial !important;
   font-weight: inherit !important;
   background: linear-gradient(to top, hsl(48, 100%, 68%) 45%, hsla(0, 0%, 100%, 0) 45%);
+}
+#collection-5e39b9749234572a14d9b8aa div.image-title-wrapper,
+#collection-5e39b9a59234572a14d9ca78 div.image-title-wrapper,
+#collection-5e43425618e6e3448f09e57f div.image-title-wrapper,
+#collection-5e4331f5383ee71bf8193c3e div.image-title-wrapper,
+#collection-5e433289e1841065260285e6 div.image-title-wrapper,
+#collection-5e4333f8f0d10522284cb551 div.image-title-wrapper,
+#collection-5e39b9749234572a14d9b8aa div.image-subtitle-wrapper,
+#collection-5e39b9a59234572a14d9ca78 div.image-subtitle-wrapper,
+#collection-5e43425618e6e3448f09e57f div.image-subtitle-wrapper,
+#collection-5e4331f5383ee71bf8193c3e div.image-subtitle-wrapper,
+#collection-5e433289e1841065260285e6 div.image-subtitle-wrapper,
+#collection-5e4333f8f0d10522284cb551 div.image-subtitle-wrapper {
+  text-align: left !important;
+  padding-right: 0 !important;
 }
 /*=====  End of FINAL LANDING PAGES for SERVICES & BIO pages  ======*/
 /* ///////////////////////////////////
