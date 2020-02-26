@@ -109,18 +109,12 @@ h5 {
   font-size: 1.33em;
   line-height: 1.6em;
   color: white;
-  padding-top: 0em !important;
+  margin-top: -1em !important;
 }
 #welcome-banner h5 {
   font-size: 5.25em;
   text-transform: none;
   color: white;
-}
-@media only screen and (max-width: 850px) {
-  #welcome-banner {
-    font-size: 1.2em;
-    line-height: 1.6em;
-  }
 }
 /* add right margin on mobile */
 @media screen and (max-width: 640px) {
@@ -197,6 +191,12 @@ div.image-title p strong {
   line-height: 0.7em !important;
   text-transform: none;
   margin-bottom: 0.25em;
+}
+#value-statement div.image-subtitle p,
+#services-banner div.image-subtitle p {
+  font-size: 1.1em !important;
+  padding-top: 0.5em !important;
+  padding-bottom: 0.5em !important;
 }
 /*----------  Image Card on sub-pages fonts  ----------*/
 /*#@{services-page},
