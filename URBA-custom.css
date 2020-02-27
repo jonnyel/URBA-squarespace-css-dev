@@ -70,28 +70,20 @@ h2 strong {
 #collection-5df17ac89146e02844b3ee1a .Index {
   background-color: #fff !important;
 }
-/*=====  End of NEW HOME INDEX PAGE  ======*/
-/* =================================
-   =================================
-   NEW HOME INDEX PAGE 
-
-   Banner with image - Text Style override */
-/* no hyphenation */
+/*----------  NO Hyphenation on index page text  ----------*/
 .Index-page--has-image {
   hyphens: none !important;
   -webkit-hyphens: none !important;
   -ms-hyphens: none  !important;
 }
-/* ===========
-   INDEX PAGES 
-   Set differentiated BACKGROUND COLORS */
+/*----------  Set differentiated BACKGROUND COLORS  ----------*/
 #personal-statement {
   background-color: hsl(0, 0%, 96%) !important;
 }
 #testimonials {
   background-color: hsl(164, 37.3%, 49.4%) !important;
 }
-/* - H1 - FONT change for a few Index Pages */
+/*----------  H1 - FONT change for a few Index Pages  ----------*/
 #personal-statement h1,
 #featured-products h1,
 #testimonials h1,
@@ -102,8 +94,10 @@ h2 strong {
   font-weight: 600;
   letter-spacing: 0.2em;
 }
-/* =================================
-   WELCOME BANNER  */
+/*=====  End of NEW HOME INDEX PAGE  ======*/
+/*======================================
+=            WELCOME BANNER            =
+======================================*/
 /* Text transformation & Font Colours */
 #welcome-banner p {
   font-size: 1.33em;
@@ -116,17 +110,22 @@ h2 strong {
   text-transform: none;
   color: white;
 }
-/* add right margin on mobile */
-@media screen and (max-width: 640px) {
+#welcome-banner .Index-page-content.sqs-alternate-block-style-container {
+  padding-bottom: 0;
+}
+/*----------  Mobile Only  ----------*/
+@media only screen and (max-width: 640px) {
+  #welcome-banner {
+    font-size: 0.9em;
+  }
   #welcome-banner {
     padding-right: 38vw;
   }
 }
-#welcome-banner .Index-page-content.sqs-alternate-block-style-container {
-  padding-bottom: 0;
-}
-/* ==========================
-   PERSONAL-STATEMENT Banner */
+/*=====  End of WELCOME BANNER  ======*/
+/*============================================================================
+=            PERSONAL-STATEMENT "I'm Living Proof That..." Banner            =
+============================================================================*/
 #personal-statement h2 {
   font-size: 3.25em;
   line-height: 1.5em;
@@ -143,6 +142,7 @@ h2 strong {
     letter-spacing: 0.0675em;
   }
 }
+/*=====  End of PERSONAL-STATEMENT "I'm Living Proof That..." Banner  ======*/
 /*=========================================
 =            FEATURED PRODUCTS            =
 =========================================*/
@@ -302,8 +302,9 @@ div#block-b1d3723d172f7b9c33cc {
 /* #pages, #pages, #pages {...
    .summary-title > a { pointer-events: none; cursor: default;} */
 /*=====  End of SUMMARY BLOCK AS PAGE TITLES  ======*/
-/* ///////////////////////////////////
-   FEATURED BLOG POST INDEX PAGE */
+/*=====================================================
+=            FEATURED BLOG POST INDEX PAGE            =
+=====================================================*/
 #featured-blog-posts .sqs-block-image .design-layout-collage .intrinsic {
   left: 0;
   width: 100%;
@@ -341,17 +342,17 @@ div#block-b1d3723d172f7b9c33cc {
   font-size: 11px !important;
   font-weight: 400;
   color: #737373;
-  margin: 0 0 0.5em;
+  margin: 0;
 }
 /* Blog post Category spacing (markdown)  */
 #featured-blog-posts div .markdown-block {
-  margin-top: -9px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   color: yellow !important;
 }
 /* remove spacing from Blog Headline  */
-#featured-blog-posts div h3 {
+#featured-blog-posts div h3,
+#featured-blog-posts div h3 a {
   margin-top: -9px;
   margin-bottom: 0px;
 }
@@ -360,6 +361,7 @@ div#block-b1d3723d172f7b9c33cc {
 #featured-blog-posts div.sqs-block-content p a {
   margin-top: 0.25em;
 }
+/*=====  End of FEATURED BLOG POST INDEX PAGE  ======*/
 /*=============================================
 =            NEWSLETTER FORM BLOCK            =
 =============================================*/

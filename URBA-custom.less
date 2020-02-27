@@ -92,16 +92,8 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
   background-color: #fff !important;
 }
 
-/*=====  End of NEW HOME INDEX PAGE  ======*/
+/*----------  NO Hyphenation on index page text  ----------*/
 
-/* =================================
-   =================================
-   NEW HOME INDEX PAGE 
-
-   Banner with image - Text Style override */
-
-
-/* no hyphenation */
 .Index-page--has-image {
   hyphens: none !important; 
   -webkit-hyphens: none !important; 
@@ -109,9 +101,7 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 }
 
 
-/* ===========
-   INDEX PAGES 
-   Set differentiated BACKGROUND COLORS */
+/*----------  Set differentiated BACKGROUND COLORS  ----------*/
   #personal-statement {
     background-color:@uh-grey-light !important;
   }
@@ -119,19 +109,29 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
     background-color: @uh-teal-bg !important;
   }
 
-/* - H1 - FONT change for a few Index Pages */
-#personal-statement h1, #featured-products h1, #testimonials h1, #featured-blog-posts h1, #newsletter-sign-up h1 {
-  font-family: haboro-soft;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
+
+/*----------  H1 - FONT change for a few Index Pages  ----------*/
+#personal-statement,
+#featured-products,
+#testimonials,
+#featured-blog-posts,
+#newsletter-sign-up {
+  h1 {
+    font-family: haboro-soft;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+  }
 }
   
 
+/*=====  End of NEW HOME INDEX PAGE  ======*/
 
 
-/* =================================
-   WELCOME BANNER  */
+
+/*======================================
+=            WELCOME BANNER            =
+======================================*/
 
 
 /* Text transformation & Font Colours */
@@ -149,26 +149,30 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
   color: white;
   }
 
-
-@media only screen and (max-width: 850px) { 
-  #welcome-banner {
-    // font-size:1.2em; line-height:1.6em;
-  }
+#welcome-banner .Index-page-content.sqs-alternate-block-style-container {
+  padding-bottom: 0;
 }
-/* add right margin on mobile */
-@media screen and (max-width:640px) {
+
+/*----------  Mobile Only  ----------*/
+
+@media only screen and (max-width: 640px) { 
+  #welcome-banner {
+    font-size:0.9em; 
+  }
+  // add right margin on mobile 
   #welcome-banner {
     padding-right: 38vw;
   }
 }
 
-#welcome-banner .Index-page-content.sqs-alternate-block-style-container {
-  padding-bottom: 0;
-}
+
+/*=====  End of WELCOME BANNER  ======*/
 
 
-/* ==========================
-   PERSONAL-STATEMENT Banner */
+/*============================================================================
+=            PERSONAL-STATEMENT "I'm Living Proof That..." Banner            =
+============================================================================*/
+
 #personal-statement h2 {
   font-size: 3.25em;
   line-height: 1.5em;
@@ -189,10 +193,13 @@ box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
 }
 
 
+/*=====  End of PERSONAL-STATEMENT "I'm Living Proof That..." Banner  ======*/
+
+
+
 /*=========================================
 =            FEATURED PRODUCTS            =
 =========================================*/
-
 
 /*----------  FEATURED PRODUCTS - Link styles  ----------*/
 
@@ -407,11 +414,11 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
 
 
 
+/*=====================================================
+=            FEATURED BLOG POST INDEX PAGE            =
+=====================================================*/
 
 
-
-/* ///////////////////////////////////
-   FEATURED BLOG POST INDEX PAGE */
 #featured-blog-posts .sqs-block-image .design-layout-collage .intrinsic {
   left: 0;
   width: 100%;
@@ -457,21 +464,23 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
   font-size: 11px !important;
   font-weight: 400;
   color: #737373;
-  margin: 0 0 0.5em;
+  margin: 0;
 }
 
 /* Blog post Category spacing (markdown)  */
 #featured-blog-posts div .markdown-block {
-  margin-top: -9px;
-  padding-top: 0;
-  padding-bottom: 0;
+  // margin-top: -9px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   color: yellow !important;
 }
 
 /* remove spacing from Blog Headline  */
-#featured-blog-posts div h3 {
-  margin-top: -9px;
-  margin-bottom: 0px;
+#featured-blog-posts {
+  div h3, div h3 a {
+    margin-top: -9px;
+    margin-bottom: 0px;
+  }
 }
 
 /* remove spacing from 'read more'  */
@@ -479,6 +488,8 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
 #featured-blog-posts div.sqs-block-content p a {
   margin-top: .25em;
 }
+
+/*=====  End of FEATURED BLOG POST INDEX PAGE  ======*/
 
 
 
