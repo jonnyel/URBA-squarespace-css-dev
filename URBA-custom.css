@@ -1,4 +1,20 @@
 /* UH Website CSS */
+/* Fix font flicker on load (from silvabokis.com) */
+#desktopNav,
+.title-desc-inner {
+  animation: fade-me-in 1.5s;
+}
+@keyframes fade-me-in {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* DEFINE page name variables instead of collection id */
 /* DEFINE UH Brand Colour variables */
 /* =================================
@@ -44,14 +60,16 @@ h2 strong {
     letter-spacing: 0.08em;
   }
 }
-/* HEADER margin fix */
+/*==============================
+=            HEADER            =
+==============================*/
+/*----------  HEADER margin fix  ----------*/
 .Header-inner--top {
   padding-bottom: 0px;
   padding-top: 20px;
   margin-bottom: 0px;
 }
-/* MOBILE HEADER
-   Drop Shadow Mobile Header */
+/*----------  MOBILE HEADER  ----------*/
 .Mobile-bar--top {
   -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
   -moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
@@ -64,6 +82,7 @@ h2 strong {
 .Mobile-bar .Cart {
   padding-bottom: 0px;
 }
+/*=====  End of HEADER  ======*/
 /*===========================================
 =            NEW HOME INDEX PAGE            =
 ===========================================*/
@@ -551,9 +570,9 @@ h2 a {
 .Main--blog-list {
   padding-top: 20px !important;
 }
-/* ==================================
-   ==================================
-   TESTIMONIAL SLIDER from SquareStud.io  */
+/*=============================================================
+=            TESTIMONIAL SLIDER from SquareStud.io            =
+=============================================================*/
 .sqs-gallery-thumbnails.sqs-gallery-design-strip {
   left: 0 !important;
   width: auto !important;
@@ -696,6 +715,7 @@ h2 a {
     width: 100% !important;
   }
 }
+/*=====  End of TESTIMONIAL SLIDER from SquareStud.io  ======*/
 /*============================================
 =            TESTIMONIALS SECTION            =
 ============================================*/

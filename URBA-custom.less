@@ -1,5 +1,16 @@
 /* UH Website CSS */  
 
+/* Fix font flicker on load (from silvabokis.com) */
+#desktopNav, .title-desc-inner {
+  animation: fade-me-in 1.5s;
+}
+
+@keyframes fade-me-in {
+  0% {opacity:0;}
+  80% {opacity:0;}
+  100% {opacity:1;}
+}
+
 /* DEFINE page name variables instead of collection id */
 @services-page: collection-5e1e35322ee5903aac1cf3c5;
 @bio-page: collection-5e1e3b0dea1c913c8b171986;
@@ -14,7 +25,6 @@
 @uh-teal-bg: hsl(164, 37.3%, 49.4%);
 @uh-grey-light: hsl(0, 0%, 96%);
 @uh-grey-dark: #545454;
-@uh-dark-transp: rgba(20,20,20,.75);
 @uh-transp: hsla(0,0%,100%,0);
 
 /* =================================
@@ -63,24 +73,34 @@ h2 strong {
 }
 
 
-/* HEADER margin fix */
+/*==============================
+=            HEADER            =
+==============================*/
+
+
+/*----------  HEADER margin fix  ----------*/
 .Header-inner--top {
   padding-bottom: 0px;
   padding-top: 20px;
   margin-bottom: 0px;
 }
-/* MOBILE HEADER
-   Drop Shadow Mobile Header */
-  .Mobile-bar--top {
-    -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
--moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
-    padding-bottom: 0px !important;
-  }
 
-  .Mobile-bar-branding, .Mobile-bar-search, .Mobile-bar-menu, .Mobile-bar .Cart {
-    padding-bottom: 0px;
+/*----------  MOBILE HEADER  ----------*/
+
+// Drop Shadow Mobile Header
+.Mobile-bar--top {
+  -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+  -moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+  box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+  padding-bottom: 0px !important;
 }
+
+.Mobile-bar-branding, .Mobile-bar-search, .Mobile-bar-menu, .Mobile-bar .Cart {
+  padding-bottom: 0px;
+}
+
+
+/*=====  End of HEADER  ======*/
 
 
 
@@ -383,7 +403,7 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
   div.image-title p em {
     font-style: initial !important;
     font-weight: inherit !important;
-    background: linear-gradient(to top, @uh-ochre-bright 45%, hsla(0,100,100,0) 45%);
+    background: linear-gradient(to top, @uh-ochre-bright 45%, @uh-transp 45%);
   }
 
   /*----------  Fonts  ----------*/
@@ -716,12 +736,10 @@ h2 a { border-bottom-style: none !important; }
   padding-top: 20px !important;
 }
 
+/*=============================================================
+=            TESTIMONIAL SLIDER from SquareStud.io            =
+=============================================================*/
 
-
-
-/* ==================================
-   ==================================
-   TESTIMONIAL SLIDER from SquareStud.io  */
 .sqs-gallery-thumbnails.sqs-gallery-design-strip {
     left: 0 !important;
     width: auto !important;
@@ -872,6 +890,9 @@ h2 a { border-bottom-style: none !important; }
 }
 
 
+/*=====  End of TESTIMONIAL SLIDER from SquareStud.io  ======*/
+
+
 /*============================================
 =            TESTIMONIALS SECTION            =
 ============================================*/
@@ -886,5 +907,4 @@ h2 a { border-bottom-style: none !important; }
 }
 
 /*=====  End of TESTIMONIALS SECTION  ======*/
-
 
