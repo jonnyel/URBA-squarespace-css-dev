@@ -1,5 +1,5 @@
 /* UH Website CSS */
-/* 2020-04-23 */
+/* 2020-04-24 */
 /* Fix font flicker on load (from silvabokis.com) */
 #desktopNav,
 .title-desc-inner {
@@ -332,11 +332,10 @@ div#block-b1d3723d172f7b9c33cc {
 #collection-5e4331f5383ee71bf8193c3e blockquote,
 #collection-5e433289e1841065260285e6 blockquote,
 #collection-5e4333f8f0d10522284cb551 blockquote {
-  font-size: 1.25em;
+  font-size: 1.35em;
   line-height: 2em;
   overflow: hidden;
-  padding-left: 1.35em;
-  padding-right: 1.35em;
+  padding: 0.35em 0 0.35em;
   border: none;
 }
 #collection-5e39b9749234572a14d9b8aa ol,
@@ -346,6 +345,58 @@ div#block-b1d3723d172f7b9c33cc {
 #collection-5e433289e1841065260285e6 ol,
 #collection-5e4333f8f0d10522284cb551 ol {
   overflow: hidden;
+}
+#collection-5e39b9749234572a14d9b8aa .sqs-block[class*=float-left],
+#collection-5e39b9a59234572a14d9ca78 .sqs-block[class*=float-left],
+#collection-5e43425618e6e3448f09e57f .sqs-block[class*=float-left],
+#collection-5e4331f5383ee71bf8193c3e .sqs-block[class*=float-left],
+#collection-5e433289e1841065260285e6 .sqs-block[class*=float-left],
+#collection-5e4333f8f0d10522284cb551 .sqs-block[class*=float-left] {
+  margin-right: 42px;
+}
+#collection-5e39b9749234572a14d9b8aa .sqs-block-content p,
+#collection-5e39b9a59234572a14d9ca78 .sqs-block-content p,
+#collection-5e43425618e6e3448f09e57f .sqs-block-content p,
+#collection-5e4331f5383ee71bf8193c3e .sqs-block-content p,
+#collection-5e433289e1841065260285e6 .sqs-block-content p,
+#collection-5e4333f8f0d10522284cb551 .sqs-block-content p {
+  overflow: hidden;
+}
+#collection-5e39b9749234572a14d9b8aa .sqs-block-content ol li p,
+#collection-5e39b9a59234572a14d9ca78 .sqs-block-content ol li p,
+#collection-5e43425618e6e3448f09e57f .sqs-block-content ol li p,
+#collection-5e4331f5383ee71bf8193c3e .sqs-block-content ol li p,
+#collection-5e433289e1841065260285e6 .sqs-block-content ol li p,
+#collection-5e4333f8f0d10522284cb551 .sqs-block-content ol li p {
+  overflow: visible;
+}
+#collection-5e39b9749234572a14d9b8aa .markdown-block,
+#collection-5e39b9a59234572a14d9ca78 .markdown-block,
+#collection-5e43425618e6e3448f09e57f .markdown-block,
+#collection-5e4331f5383ee71bf8193c3e .markdown-block,
+#collection-5e433289e1841065260285e6 .markdown-block,
+#collection-5e4333f8f0d10522284cb551 .markdown-block {
+  overflow: hidden;
+}
+#collection-5e39b9749234572a14d9b8aa .sqs-block-content,
+#collection-5e39b9a59234572a14d9ca78 .sqs-block-content,
+#collection-5e43425618e6e3448f09e57f .sqs-block-content,
+#collection-5e4331f5383ee71bf8193c3e .sqs-block-content,
+#collection-5e433289e1841065260285e6 .sqs-block-content,
+#collection-5e4333f8f0d10522284cb551 .sqs-block-content {
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  break-inside: avoid;
+}
+@media screen and (max-width: 640px) {
+  #collection-5e39b9749234572a14d9b8aa .sqs-block[class*=float-left],
+  #collection-5e39b9a59234572a14d9ca78 .sqs-block[class*=float-left],
+  #collection-5e43425618e6e3448f09e57f .sqs-block[class*=float-left],
+  #collection-5e4331f5383ee71bf8193c3e .sqs-block[class*=float-left],
+  #collection-5e433289e1841065260285e6 .sqs-block[class*=float-left],
+  #collection-5e4333f8f0d10522284cb551 .sqs-block[class*=float-left] {
+    margin-right: 0;
+  }
 }
 /*=====  End of FINAL LANDING PAGES for SERVICES & BIO pages  ======*/
 /*====================================================

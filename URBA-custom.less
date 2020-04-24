@@ -1,5 +1,5 @@
 /* UH Website CSS */  
-/* 2020-04-23 */
+/* 2020-04-24 */
 
 /* Fix font flicker on load (from silvabokis.com) */
 #desktopNav, .title-desc-inner {
@@ -422,19 +422,60 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
 
   /* pullquote using markdown block */
   blockquote {
-    font-size: 1.25em;
+    font-size: 1.35em;
     line-height: 2.0em;
-    // display: table;
+    // -ms-hyphens: auto;
+    // -webkit-hyphens: auto;
+    // hyphens: auto;
     overflow: hidden;
-    padding-left: 1.35em;
-    padding-right: 1.35em;
+    padding: 0.35em 0 0.35em;
     border: none;
   }
+  
+  // fix indent for float left
   ol {
     overflow: hidden;
   }
-}
 
+  // add margin to float image
+  .sqs-block[class*=float-left] {
+    margin-right: 42px;
+  }
+
+  // keep paragraphs from breaking when flowing around image
+  .sqs-block-content p {
+    overflow: hidden;
+  }
+  .sqs-block-content ol li p {
+    overflow: visible;
+  }
+  // keep markdown-block quote below float
+  .markdown-block {
+    overflow: hidden;
+
+  }
+
+  // keep heading with following text paragraph
+  .sqs-block-content {
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+// remove margin float image on mobile
+@media screen and (max-width: 640px) {
+  #collection-5e39b9749234572a14d9b8aa,
+  #collection-5e39b9a59234572a14d9ca78,
+  #collection-5e43425618e6e3448f09e57f,
+  
+  #collection-5e4331f5383ee71bf8193c3e,
+  #collection-5e433289e1841065260285e6,
+  #collection-5e4333f8f0d10522284cb551  {
+    .sqs-block[class*=float-left] {
+      margin-right: 0;
+    }
+  }
+}
 /*=====  End of FINAL LANDING PAGES for SERVICES & BIO pages  ======*/
 
 
