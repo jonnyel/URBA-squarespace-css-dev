@@ -413,26 +413,25 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
     text-align: left !important;
     padding-right: 0 !important;
     }
-  .markdown-block h2:first-of-type {
+  .markdown-block:first-of-type h2 {
     text-align:center;
     white-space:pre-wrap;
-    padding-bottom: 1em;
-    padding-top: 0.5em;
+    padding-bottom: .5em;
+    padding-top: 0.35em;
   }
-  .markdown-block {
-      padding-bottom: 0.5em;
-    }
+
   /* pullquote using markdown block */
-    blockquote {
+  blockquote {
     font-size: 1.25em;
     line-height: 2.0em;
-    display: table;
+    // display: table;
+    overflow: hidden;
     padding-left: 1.35em;
     padding-right: 1.35em;
     border: none;
   }
   ol {
-    display: table;
+    overflow: hidden;
   }
 }
 
