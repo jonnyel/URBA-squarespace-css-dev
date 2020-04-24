@@ -196,6 +196,22 @@ h2 strong {
   font-size: 11px !important;
   color: #737373;
 }
+@media screen and (max-width: 640px) {
+  #featured-products .sqs-block.sqs-block-image,
+  #featured-blog-posts .sqs-block.sqs-block-image,
+  #featured-products .sqs-block-markdown,
+  #featured-blog-posts .sqs-block-markdown,
+  #featured-products .sqs-block-html h3,
+  #featured-blog-posts .sqs-block-html h3,
+  #featured-products .sqs-block-html p,
+  #featured-blog-posts .sqs-block-html p {
+    margin-left: 2em;
+    margin-right: 2em;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    -ms-hyphens: none  !important;
+  }
+}
 /*=====  End of FEATURED PRODUCTS  ======*/
 /*===================================
 =            IMAGE-CARDS            =
@@ -238,7 +254,6 @@ div.image-title p strong {
 #collection-5e1e35322ee5903aac1cf3c5 .image-card-wrapper,
 #collection-5e1e3b0dea1c913c8b171986 .image-card-wrapper {
   background: hsl(0, 0%, 96%) !important;
-  width: calc(50%);
 }
 div#block-yui_3_17_2_1_1576107302498_3756,
 div#block-b1d3723d172f7b9c33cc {
@@ -261,7 +276,7 @@ div#block-b1d3723d172f7b9c33cc {
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width) {
     display: block !important;
   }
-  .sqs-block-image .design-layout-card:not(.sqs-narrow-width) .image-card-wrapper {
+  .sqs-block-image .design-layout-card:not(.sqs-narrow-width) figcaption.image-card-wrapper {
     width: 100% !important;
   }
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width) > div:first-child {
@@ -288,7 +303,6 @@ div#block-b1d3723d172f7b9c33cc {
 #collection-5e433289e1841065260285e6,
 #collection-5e4333f8f0d10522284cb551 {
   /*----------  Fonts  ----------*/
-  /* pullquote using markdown block */
 }
 #collection-5e39b9749234572a14d9b8aa div.image-title p em,
 #collection-5e39b9a59234572a14d9ca78 div.image-title p em,
@@ -378,16 +392,6 @@ div#block-b1d3723d172f7b9c33cc {
 #collection-5e4333f8f0d10522284cb551 .markdown-block {
   overflow: hidden;
 }
-#collection-5e39b9749234572a14d9b8aa .sqs-block-content,
-#collection-5e39b9a59234572a14d9ca78 .sqs-block-content,
-#collection-5e43425618e6e3448f09e57f .sqs-block-content,
-#collection-5e4331f5383ee71bf8193c3e .sqs-block-content,
-#collection-5e433289e1841065260285e6 .sqs-block-content,
-#collection-5e4333f8f0d10522284cb551 .sqs-block-content {
-  -webkit-column-break-inside: avoid;
-  -moz-column-break-inside: avoid;
-  break-inside: avoid;
-}
 @media screen and (max-width: 640px) {
   #collection-5e39b9749234572a14d9b8aa .sqs-block[class*=float-left],
   #collection-5e39b9a59234572a14d9ca78 .sqs-block[class*=float-left],
@@ -447,6 +451,14 @@ div#block-b1d3723d172f7b9c33cc {
   font-weight: 400;
   color: #737373;
   margin: 0;
+}
+#featured-blog-posts h6 a {
+  background-color: hsl(0, 0%, 96%);
+  padding: 3px 5px;
+}
+#featured-blog-posts h6 a:hover {
+  color: #545454;
+  transition: color 0.15s ease-out;
 }
 /* Blog post Category spacing (markdown)  */
 #featured-blog-posts div .markdown-block {
@@ -598,8 +610,6 @@ h2 a {
     margin-top: -33px !important;
   }
 }
-/* PAGE: Latest News Page
-   News-Latest-Posts background colour */
 /* PAGE: Healing Herbal Medicine
    links: remove underlines */
 #block-yui_3_17_2_2_1508949894256_9134 h2 a,
@@ -609,14 +619,9 @@ h2 a {
 #block-yui_3_17_2_2_1508949894256_9134 p a {
   color: inherit !important;
 }
-/* PAGE: Home Page
-   Newsletter box */
-#subscribe-newsletter {
-  padding-top: 16px !important;
-}
-/* =============================
-   BLOG ========================
-   BLOG ENTRY Padding (desktop & mobile) */
+/*=============================================
+=            BLOG-LIST            =
+=============================================*/
 .BlogItem {
   padding-left: 21.8%;
   padding-right: 21.8%;
@@ -639,8 +644,18 @@ h2 a {
     padding-right: 0%;
   }
 }
-/* =================================
-   FOOTER */
+header .BlogList-filter,
+.BlogList-item-meta a {
+  background-color: hsl(0, 0%, 96%);
+  padding: 3px 5px;
+}
+.Main--blog-list {
+  padding-top: 20px !important;
+}
+/*=====  End of BLOG-LIST  ======*/
+/*=============================================
+=            FOOTER            =
+=============================================*/
 .Footer-blocks--top {
   display: none !important;
 }
@@ -650,11 +665,7 @@ h2 a {
 .Footer-blocks--middle {
   padding: 1px !important;
 }
-/* PAGE: News
-   Blog list padding top  */
-.Main--blog-list {
-  padding-top: 20px !important;
-}
+/*=====  End of FOOTER  ======*/
 /*=============================================================
 =            TESTIMONIAL SLIDER from SquareStud.io            =
 =============================================================*/
@@ -810,5 +821,10 @@ h2 a {
 #testimonials {
   margin-top: 6em;
   margin-bottom: 6em;
+}
+/* PAGE: Home Page
+   old Newsletter box */
+#subscribe-newsletter {
+  padding-top: 16px !important;
 }
 /*=====  End of TESTIMONIALS SECTION  ======*/

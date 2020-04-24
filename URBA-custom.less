@@ -267,6 +267,22 @@ h2 strong {
   }
 }
 
+// reduce width of #featured-products and #featured-blog-posts sections on mobile
+@media screen and (max-width:640px) {
+  #featured-products,
+  #featured-blog-posts {
+    .sqs-block.sqs-block-image,
+    .sqs-block-markdown,
+    .sqs-block-html h3, 
+    .sqs-block-html p, {
+      margin-left: 2em;
+      margin-right: 2em;
+      hyphens: none !important; 
+      -webkit-hyphens: none !important; 
+      -ms-hyphens: none  !important; 
+    }
+  }
+}
 
 /*=====  End of FEATURED PRODUCTS  ======*/
 
@@ -326,15 +342,18 @@ div.image-title p strong {
 }
 
 
+
 #value-statement, 
 #services-banner,
 #@{services-page},
 #@{bio-page} {
   .image-card-wrapper {
     background: @uh-grey-light !important;
-    width: calc(50%);
+    // removed because Sqs changed their html ("figcaption") 
+    // width: calc(50%);
   }
 }
+
 
 div#block-yui_3_17_2_1_1576107302498_3756 /* My Commitment image-card block */,
 div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
@@ -364,7 +383,7 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width) {
       display: block !important;
   }
-  .sqs-block-image .design-layout-card:not(.sqs-narrow-width) .image-card-wrapper {
+  .sqs-block-image .design-layout-card:not(.sqs-narrow-width) figcaption.image-card-wrapper {
       width: 100% !important;
   }
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width)>div:first-child {
@@ -420,7 +439,7 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
     padding-top: 0.35em;
   }
 
-  /* pullquote using markdown block */
+  // pullquote using markdown block
   blockquote {
     font-size: 1.35em;
     line-height: 2.0em;
@@ -449,19 +468,14 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
   .sqs-block-content ol li p {
     overflow: visible;
   }
+  
   // keep markdown-block quote below float
   .markdown-block {
     overflow: hidden;
 
   }
-
-  // keep heading with following text paragraph
-  .sqs-block-content {
-    -webkit-column-break-inside: avoid;
-    -moz-column-break-inside: avoid;
-    break-inside: avoid;
-  }
 }
+
 // remove margin float image on mobile
 @media screen and (max-width: 640px) {
   #collection-5e39b9749234572a14d9b8aa,
@@ -476,6 +490,7 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
     }
   }
 }
+
 /*=====  End of FINAL LANDING PAGES for SERVICES & BIO pages  ======*/
 
 
@@ -547,6 +562,15 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
   color: #737373;
   margin: 0;
 }
+#featured-blog-posts h6 a {
+  background-color: @uh-grey-light;
+  padding: 3px 5px;
+}
+#featured-blog-posts h6 a:hover {
+  color: @uh-grey-dark;
+  transition: color .15s ease-out;
+}
+
 
 /* Blog post Category spacing (markdown)  */
 #featured-blog-posts div .markdown-block {
@@ -727,12 +751,6 @@ h2 a { border-bottom-style: none !important; }
 }
 
 
-/* PAGE: Latest News Page
-   News-Latest-Posts background colour */
-#news-latest-posts {
-//  background-color: #f2f2f2 !important;
-}
-
 
 /* PAGE: Healing Herbal Medicine
    links: remove underlines */
@@ -748,18 +766,16 @@ h2 a { border-bottom-style: none !important; }
 
 
 
-/* PAGE: Home Page
-   Newsletter box */
-#subscribe-newsletter {
-  padding-top: 16px !important;
-}
 
-/* =============================
-   BLOG ========================
-   BLOG ENTRY Padding (desktop & mobile) */
-  .BlogItem {
-    padding-left: 21.8%;
-    padding-right: 21.8%;
+
+/*=============================================
+=            BLOG-LIST            =
+=============================================*/
+
+//  BLOG ENTRY Padding (desktop & mobile)
+.BlogItem {
+  padding-left: 21.8%;
+  padding-right: 21.8%;
   }
 @media screen and (max-width: 1189px) {
   .BlogItem {
@@ -780,22 +796,33 @@ h2 a { border-bottom-style: none !important; }
   }
 }  
 
+header .BlogList-filter,
+.BlogList-item-meta a {
+  background-color: @uh-grey-light;
+  padding: 3px 5px;
+}
 
-/* =================================
-   FOOTER */
+// Blog list padding top
+  .Main--blog-list  {
+  padding-top: 20px !important;
+}
+
+/*=====  End of BLOG-LIST  ======*/
+
+
+/*=============================================
+=            FOOTER            =
+=============================================*/
+
 .Footer-blocks--top { display: none !important }
 
 .sqs-licensed-asset-preview-bar { display: none !important }
 
 .Footer-blocks--middle { padding: 1px !important; }
 
+/*=====  End of FOOTER  ======*/
 
 
-/* PAGE: News
-   Blog list padding top  */
-.Main--blog-list  {
-  padding-top: 20px !important;
-}
 
 /*=============================================================
 =            TESTIMONIAL SLIDER from SquareStud.io            =
@@ -967,5 +994,11 @@ h2 a { border-bottom-style: none !important; }
   margin-bottom: 6em;
 }
 
+/* PAGE: Home Page
+   old Newsletter box */
+   #subscribe-newsletter {
+    padding-top: 16px !important;
+  }
+  
 /*=====  End of TESTIMONIALS SECTION  ======*/
 
