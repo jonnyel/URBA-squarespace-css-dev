@@ -1,4 +1,5 @@
 /* UH Website CSS */  
+/* 2020-04-23 */
 
 /* Fix font flicker on load (from silvabokis.com) */
 #desktopNav, .title-desc-inner {
@@ -329,7 +330,7 @@ div.image-title p strong {
 #services-banner,
 #@{services-page},
 #@{bio-page} {
-  div.image-card-wrapper {
+  .image-card-wrapper {
     background: @uh-grey-light !important;
     width: calc(50%);
   }
@@ -412,7 +413,27 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
     text-align: left !important;
     padding-right: 0 !important;
     }
-    
+  .markdown-block h2:first-of-type {
+    text-align:center;
+    white-space:pre-wrap;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+  }
+  .markdown-block {
+      padding-bottom: 0.5em;
+    }
+  /* pullquote using markdown block */
+    blockquote {
+    font-size: 1.25em;
+    line-height: 2.0em;
+    display: table;
+    padding-left: 1.35em;
+    padding-right: 1.35em;
+    border: none;
+  }
+  ol {
+    display: table;
+  }
 }
 
 /*=====  End of FINAL LANDING PAGES for SERVICES & BIO pages  ======*/

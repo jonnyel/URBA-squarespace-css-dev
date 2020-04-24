@@ -1,4 +1,5 @@
 /* UH Website CSS */
+/* 2020-04-23 */
 /* Fix font flicker on load (from silvabokis.com) */
 #desktopNav,
 .title-desc-inner {
@@ -232,10 +233,10 @@ div.image-title p strong {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-#value-statement div.image-card-wrapper,
-#services-banner div.image-card-wrapper,
-#collection-5e1e35322ee5903aac1cf3c5 div.image-card-wrapper,
-#collection-5e1e3b0dea1c913c8b171986 div.image-card-wrapper {
+#value-statement .image-card-wrapper,
+#services-banner .image-card-wrapper,
+#collection-5e1e35322ee5903aac1cf3c5 .image-card-wrapper,
+#collection-5e1e3b0dea1c913c8b171986 .image-card-wrapper {
   background: hsl(0, 0%, 96%) !important;
   width: calc(50%);
 }
@@ -287,6 +288,7 @@ div#block-b1d3723d172f7b9c33cc {
 #collection-5e433289e1841065260285e6,
 #collection-5e4333f8f0d10522284cb551 {
   /*----------  Fonts  ----------*/
+  /* pullquote using markdown block */
 }
 #collection-5e39b9749234572a14d9b8aa div.image-title p em,
 #collection-5e39b9a59234572a14d9ca78 div.image-title p em,
@@ -312,6 +314,46 @@ div#block-b1d3723d172f7b9c33cc {
 #collection-5e4333f8f0d10522284cb551 div.image-subtitle-wrapper {
   text-align: left !important;
   padding-right: 0 !important;
+}
+#collection-5e39b9749234572a14d9b8aa .markdown-block h2:first-of-type,
+#collection-5e39b9a59234572a14d9ca78 .markdown-block h2:first-of-type,
+#collection-5e43425618e6e3448f09e57f .markdown-block h2:first-of-type,
+#collection-5e4331f5383ee71bf8193c3e .markdown-block h2:first-of-type,
+#collection-5e433289e1841065260285e6 .markdown-block h2:first-of-type,
+#collection-5e4333f8f0d10522284cb551 .markdown-block h2:first-of-type {
+  text-align: center;
+  white-space: pre-wrap;
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+}
+#collection-5e39b9749234572a14d9b8aa .markdown-block,
+#collection-5e39b9a59234572a14d9ca78 .markdown-block,
+#collection-5e43425618e6e3448f09e57f .markdown-block,
+#collection-5e4331f5383ee71bf8193c3e .markdown-block,
+#collection-5e433289e1841065260285e6 .markdown-block,
+#collection-5e4333f8f0d10522284cb551 .markdown-block {
+  padding-bottom: 0.5em;
+}
+#collection-5e39b9749234572a14d9b8aa blockquote,
+#collection-5e39b9a59234572a14d9ca78 blockquote,
+#collection-5e43425618e6e3448f09e57f blockquote,
+#collection-5e4331f5383ee71bf8193c3e blockquote,
+#collection-5e433289e1841065260285e6 blockquote,
+#collection-5e4333f8f0d10522284cb551 blockquote {
+  font-size: 1.25em;
+  line-height: 2em;
+  display: table;
+  padding-left: 1.35em;
+  padding-right: 1.35em;
+  border: none;
+}
+#collection-5e39b9749234572a14d9b8aa ol,
+#collection-5e39b9a59234572a14d9ca78 ol,
+#collection-5e43425618e6e3448f09e57f ol,
+#collection-5e4331f5383ee71bf8193c3e ol,
+#collection-5e433289e1841065260285e6 ol,
+#collection-5e4333f8f0d10522284cb551 ol {
+  display: table;
 }
 /*=====  End of FINAL LANDING PAGES for SERVICES & BIO pages  ======*/
 /*====================================================
