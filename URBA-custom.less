@@ -14,6 +14,7 @@
 
 /* DEFINE page name variables instead of collection id */
 @bio-page: collection-5e1e3b0dea1c913c8b171986;
+@bio-page-header: block-4fa84b67d2fef18c03fc;
 @bio-my-story: collection-5e4331f5383ee71bf8193c3e;
 @bio-my-story-header: block-yui_3_17_2_1_1588014051745_18899;
 @bio-my-work: collection-5e433289e1841065260285e6;
@@ -21,6 +22,7 @@
 @bio-my-commitment: collection-5e4333f8f0d10522284cb551;
 @bio-my-commitment-header: block-yui_3_17_2_1_1588014532576_6482;
 @services-page: collection-5e1e35322ee5903aac1cf3c5;
+@services-page-header: block-a3a5220cc9896ff94759;
 @services-clinical: collection-5e39b9749234572a14d9b8aa;
 @services-clinical-header: block-35f96be5b7829ad26d17;
 @services-yoga: collection-5e39b9a59234572a14d9ca78;
@@ -338,8 +340,12 @@ div.image-title p strong {
   div.Index-page-content {
     padding: 0;
     }
-    .design-layout-card .image-card {
+  .design-layout-card .image-card {
     padding: 3em 0;
+  }
+  .sqs-block-image-figure {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -350,6 +356,12 @@ div.image-title p strong {
   .Main-content {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+  .sqs-block-image, .sqs-block-image-figure {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
@@ -417,6 +429,20 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
 /*=====  End of IMAGE-CARDS  ======*/
 
 
+/*=============================================
+=            SERVICES & BIO PAGES             =
+=============================================*/
+div #@{bio-page-header},
+div #@{services-page-header},
+{
+  h2 {
+    margin-bottom: 0;
+  }
+  padding-bottom: 2.0em;
+}
+
+
+
 
 /*====================================================================
 =            FINAL LANDING PAGES for SERVICES & BIO pages            =
@@ -450,8 +476,7 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
   div #@{bio-my-commitment-header},
   div #@{services-clinical-header},
   div #@{services-yoga-header},
-  div #@{services-massage-header}  
-  {
+  div #@{services-massage-header}  {
     h2 {
       margin-bottom: 0;
     }

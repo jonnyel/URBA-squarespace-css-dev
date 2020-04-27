@@ -243,11 +243,25 @@ div.image-title p strong {
 #services-banner .design-layout-card .image-card {
   padding: 3em 0;
 }
+#value-statement .sqs-block-image-figure,
+#services-banner .sqs-block-image-figure {
+  margin-left: 0;
+  margin-right: 0;
+}
 /*----------  IMAGE-CARDS ON SUBPAGES Section Padding  ----------*/
 #collection-5e1e35322ee5903aac1cf3c5 .Main-content,
 #collection-5e1e3b0dea1c913c8b171986 .Main-content {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+#collection-5e1e35322ee5903aac1cf3c5 .sqs-block-image,
+#collection-5e1e3b0dea1c913c8b171986 .sqs-block-image,
+#collection-5e1e35322ee5903aac1cf3c5 .sqs-block-image-figure,
+#collection-5e1e3b0dea1c913c8b171986 .sqs-block-image-figure {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 #value-statement .image-card-wrapper,
 #services-banner .image-card-wrapper,
@@ -292,6 +306,17 @@ div#block-b1d3723d172f7b9c33cc {
   }
 }
 /*=====  End of IMAGE-CARDS  ======*/
+/*=============================================
+=            SERVICES & BIO PAGES             =
+=============================================*/
+div #block-4fa84b67d2fef18c03fc,
+div #block-a3a5220cc9896ff94759 {
+  padding-bottom: 2em;
+}
+div #block-4fa84b67d2fef18c03fc h2,
+div #block-a3a5220cc9896ff94759 h2 {
+  margin-bottom: 0;
+}
 /*====================================================================
 =            FINAL LANDING PAGES for SERVICES & BIO pages            =
 ====================================================================*/
