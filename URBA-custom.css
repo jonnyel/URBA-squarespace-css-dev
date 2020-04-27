@@ -297,6 +297,11 @@ div.image-title p strong {
 /*=============================================
 =            SERVICES & BIO PAGES             =
 =============================================*/
+#collection-5e1e3b0dea1c913c8b171986 div .row.sqs-row,
+#collection-5e1e35322ee5903aac1cf3c5 div .row.sqs-row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 div #block-4fa84b67d2fef18c03fc,
 div #block-a3a5220cc9896ff94759 {
   padding-left: 20px;
