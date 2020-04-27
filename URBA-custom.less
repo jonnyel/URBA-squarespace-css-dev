@@ -1,5 +1,5 @@
 /* UH Website CSS */  
-/* 2020-04-24 */
+/* 2020-04-27 */
 
 /* Fix font flicker on load (from silvabokis.com) */
 #desktopNav, .title-desc-inner {
@@ -13,8 +13,20 @@
 }
 
 /* DEFINE page name variables instead of collection id */
-@services-page: collection-5e1e35322ee5903aac1cf3c5;
 @bio-page: collection-5e1e3b0dea1c913c8b171986;
+@bio-my-story: collection-5e4331f5383ee71bf8193c3e;
+@bio-my-story-header: block-yui_3_17_2_1_1588014051745_18899;
+@bio-my-work: collection-5e433289e1841065260285e6;
+@bio-my-work-header: block-yui_3_17_2_1_1588014513341_6425;
+@bio-my-commitment: collection-5e4333f8f0d10522284cb551;
+@bio-my-commitment-header: block-yui_3_17_2_1_1588014532576_6482;
+@services-page: collection-5e1e35322ee5903aac1cf3c5;
+@services-clinical: collection-5e39b9749234572a14d9b8aa;
+@services-clinical-header: block-35f96be5b7829ad26d17;
+@services-yoga: collection-5e39b9a59234572a14d9ca78;
+@services-yoga-header: block-yui_3_17_2_1_1581466152347_4542;
+@services-massage: collection-5e43425618e6e3448f09e57f;
+@services-massage-header: block-4176da6257aae14a264d;
 
 /* DEFINE UH Brand Colour variables */
 @uh-coral: hsl(354, 85%, 65%);
@@ -410,34 +422,49 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
 =            FINAL LANDING PAGES for SERVICES & BIO pages            =
 ====================================================================*/
 
-/*----------  Highlighter title font for em (italic)  ----------*/
+#@{bio-my-story},
+#@{bio-my-work},
+#@{bio-my-commitment},
+#@{services-clinical},
+#@{services-yoga},
+#@{services-massage}  {
 
-#collection-5e39b9749234572a14d9b8aa,
-#collection-5e39b9a59234572a14d9ca78,
-#collection-5e43425618e6e3448f09e57f,
-
-#collection-5e4331f5383ee71bf8193c3e,
-#collection-5e433289e1841065260285e6,
-#collection-5e4333f8f0d10522284cb551  {
-
-  div.image-title p em {
+  // Highlighter title font for em (italic)
+  div.image-title p em 
+  {
     font-style: initial !important;
     font-weight: inherit !important;
     background: linear-gradient(to top, @uh-ochre-bright 45%, @uh-transp 45%);
   }
 
-  /*----------  Fonts  ----------*/
+  //  Fonts  
   div.image-title-wrapper,
-  div.image-subtitle-wrapper {
+  div.image-subtitle-wrapper 
+  {
     text-align: left !important;
     padding-right: 0 !important;
+  }
+
+  div #@{bio-my-story-header},
+  div #@{bio-my-work-header},
+  div #@{bio-my-commitment-header},
+  div #@{services-clinical-header},
+  div #@{services-yoga-header},
+  div #@{services-massage-header}  
+  {
+    h2 {
+      margin-bottom: 0;
     }
+    padding-bottom: 2.0em;
+  }
+/*     
   .markdown-block:first-of-type h2 {
     text-align:center;
     white-space:pre-wrap;
     padding-bottom: .5em;
     padding-top: 0.35em;
   }
+ */
 
   // pullquote using markdown block
   blockquote {
@@ -451,8 +478,8 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
     border: none;
   }
   
-  // fix indent for float left
-  ol {
+  // fix indent for float left wrapped lists
+  ol, ul {
     overflow: hidden;
   }
 
@@ -465,8 +492,11 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
   .sqs-block-content p {
     overflow: hidden;
   }
-  .sqs-block-content ol li p {
-    overflow: visible;
+  .sqs-block-content {
+    ol li p,
+    ul li p {
+      overflow: visible;
+    }
   }
   
   // keep markdown-block quote below float
@@ -476,15 +506,18 @@ div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
   }
 }
 
-// remove margin float image on mobile
+
+/*----------  MOBILE  ----------*/
+
+
+// MOBILE: remove margin float image
 @media screen and (max-width: 640px) {
-  #collection-5e39b9749234572a14d9b8aa,
-  #collection-5e39b9a59234572a14d9ca78,
-  #collection-5e43425618e6e3448f09e57f,
-  
-  #collection-5e4331f5383ee71bf8193c3e,
-  #collection-5e433289e1841065260285e6,
-  #collection-5e4333f8f0d10522284cb551  {
+  #@{bio-my-story},
+  #@{bio-my-work},
+  #@{bio-my-commitment},
+  #@{services-clinical},
+  #@{services-yoga},
+  #@{services-massage}  {
     .sqs-block[class*=float-left] {
       margin-right: 0;
     }

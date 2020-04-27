@@ -1,5 +1,5 @@
 /* UH Website CSS */
-/* 2020-04-24 */
+/* 2020-04-27 */
 /* Fix font flicker on load (from silvabokis.com) */
 #desktopNav,
 .title-desc-inner {
@@ -295,110 +295,194 @@ div#block-b1d3723d172f7b9c33cc {
 /*====================================================================
 =            FINAL LANDING PAGES for SERVICES & BIO pages            =
 ====================================================================*/
-/*----------  Highlighter title font for em (italic)  ----------*/
-#collection-5e39b9749234572a14d9b8aa,
-#collection-5e39b9a59234572a14d9ca78,
-#collection-5e43425618e6e3448f09e57f,
 #collection-5e4331f5383ee71bf8193c3e,
 #collection-5e433289e1841065260285e6,
-#collection-5e4333f8f0d10522284cb551 {
-  /*----------  Fonts  ----------*/
+#collection-5e4333f8f0d10522284cb551,
+#collection-5e39b9749234572a14d9b8aa,
+#collection-5e39b9a59234572a14d9ca78,
+#collection-5e43425618e6e3448f09e57f {
+  /*     
+  .markdown-block:first-of-type h2 {
+    text-align:center;
+    white-space:pre-wrap;
+    padding-bottom: .5em;
+    padding-top: 0.35em;
+  }
+ */
 }
-#collection-5e39b9749234572a14d9b8aa div.image-title p em,
-#collection-5e39b9a59234572a14d9ca78 div.image-title p em,
-#collection-5e43425618e6e3448f09e57f div.image-title p em,
 #collection-5e4331f5383ee71bf8193c3e div.image-title p em,
 #collection-5e433289e1841065260285e6 div.image-title p em,
-#collection-5e4333f8f0d10522284cb551 div.image-title p em {
+#collection-5e4333f8f0d10522284cb551 div.image-title p em,
+#collection-5e39b9749234572a14d9b8aa div.image-title p em,
+#collection-5e39b9a59234572a14d9ca78 div.image-title p em,
+#collection-5e43425618e6e3448f09e57f div.image-title p em {
   font-style: initial !important;
   font-weight: inherit !important;
   background: linear-gradient(to top, hsl(48, 100%, 68%) 45%, hsla(0, 0%, 100%, 0) 45%);
 }
-#collection-5e39b9749234572a14d9b8aa div.image-title-wrapper,
-#collection-5e39b9a59234572a14d9ca78 div.image-title-wrapper,
-#collection-5e43425618e6e3448f09e57f div.image-title-wrapper,
 #collection-5e4331f5383ee71bf8193c3e div.image-title-wrapper,
 #collection-5e433289e1841065260285e6 div.image-title-wrapper,
 #collection-5e4333f8f0d10522284cb551 div.image-title-wrapper,
-#collection-5e39b9749234572a14d9b8aa div.image-subtitle-wrapper,
-#collection-5e39b9a59234572a14d9ca78 div.image-subtitle-wrapper,
-#collection-5e43425618e6e3448f09e57f div.image-subtitle-wrapper,
+#collection-5e39b9749234572a14d9b8aa div.image-title-wrapper,
+#collection-5e39b9a59234572a14d9ca78 div.image-title-wrapper,
+#collection-5e43425618e6e3448f09e57f div.image-title-wrapper,
 #collection-5e4331f5383ee71bf8193c3e div.image-subtitle-wrapper,
 #collection-5e433289e1841065260285e6 div.image-subtitle-wrapper,
-#collection-5e4333f8f0d10522284cb551 div.image-subtitle-wrapper {
+#collection-5e4333f8f0d10522284cb551 div.image-subtitle-wrapper,
+#collection-5e39b9749234572a14d9b8aa div.image-subtitle-wrapper,
+#collection-5e39b9a59234572a14d9ca78 div.image-subtitle-wrapper,
+#collection-5e43425618e6e3448f09e57f div.image-subtitle-wrapper {
   text-align: left !important;
   padding-right: 0 !important;
 }
-#collection-5e39b9749234572a14d9b8aa .markdown-block:first-of-type h2,
-#collection-5e39b9a59234572a14d9ca78 .markdown-block:first-of-type h2,
-#collection-5e43425618e6e3448f09e57f .markdown-block:first-of-type h2,
-#collection-5e4331f5383ee71bf8193c3e .markdown-block:first-of-type h2,
-#collection-5e433289e1841065260285e6 .markdown-block:first-of-type h2,
-#collection-5e4333f8f0d10522284cb551 .markdown-block:first-of-type h2 {
-  text-align: center;
-  white-space: pre-wrap;
-  padding-bottom: 0.5em;
-  padding-top: 0.35em;
+#collection-5e4331f5383ee71bf8193c3e div #block-yui_3_17_2_1_1588014051745_18899,
+#collection-5e433289e1841065260285e6 div #block-yui_3_17_2_1_1588014051745_18899,
+#collection-5e4333f8f0d10522284cb551 div #block-yui_3_17_2_1_1588014051745_18899,
+#collection-5e39b9749234572a14d9b8aa div #block-yui_3_17_2_1_1588014051745_18899,
+#collection-5e39b9a59234572a14d9ca78 div #block-yui_3_17_2_1_1588014051745_18899,
+#collection-5e43425618e6e3448f09e57f div #block-yui_3_17_2_1_1588014051745_18899,
+#collection-5e4331f5383ee71bf8193c3e div #block-yui_3_17_2_1_1588014513341_6425,
+#collection-5e433289e1841065260285e6 div #block-yui_3_17_2_1_1588014513341_6425,
+#collection-5e4333f8f0d10522284cb551 div #block-yui_3_17_2_1_1588014513341_6425,
+#collection-5e39b9749234572a14d9b8aa div #block-yui_3_17_2_1_1588014513341_6425,
+#collection-5e39b9a59234572a14d9ca78 div #block-yui_3_17_2_1_1588014513341_6425,
+#collection-5e43425618e6e3448f09e57f div #block-yui_3_17_2_1_1588014513341_6425,
+#collection-5e4331f5383ee71bf8193c3e div #block-yui_3_17_2_1_1588014532576_6482,
+#collection-5e433289e1841065260285e6 div #block-yui_3_17_2_1_1588014532576_6482,
+#collection-5e4333f8f0d10522284cb551 div #block-yui_3_17_2_1_1588014532576_6482,
+#collection-5e39b9749234572a14d9b8aa div #block-yui_3_17_2_1_1588014532576_6482,
+#collection-5e39b9a59234572a14d9ca78 div #block-yui_3_17_2_1_1588014532576_6482,
+#collection-5e43425618e6e3448f09e57f div #block-yui_3_17_2_1_1588014532576_6482,
+#collection-5e4331f5383ee71bf8193c3e div #block-35f96be5b7829ad26d17,
+#collection-5e433289e1841065260285e6 div #block-35f96be5b7829ad26d17,
+#collection-5e4333f8f0d10522284cb551 div #block-35f96be5b7829ad26d17,
+#collection-5e39b9749234572a14d9b8aa div #block-35f96be5b7829ad26d17,
+#collection-5e39b9a59234572a14d9ca78 div #block-35f96be5b7829ad26d17,
+#collection-5e43425618e6e3448f09e57f div #block-35f96be5b7829ad26d17,
+#collection-5e4331f5383ee71bf8193c3e div #block-yui_3_17_2_1_1581466152347_4542,
+#collection-5e433289e1841065260285e6 div #block-yui_3_17_2_1_1581466152347_4542,
+#collection-5e4333f8f0d10522284cb551 div #block-yui_3_17_2_1_1581466152347_4542,
+#collection-5e39b9749234572a14d9b8aa div #block-yui_3_17_2_1_1581466152347_4542,
+#collection-5e39b9a59234572a14d9ca78 div #block-yui_3_17_2_1_1581466152347_4542,
+#collection-5e43425618e6e3448f09e57f div #block-yui_3_17_2_1_1581466152347_4542,
+#collection-5e4331f5383ee71bf8193c3e div #block-4176da6257aae14a264d,
+#collection-5e433289e1841065260285e6 div #block-4176da6257aae14a264d,
+#collection-5e4333f8f0d10522284cb551 div #block-4176da6257aae14a264d,
+#collection-5e39b9749234572a14d9b8aa div #block-4176da6257aae14a264d,
+#collection-5e39b9a59234572a14d9ca78 div #block-4176da6257aae14a264d,
+#collection-5e43425618e6e3448f09e57f div #block-4176da6257aae14a264d {
+  padding-bottom: 2em;
 }
-#collection-5e39b9749234572a14d9b8aa blockquote,
-#collection-5e39b9a59234572a14d9ca78 blockquote,
-#collection-5e43425618e6e3448f09e57f blockquote,
+#collection-5e4331f5383ee71bf8193c3e div #block-yui_3_17_2_1_1588014051745_18899 h2,
+#collection-5e433289e1841065260285e6 div #block-yui_3_17_2_1_1588014051745_18899 h2,
+#collection-5e4333f8f0d10522284cb551 div #block-yui_3_17_2_1_1588014051745_18899 h2,
+#collection-5e39b9749234572a14d9b8aa div #block-yui_3_17_2_1_1588014051745_18899 h2,
+#collection-5e39b9a59234572a14d9ca78 div #block-yui_3_17_2_1_1588014051745_18899 h2,
+#collection-5e43425618e6e3448f09e57f div #block-yui_3_17_2_1_1588014051745_18899 h2,
+#collection-5e4331f5383ee71bf8193c3e div #block-yui_3_17_2_1_1588014513341_6425 h2,
+#collection-5e433289e1841065260285e6 div #block-yui_3_17_2_1_1588014513341_6425 h2,
+#collection-5e4333f8f0d10522284cb551 div #block-yui_3_17_2_1_1588014513341_6425 h2,
+#collection-5e39b9749234572a14d9b8aa div #block-yui_3_17_2_1_1588014513341_6425 h2,
+#collection-5e39b9a59234572a14d9ca78 div #block-yui_3_17_2_1_1588014513341_6425 h2,
+#collection-5e43425618e6e3448f09e57f div #block-yui_3_17_2_1_1588014513341_6425 h2,
+#collection-5e4331f5383ee71bf8193c3e div #block-yui_3_17_2_1_1588014532576_6482 h2,
+#collection-5e433289e1841065260285e6 div #block-yui_3_17_2_1_1588014532576_6482 h2,
+#collection-5e4333f8f0d10522284cb551 div #block-yui_3_17_2_1_1588014532576_6482 h2,
+#collection-5e39b9749234572a14d9b8aa div #block-yui_3_17_2_1_1588014532576_6482 h2,
+#collection-5e39b9a59234572a14d9ca78 div #block-yui_3_17_2_1_1588014532576_6482 h2,
+#collection-5e43425618e6e3448f09e57f div #block-yui_3_17_2_1_1588014532576_6482 h2,
+#collection-5e4331f5383ee71bf8193c3e div #block-35f96be5b7829ad26d17 h2,
+#collection-5e433289e1841065260285e6 div #block-35f96be5b7829ad26d17 h2,
+#collection-5e4333f8f0d10522284cb551 div #block-35f96be5b7829ad26d17 h2,
+#collection-5e39b9749234572a14d9b8aa div #block-35f96be5b7829ad26d17 h2,
+#collection-5e39b9a59234572a14d9ca78 div #block-35f96be5b7829ad26d17 h2,
+#collection-5e43425618e6e3448f09e57f div #block-35f96be5b7829ad26d17 h2,
+#collection-5e4331f5383ee71bf8193c3e div #block-yui_3_17_2_1_1581466152347_4542 h2,
+#collection-5e433289e1841065260285e6 div #block-yui_3_17_2_1_1581466152347_4542 h2,
+#collection-5e4333f8f0d10522284cb551 div #block-yui_3_17_2_1_1581466152347_4542 h2,
+#collection-5e39b9749234572a14d9b8aa div #block-yui_3_17_2_1_1581466152347_4542 h2,
+#collection-5e39b9a59234572a14d9ca78 div #block-yui_3_17_2_1_1581466152347_4542 h2,
+#collection-5e43425618e6e3448f09e57f div #block-yui_3_17_2_1_1581466152347_4542 h2,
+#collection-5e4331f5383ee71bf8193c3e div #block-4176da6257aae14a264d h2,
+#collection-5e433289e1841065260285e6 div #block-4176da6257aae14a264d h2,
+#collection-5e4333f8f0d10522284cb551 div #block-4176da6257aae14a264d h2,
+#collection-5e39b9749234572a14d9b8aa div #block-4176da6257aae14a264d h2,
+#collection-5e39b9a59234572a14d9ca78 div #block-4176da6257aae14a264d h2,
+#collection-5e43425618e6e3448f09e57f div #block-4176da6257aae14a264d h2 {
+  margin-bottom: 0;
+}
 #collection-5e4331f5383ee71bf8193c3e blockquote,
 #collection-5e433289e1841065260285e6 blockquote,
-#collection-5e4333f8f0d10522284cb551 blockquote {
+#collection-5e4333f8f0d10522284cb551 blockquote,
+#collection-5e39b9749234572a14d9b8aa blockquote,
+#collection-5e39b9a59234572a14d9ca78 blockquote,
+#collection-5e43425618e6e3448f09e57f blockquote {
   font-size: 1.35em;
   line-height: 2em;
   overflow: hidden;
   padding: 0.35em 0 0.35em;
   border: none;
 }
+#collection-5e4331f5383ee71bf8193c3e ol,
+#collection-5e433289e1841065260285e6 ol,
+#collection-5e4333f8f0d10522284cb551 ol,
 #collection-5e39b9749234572a14d9b8aa ol,
 #collection-5e39b9a59234572a14d9ca78 ol,
 #collection-5e43425618e6e3448f09e57f ol,
-#collection-5e4331f5383ee71bf8193c3e ol,
-#collection-5e433289e1841065260285e6 ol,
-#collection-5e4333f8f0d10522284cb551 ol {
+#collection-5e4331f5383ee71bf8193c3e ul,
+#collection-5e433289e1841065260285e6 ul,
+#collection-5e4333f8f0d10522284cb551 ul,
+#collection-5e39b9749234572a14d9b8aa ul,
+#collection-5e39b9a59234572a14d9ca78 ul,
+#collection-5e43425618e6e3448f09e57f ul {
   overflow: hidden;
 }
-#collection-5e39b9749234572a14d9b8aa .sqs-block[class*=float-left],
-#collection-5e39b9a59234572a14d9ca78 .sqs-block[class*=float-left],
-#collection-5e43425618e6e3448f09e57f .sqs-block[class*=float-left],
 #collection-5e4331f5383ee71bf8193c3e .sqs-block[class*=float-left],
 #collection-5e433289e1841065260285e6 .sqs-block[class*=float-left],
-#collection-5e4333f8f0d10522284cb551 .sqs-block[class*=float-left] {
+#collection-5e4333f8f0d10522284cb551 .sqs-block[class*=float-left],
+#collection-5e39b9749234572a14d9b8aa .sqs-block[class*=float-left],
+#collection-5e39b9a59234572a14d9ca78 .sqs-block[class*=float-left],
+#collection-5e43425618e6e3448f09e57f .sqs-block[class*=float-left] {
   margin-right: 42px;
 }
-#collection-5e39b9749234572a14d9b8aa .sqs-block-content p,
-#collection-5e39b9a59234572a14d9ca78 .sqs-block-content p,
-#collection-5e43425618e6e3448f09e57f .sqs-block-content p,
 #collection-5e4331f5383ee71bf8193c3e .sqs-block-content p,
 #collection-5e433289e1841065260285e6 .sqs-block-content p,
-#collection-5e4333f8f0d10522284cb551 .sqs-block-content p {
+#collection-5e4333f8f0d10522284cb551 .sqs-block-content p,
+#collection-5e39b9749234572a14d9b8aa .sqs-block-content p,
+#collection-5e39b9a59234572a14d9ca78 .sqs-block-content p,
+#collection-5e43425618e6e3448f09e57f .sqs-block-content p {
   overflow: hidden;
 }
+#collection-5e4331f5383ee71bf8193c3e .sqs-block-content ol li p,
+#collection-5e433289e1841065260285e6 .sqs-block-content ol li p,
+#collection-5e4333f8f0d10522284cb551 .sqs-block-content ol li p,
 #collection-5e39b9749234572a14d9b8aa .sqs-block-content ol li p,
 #collection-5e39b9a59234572a14d9ca78 .sqs-block-content ol li p,
 #collection-5e43425618e6e3448f09e57f .sqs-block-content ol li p,
-#collection-5e4331f5383ee71bf8193c3e .sqs-block-content ol li p,
-#collection-5e433289e1841065260285e6 .sqs-block-content ol li p,
-#collection-5e4333f8f0d10522284cb551 .sqs-block-content ol li p {
+#collection-5e4331f5383ee71bf8193c3e .sqs-block-content ul li p,
+#collection-5e433289e1841065260285e6 .sqs-block-content ul li p,
+#collection-5e4333f8f0d10522284cb551 .sqs-block-content ul li p,
+#collection-5e39b9749234572a14d9b8aa .sqs-block-content ul li p,
+#collection-5e39b9a59234572a14d9ca78 .sqs-block-content ul li p,
+#collection-5e43425618e6e3448f09e57f .sqs-block-content ul li p {
   overflow: visible;
 }
-#collection-5e39b9749234572a14d9b8aa .markdown-block,
-#collection-5e39b9a59234572a14d9ca78 .markdown-block,
-#collection-5e43425618e6e3448f09e57f .markdown-block,
 #collection-5e4331f5383ee71bf8193c3e .markdown-block,
 #collection-5e433289e1841065260285e6 .markdown-block,
-#collection-5e4333f8f0d10522284cb551 .markdown-block {
+#collection-5e4333f8f0d10522284cb551 .markdown-block,
+#collection-5e39b9749234572a14d9b8aa .markdown-block,
+#collection-5e39b9a59234572a14d9ca78 .markdown-block,
+#collection-5e43425618e6e3448f09e57f .markdown-block {
   overflow: hidden;
 }
+/*----------  MOBILE  ----------*/
 @media screen and (max-width: 640px) {
-  #collection-5e39b9749234572a14d9b8aa .sqs-block[class*=float-left],
-  #collection-5e39b9a59234572a14d9ca78 .sqs-block[class*=float-left],
-  #collection-5e43425618e6e3448f09e57f .sqs-block[class*=float-left],
   #collection-5e4331f5383ee71bf8193c3e .sqs-block[class*=float-left],
   #collection-5e433289e1841065260285e6 .sqs-block[class*=float-left],
-  #collection-5e4333f8f0d10522284cb551 .sqs-block[class*=float-left] {
+  #collection-5e4333f8f0d10522284cb551 .sqs-block[class*=float-left],
+  #collection-5e39b9749234572a14d9b8aa .sqs-block[class*=float-left],
+  #collection-5e39b9a59234572a14d9ca78 .sqs-block[class*=float-left],
+  #collection-5e43425618e6e3448f09e57f .sqs-block[class*=float-left] {
     margin-right: 0;
   }
 }
