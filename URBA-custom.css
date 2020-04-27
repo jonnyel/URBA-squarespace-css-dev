@@ -70,12 +70,12 @@ h2 strong {
   margin-bottom: 0px;
 }
 /*----------  MOBILE HEADER  ----------*/
-.Mobile-bar--top {
-  -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
-  -moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
-  box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
-  padding-bottom: 0px !important;
-}
+/* .Mobile-bar--top {
+    -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+    -moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+    box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+    padding-bottom: 0px !important;
+  } */
 .Mobile-bar-branding,
 .Mobile-bar-search,
 .Mobile-bar-menu,
@@ -255,6 +255,13 @@ div.image-title p strong {
   padding-left: 0;
   padding-right: 0;
 }
+#collection-5e1e35322ee5903aac1cf3c5 .sqs-block-image,
+#collection-5e1e3b0dea1c913c8b171986 .sqs-block-image,
+#collection-5e1e35322ee5903aac1cf3c5 .sqs-block-image-figure,
+#collection-5e1e3b0dea1c913c8b171986 .sqs-block-image-figure {
+  padding-left: 0 ;
+  padding-right: 0 ;
+}
 /*----------  Desktop & Tablet only - CARD TEXT: widen L&R padding  ----------*/
 @media screen and (min-width: 641px) {
   #value-statement div.image-title-wrapper,
@@ -292,6 +299,8 @@ div.image-title p strong {
 =============================================*/
 div #block-4fa84b67d2fef18c03fc,
 div #block-a3a5220cc9896ff94759 {
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 2em;
 }
 div #block-4fa84b67d2fef18c03fc h2,
