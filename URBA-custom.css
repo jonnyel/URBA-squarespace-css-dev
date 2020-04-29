@@ -781,12 +781,6 @@ h2 a {
 /*=============================================
 =            FOOTER            =
 =============================================*/
-.Footer-blocks--top {
-  display: none !important;
-}
-.sqs-licensed-asset-preview-bar {
-  display: none !important;
-}
 .Footer-blocks--middle {
   padding: 1px !important;
 }
