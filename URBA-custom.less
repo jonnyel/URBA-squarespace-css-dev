@@ -1,164 +1,186 @@
-/* UH Website CSS */  
-/* 2020-04-27 */
+/* UH Website CSS */
+/* 2020-04-28  */
 
+/*#region FONTS & HEADER */
 /* Fix font flicker on load (from silvabokis.com) */
-  #desktopNav, .title-desc-inner {
+#desktopNav,
+.title-desc-inner {
     animation: fade-me-in 1.5s;
-  }
+}
 
-  @keyframes fade-me-in {
-    0% {opacity:0;}
-    80% {opacity:0;}
-    100% {opacity:1;}
-  }
+@keyframes fade-me-in {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 /* DEFINE page name variables instead of collection id */
-  @bio-page: collection-5e1e3b0dea1c913c8b171986;
-  @bio-page-header: block-4fa84b67d2fef18c03fc;
-  @bio-my-story: collection-5e4331f5383ee71bf8193c3e;
-  @bio-my-story-header: block-yui_3_17_2_1_1588014051745_18899;
-  @bio-my-work: collection-5e433289e1841065260285e6;
-  @bio-my-work-header: block-yui_3_17_2_1_1588014513341_6425;
-  @bio-my-commitment: collection-5e4333f8f0d10522284cb551;
-  @bio-my-commitment-header: block-yui_3_17_2_1_1588014532576_6482;
-  @services-page: collection-5e1e35322ee5903aac1cf3c5;
-  @services-page-header: block-a3a5220cc9896ff94759;
-  @services-clinical: collection-5e39b9749234572a14d9b8aa;
-  @services-clinical-header: block-35f96be5b7829ad26d17;
-  @services-yoga: collection-5e39b9a59234572a14d9ca78;
-  @services-yoga-header: block-yui_3_17_2_1_1581466152347_4542;
-  @services-massage: collection-5e43425618e6e3448f09e57f;
-  @services-massage-header: block-4176da6257aae14a264d;
+	@bio-page: collection-5e1e3b0dea1c913c8b171986;
+	@bio-page-header: block-4fa84b67d2fef18c03fc;
+	@bio-my-story: collection-5e4331f5383ee71bf8193c3e;
+	@bio-my-story-header: block-yui_3_17_2_1_1588014051745_18899;
+	@bio-my-work: collection-5e433289e1841065260285e6;
+	@bio-my-work-header: block-yui_3_17_2_1_1588014513341_6425;
+	@bio-my-commitment: collection-5e4333f8f0d10522284cb551;
+	@bio-my-commitment-header: block-yui_3_17_2_1_1588014532576_6482;
+	@services-page: collection-5e1e35322ee5903aac1cf3c5;
+	@services-page-header: block-a3a5220cc9896ff94759;
+	@services-clinical: collection-5e39b9749234572a14d9b8aa;
+	@services-clinical-header: block-35f96be5b7829ad26d17;
+	@services-yoga: collection-5e39b9a59234572a14d9ca78;
+	@services-yoga-header: block-yui_3_17_2_1_1581466152347_4542;
+	@services-massage: collection-5e43425618e6e3448f09e57f;
+	@services-massage-header: block-4176da6257aae14a264d;
+	@shop-page: collection-5bc5005e4192023031781698;
 
 /* DEFINE UH Brand Colour variables */
-  @uh-coral: hsl(354, 85%, 65%);
-  @uh-coral-light: hsl(354, 85%, 80%);
-  @uh-ochre-bright: hsl(48, 100%, 68%);
-  @uh-ochre-light: hsl(48, 100%, 80%);
-  @uh-teal: hsl(164, 38%, 49%);
-  @uh-teal-light: hsl(163, 55%, 85%);
-  @uh-teal-bg: hsl(164, 37.3%, 49.4%);
-  @uh-grey-light: hsl(0, 0%, 96%);
-  @uh-grey-dark: #545454;
-  @uh-transp: hsla(0,0%,100%,0);
+	@uh-coral: hsl(354, 85%, 65%);
+	@uh-coral-light: hsl(354, 85%, 80%);
+	@uh-ochre-bright: hsl(48, 100%, 68%);
+	@uh-ochre-light: hsl(48, 100%, 80%);
+	@uh-teal: hsl(164, 38%, 49%);
+	@uh-teal-light: hsl(163, 55%, 85%);
+	@uh-teal-med: hsl(164, 42%, 64%);
+	@uh-teal-bg: hsl(164, 37.3%, 49.4%);
+	@uh-grey-light: hsl(0, 0%, 96%);
+	@uh-grey-dark: #545454;
+	@uh-transp: hsla(0, 0%, 100%, 0);
 
 /* CUSTOM FONTS */
-  @font-face {font-family: 'Notera';src: url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5dd571e426591d0da6e5feda/1574269412456/Notera.woff2') format('woff2'),url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5dd571dfd8f6e70a23740916/1574269407854/Notera.woff') format('woff');}
+	@font-face {
+		font-family: 'Notera';
+		src: url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5dd571e426591d0da6e5feda/1574269412456/Notera.woff2') format('woff2'), url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5dd571dfd8f6e70a23740916/1574269407854/Notera.woff') format('woff');
+	}
 
-  @font-face {font-family: 'Notera2Thin';src: url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5e39b0300934747943124a00/1580838960090/Notera2Thin.woff2') format('woff2'),url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5e39b02aa0af01453b5d92aa/1580838954298/Notera2Thin.woff') format('woff');}
+	@font-face {
+		font-family: 'Notera2Thin';
+		src: url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5e39b0300934747943124a00/1580838960090/Notera2Thin.woff2') format('woff2'), url('https://static1.squarespace.com/static/59dda7263e00be15fdb4d6cf/t/5e39b02aa0af01453b5d92aa/1580838954298/Notera2Thin.woff') format('woff');
+	}
 
-  h5 {
-    font-family: 'Notera'; 
-    font-size: 3.5em; 
-    font-style: normal;
-    font-weight:100; 
-    letter-spacing:0em;
-    line-height:0.8em; 
-    margin-top: 0.25em; 
-    margin-bottom:0em !important;
-    text-transform: none;
-  }
+	h5 {
+		font-family: 'Notera';
+		font-size: 3.5em;
+		font-style: normal;
+		font-weight: 100;
+		letter-spacing: 0em;
+		line-height: 0.8em;
+		margin-top: 0.25em;
+		margin-bottom: 0em !important;
+		text-transform: none;
+	}
 
 
 /*============================================================
 =            HIGHLIGHTER effect on h2 bold-italic            =
 ============================================================*/
-  h2 strong, h2 strong em {
-    font-style: initial !important;
-    font-weight: inherit !important;
-    background: linear-gradient(to top, @uh-ochre-light 45%, @uh-transp 45%);
-  }
+	h2 strong,
+	h2 strong em {
+		font-style: initial !important;
+		font-weight: inherit !important;
+		background: linear-gradient(to top, @uh-ochre-light 45%, @uh-transp 45%);
+	}
 
-  h2 strong {
-    background: linear-gradient(to top, @uh-teal-light 45%, @uh-transp 45%);
-  }
+	h2 strong {
+		background: linear-gradient(to top, @uh-teal-light 45%, @uh-transp 45%);
+	}
 
-  #personal-statement h2 strong em {
-    background: linear-gradient(to top, @uh-ochre-bright 45%, @uh-grey-light 45%);
-  }
+	#personal-statement h2 strong em {
+		background: linear-gradient(to top, @uh-ochre-bright 45%, @uh-grey-light 45%);
+	}
 
 
 
-  /* Fix h2 Sqr reduction of letterspacing on mobile */
-  @media screen and (max-width:640px) {
-    h2 {
-      letter-spacing:.08em;
-    }
-  }
+	/* Fix h2 Sqr reduction of letterspacing on mobile */
+	@media screen and (max-width:640px) {
+		h2 {
+			letter-spacing: .08em;
+		}
+	}
 
 /*=====  End of HIGHLIGHTER effect on h2 bold-italic  ======*/
-
 
 /*==============================
 =            HEADER            =
 ==============================*/
 
+	/*----------  HEADER margin fix  ----------*/
+	.Header-inner--top {
+		padding-bottom: 0px;
+		padding-top: 20px;
+		margin-bottom: 0px;
+	}
 
-  /*----------  HEADER margin fix  ----------*/
-  .Header-inner--top {
-    padding-bottom: 0px;
-    padding-top: 20px;
-    margin-bottom: 0px;
-  }
+	/*----------  MOBILE HEADER  ----------*/
 
-  /*----------  MOBILE HEADER  ----------*/
+	// Drop Shadow Mobile Header
+	/* .Mobile-bar--top {
+		-webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+		-moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+		box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+		padding-bottom: 0px !important;
+	} */
 
-  // Drop Shadow Mobile Header
-  /* .Mobile-bar--top {
-    -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
-    -moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
-    box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
-    padding-bottom: 0px !important;
-  } */
-
-  .Mobile-bar-branding, .Mobile-bar-search, .Mobile-bar-menu, .Mobile-bar .Cart {
-    padding-bottom: 0px;
-  }
+	.Mobile-bar-branding,
+	.Mobile-bar-search,
+	.Mobile-bar-menu,
+	.Mobile-bar .Cart {
+		padding-bottom: 0px;
+	}
 
 
 /*=====  End of HEADER  ======*/
+/*#endregion FONTS & HEADER */
 
-
+/*#region NEW HOME INDEX PAGE*/
 /*===========================================
 =            NEW HOME INDEX PAGE            =
 ===========================================*/
 
-  #collection-5df17ac89146e02844b3ee1a .Index {
-    background-color: #fff !important;
-  }
+	#collection-5df17ac89146e02844b3ee1a .Index {
+		background-color: #fff !important;
+	}
 
-  /*----------  NO Hyphenation on index page text  ----------*/
+	/*----------  NO Hyphenation on index page text  ----------*/
 
-  .Index-page--has-image {
-    hyphens: none !important; 
-    -webkit-hyphens: none !important; 
-    -ms-hyphens: none  !important; 
-  }
-
-
-  /*----------  Set differentiated BACKGROUND COLORS  ----------*/
-    #personal-statement {
-      background-color:@uh-grey-light !important;
-    }
-    #testimonials {
-      background-color: @uh-teal-bg !important;
-    }
+	.Index-page--has-image {
+		hyphens: none !important;
+		-webkit-hyphens: none !important;
+		-ms-hyphens: none !important;
+	}
 
 
-  /*----------  H1 - FONT change for a few Index Pages  ----------*/
-  #personal-statement,
-  #featured-products,
-  #testimonials,
-  #featured-blog-posts,
-  #newsletter-sign-up {
-    h1 {
-      font-family: haboro-soft;
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-    }
-  }
-    
+	/*----------  Set differentiated BACKGROUND COLORS  ----------*/
+	#personal-statement {
+		background-color: @uh-grey-light  !important;
+	}
+
+	#testimonials {
+		background-color: @uh-teal-bg  !important;
+	}
+
+
+	/*----------  H1 - FONT change for a few Index Pages  ----------*/
+	#personal-statement,
+	#featured-products,
+	#testimonials,
+	#featured-blog-posts,
+	#newsletter-sign-up {
+		h1 {
+			font-family: haboro-soft;
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: 0.2em;
+		}
+	}
+
 
 /*=====  End of NEW HOME INDEX PAGE  ======*/
 
@@ -168,36 +190,37 @@
 ======================================*/
 
 
-  /* Text transformation & Font Colours */
-  #welcome-banner p {
-    font-size:1.33em; 
-    line-height:1.6em;
-    color: white;
-    margin-top: -1em !important;
-    }
+	/* Text transformation & Font Colours */
+	#welcome-banner p {
+		font-size: 1.33em;
+		line-height: 1.6em;
+		color: white;
+		margin-top: -1em !important;
+	}
 
-  #welcome-banner h5 {
-    font-size:5.25em; 
-    // line-height:1.6em;
-    text-transform: none;
-    color: white;
-    }
+	#welcome-banner h5 {
+		font-size: 5.25em;
+		// line-height:1.6em;
+		text-transform: none;
+		color: white;
+	}
 
-  #welcome-banner .Index-page-content.sqs-alternate-block-style-container {
-    padding-bottom: 0;
-  }
+	#welcome-banner .Index-page-content.sqs-alternate-block-style-container {
+		padding-bottom: 0;
+	}
 
-  /*----------  Mobile Only  ----------*/
+	/*----------  Mobile Only  ----------*/
 
-  @media only screen and (max-width: 640px) { 
-    #welcome-banner {
-      font-size:0.9em; 
-    }
-    // add right margin on mobile 
-    #welcome-banner {
-      padding-right: 38vw;
-    }
-  }
+	@media only screen and (max-width: 640px) {
+		#welcome-banner {
+			font-size: 0.9em;
+		}
+
+		// add right margin on mobile 
+		#welcome-banner {
+			padding-right: 38vw;
+		}
+	}
 
 
 /*=====  End of WELCOME BANNER  ======*/
@@ -207,24 +230,24 @@
 =            PERSONAL-STATEMENT "I'm Living Proof That..." Banner            =
 ============================================================================*/
 
-  #personal-statement h2 {
-    font-size: 3.25em;
-    line-height: 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    // no hyphenation
-    hyphens: none !important; 
-    -webkit-hyphens: none !important; 
-    -ms-hyphens: none  !important; 
-  }
+	#personal-statement h2 {
+		font-size: 3.25em;
+		line-height: 1.5em;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		// no hyphenation
+		hyphens: none !important;
+		-webkit-hyphens: none !important;
+		-ms-hyphens: none !important;
+	}
 
-  /* Reduce h2  on mobile */
-  @media screen and (max-width:640px) {
-    #personal-statement h2 {
-      font-size: 2.5em !important;
-      letter-spacing:0.0675em;
-    }
-  }
+	/* Reduce h2  on mobile */
+	@media screen and (max-width:640px) {
+		#personal-statement h2 {
+			font-size: 2.5em !important;
+			letter-spacing: 0.0675em;
+		}
+	}
 
 
 /*=====  End of PERSONAL-STATEMENT "I'm Living Proof That..." Banner  ======*/
@@ -234,175 +257,339 @@
 =            FEATURED PRODUCTS            =
 =========================================*/
 
-  /*----------  FEATURED PRODUCTS - Link styles  ----------*/
+	/*----------  FEATURED PRODUCTS - Link styles  ----------*/
 
-  #featured-products div.image-caption p {
-    margin: 0.5em 0 0 0;
-  // background: green;
-  }
+	#featured-products div.image-caption p {
+		margin: 0.5em 0 0 0;
+		// background: green;
+	}
 
-  #featured-products { 
-    div.image-caption, 
-    div.image-caption a, 
-    div.image-caption strong,
-    div.image-caption a strong {
-      font-family: haboro-soft-extended;
-      color: @uh-grey-dark;
-      font-size: 1.3em;
-      font-style: normal;
-      font-weight: 400;
-      letter-spacing: .1em;
-      line-height: 1.4em;
-      text-transform: uppercase;
-      text-align: center;
-      border-bottom: none;
-      text-decoration: none;
-      //background: yellow;
-    }
-  }
+	#featured-products {
 
-  #featured-products {
-    div.image-caption strong, 
-    div.image-caption a strong {
-      font-family: haboro-soft-condensed;
-      font-weight: 600;
-  //background: red;
-    }
-  }
+		div.image-caption,
+		div.image-caption a,
+		div.image-caption strong,
+		div.image-caption a strong {
+			font-family: haboro-soft-extended;
+			color: @uh-grey-dark;
+			font-size: 1.3em;
+			font-style: normal;
+			font-weight: 400;
+			letter-spacing: .1em;
+			line-height: 1.4em;
+			text-transform: uppercase;
+			text-align: center;
+			border-bottom: none;
+			text-decoration: none;
+			//background: yellow;
+		}
+	}
 
-  #featured-products {
-    div.image-caption p,
-    div.image-caption p a {
-      font-size: 11px !important;
-      color: #737373;
-      //background: blue;
-    }
-  }
+	#featured-products {
 
-  // reduce width of #featured-products and #featured-blog-posts sections on mobile
-  @media screen and (max-width:640px) {
-    #featured-products,
-    #featured-blog-posts {
-      .sqs-block.sqs-block-image,
-      .sqs-block-markdown,
-      .sqs-block-html h3, 
-      .sqs-block-html p {
-        margin-left: 2em;
-        margin-right: 2em;
-        hyphens: none !important; 
-        -webkit-hyphens: none !important; 
-        -ms-hyphens: none  !important; 
-      }
-    }
-  }
+		div.image-caption strong,
+		div.image-caption a strong {
+			font-family: haboro-soft-condensed;
+			font-weight: 600;
+			//background: red;
+		}
+	}
+
+	#featured-products {
+
+		div.image-caption p,
+		div.image-caption p a {
+			font-size: 11px !important;
+			color: #737373;
+			//background: blue;
+		}
+	}
+
+	// reduce width of #featured-products and #featured-blog-posts sections on mobile
+	@media screen and (max-width:640px) {
+
+		#featured-products,
+		#featured-blog-posts {
+
+			.sqs-block.sqs-block-image,
+			.sqs-block-markdown,
+			.sqs-block-html h3,
+			.sqs-block-html p {
+				margin-left: 2em;
+				margin-right: 2em;
+				hyphens: none !important;
+				-webkit-hyphens: none !important;
+				-ms-hyphens: none !important;
+			}
+		}
+	}
 
 /*=====  End of FEATURED PRODUCTS  ======*/
 
 
+/*#region FEATURED JOURNAL POSTS INDEX SECTION */
+
+/*=====================================================
+=            FEATURED JOURNAL POST INDEX SECTION         =
+=====================================================*/
+	#featured-blog-posts {
+
+		.sqs-block.image-block.sqs-block-image.sqs-text-ready {
+			padding-bottom: 0 !important;
+		}
+
+		/* Blog post Category spacing (markdown)  */
+		div.markdown-block {
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			// color: yellow !important;
+		}
+
+		/* remove spacing from Blog Headline  */
+		div h3,
+		div h3 a {
+			margin-top: -9px;
+			margin-bottom: 0px;
+		}
+
+		/* remove spacing from 'read more'  */
+		div.sqs-block-content p,
+		div.sqs-block-content p a {
+			margin-top: .25em;
+		}
+
+		h3 a,
+		p a {
+			border: none;
+		}
+
+		/* Blog post Category font */
+		div.markdown-block h6,
+		div.markdown-block h6 a {
+			text-transform: uppercase;
+			font-family: haboro-soft-extended;
+			font-size: 11px !important;
+			font-weight: 400;
+			color: #737373;
+			margin: 0;
+		}
+		div.markdown-block h6 a {
+			background-color: @uh-grey-light;
+			padding: 3px 5px;
+		}
+
+		div.markdown-block h6 a:hover {
+			color: @uh-grey-dark;
+			transition: color .15s ease-out;
+		}
+
+		/* Blog post Headline font */
+		h3,
+		h3 a,
+		h6,
+		h6 a {
+			font-family: haboro-soft-condensed;
+			font-weight: 600;
+			font-size: 15px;
+			//line-height: 1.4em;
+			letter-spacing: .1em;
+			//background: red;
+		}
+	}	
+
+
+	// testing new colours for categories
+
+	#featured-blog-posts {
+		div .markdown-block h6,
+		div .markdown-block h6 a {
+			text-transform: uppercase;
+			font-family: haboro-soft-extended;
+			font-size: 11px !important;
+			font-weight: 400;
+			color: white;
+			margin: 0;
+		}
+		div.markdown-block h6 a {
+			background-color: @uh-teal-bg;
+			padding: 3px 5px;
+		}
+	}
+
+	// test 2
+	#featured-blog-posts {
+		div .markdown-block h6,
+		div .markdown-block h6 a {
+			text-transform: uppercase;
+			font-family: haboro-soft-extended;
+			font-size: 11px !important;
+			font-weight: 400;
+			color: @uh-grey-dark;
+			margin: 0;
+		}
+		div.markdown-block h6 a {
+			background-color: @uh-teal-light;
+			padding: 3px 5px;
+		}
+	}
+
+	// test 3
+	#featured-blog-posts {
+		div .markdown-block h6,
+		div .markdown-block h6 a {
+			text-transform: uppercase;
+			font-family: haboro-soft-extended;
+			font-size: 11px !important;
+			font-weight: 400;
+			color: white;
+			margin: 0;
+		}
+		div.markdown-block h6 a {
+			background-color: @uh-teal-med;
+			padding: 3px 5px;
+		}
+	} 
+/* 
+	// test 4
+	#featured-blog-posts {
+		div .markdown-block h6,
+		div .markdown-block h6 a {
+			text-transform: uppercase;
+			font-family: haboro-soft-extended;
+			font-size: 11px !important;
+			font-weight: 400;
+			color: @uh-teal;
+			margin: 0;
+		}
+		div.markdown-block h6 a {
+			background-color: @uh-grey-light;
+			padding: 3px 5px;
+		}
+	}
+ */
+/*=====  End of FEATURED JOURNAL POST INDEX SECTION  ======*/
+/*#endregion FEATURED JOURNAL POST INDEX SECTION */
+
+/*#endregion NEW HOME INDEX PAGE*/
+
+/*#region IMAGE CARDS */
 /*===================================
 =            IMAGE-CARDS            =
 ===================================*/
 
 
-  /*----------  Background colour for selected image cards  ----------*/
-  #value-statement, 
-  #services-banner,
-  #@{services-page},
-  #@{bio-page} {
+/*----------  Background colour for selected image cards  ----------*/
+#value-statement,
+#services-banner,
+#@{services-page},
+#@{bio-page} {
     .image-card-wrapper {
-      background: @uh-grey-light !important;
+        background: @uh-grey-light  !important;
     }
-  }
+}
 
-  /* Image Card 3rd Font Title (Notera2Thin) */
-    div.image-title p strong {
-      display: block;
-      font-family: 'Notera2Thin' !important;
-      font-size: 1.4em !important;
-      font-style: normal;
-      font-weight:100; 
-      letter-spacing:0em;
-      line-height: 0.7em !important;
-      text-transform: none;
-      margin-bottom: 0.25em;
-    }
+/* Image Card 3rd Font Title (Notera2Thin) */
+div.image-title p strong {
+    display: block;
+    font-family: 'Notera2Thin' !important;
+    font-size: 1.4em !important;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 0em;
+    line-height: 0.7em !important;
+    text-transform: none;
+    margin-bottom: 0.25em;
+}
 
-    #value-statement, 
-    #services-banner {
-      div.image-subtitle p {
+#value-statement,
+#services-banner {
+    div.image-subtitle p {
         font-size: 1.1em !important;
         padding-top: .5em !important;
         padding-bottom: .5em !important;
-      }
     }
+}
 
 
-  /*----------  IMAGE-CARDS ON HOMEPAGE Section Padding   ----------*/
+/*----------  IMAGE-CARDS ON HOMEPAGE Section Padding   ----------*/
 
-  #value-statement, 
-  #services-banner { 
+#value-statement,
+#services-banner {
     div.Index-page-content {
-      padding: 0;
-      }
+        padding: 0;
+    }
+
     .design-layout-card .image-card {
-      padding: 3em 0;
+        padding: 3em 0;
     }
+
     .sqs-block-image-figure {
-      // margin-left: 0;
-      // margin-right: 0;
+        // margin-left: 0;
+        // margin-right: 0;
     }
-  
-    div#block-yui_3_17_2_1_1576107302498_3756 /* My Commitment image-card block */,
-    div#block-b1d3723d172f7b9c33cc  /* Wellness At Home image-card block */ {
+
+    div#block-yui_3_17_2_1_1576107302498_3756
+    /* My Commitment image-card block */
+    ,
+    div#block-b1d3723d172f7b9c33cc
+
+    /* Wellness At Home image-card block */
+        {
         // padding: 0 !important;
-      }
-  }
+    }
+}
 
-  /*----------  IMAGE-CARDS ON SUBPAGES Section Padding  ----------*/
+/*----------  IMAGE-CARDS ON SUBPAGES Section Padding  ----------*/
 
-    #@{services-page},
-    #@{bio-page} {
-      section.Main-content {
+#@{services-page},
+#@{bio-page} {
+    section.Main-content {
         padding-left: 0;
         padding-right: 0;
-      }
-      .sqs-block-image, .sqs-block-image-figure {
-        padding-left: 0 ;
-        padding-right: 0 ;
+    }
+
+    .sqs-block-image,
+    .sqs-block-image-figure {
+        padding-left: 0;
+        padding-right: 0;
         // margin-left: 0 !important;
         // margin-right: 0 !important;
-      }
     }
+}
 
 
 
 
-  /*----------  Desktop & Tablet only - CARD TEXT: widen L&R padding  ----------*/
+/*----------  Desktop & Tablet only - CARD TEXT: widen L&R padding  ----------*/
 
-  @media screen and (min-width: 641px) {
+@media screen and (min-width: 641px) {
+
     #value-statement,
     #services-banner {
-      div.image-title-wrapper, 
-      div.image-subtitle-wrapper, 
-      div.image-button-wrapper {
-        padding-left: 18%; 
-        padding-right: 18%;
-      }
+
+        div.image-title-wrapper,
+        div.image-subtitle-wrapper,
+        div.image-button-wrapper {
+            padding-left: 18%;
+            padding-right: 18%;
+        }
     }
-  }
+}
 
 
-  /*----------  Force An Image Card to Stack on Mobile & tablet  ----------*/
+/*----------  Force An Image Card to Stack on Mobile & tablet  ----------*/
 
 
-  @media screen and (max-width: 850px) {
+@media screen and (max-width: 850px) {
 
     .sqs-block-image .design-layout-card:not(.sqs-narrow-width) {
         display: block !important;
     }
+
     .sqs-block-image .design-layout-card:not(.sqs-narrow-width) figcaption.image-card-wrapper {
         width: 100% !important;
     }
+
     .sqs-block-image .design-layout-card:not(.sqs-narrow-width)>div:first-child {
         width: 100% !important;
     }
@@ -410,40 +597,41 @@
     #value-statement,
     #services-banner,
     #@{services-page},
-    #@{bio-page}  {
-      .image-card-wrapper  { 
-        // width: 100% !important;
-        padding-top: 1.5em;
-        padding-bottom: 1.5em; 
-      }
+    #@{bio-page} {
+        .image-card-wrapper {
+            // width: 100% !important;
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+        }
     }
-  }
+}
 
 /*=====  End of IMAGE-CARDS  ======*/
+/*#endregion IMAGE-CARDS */
 
-
+/*#region SERVICES & BIO PAGES */
 /*=============================================
 =            SERVICES & BIO PAGES             =
 =============================================*/
-  // fix right margin problems!!!
-  #@{bio-page},
-  #@{services-page}  {
+// fix right margin problems!!!
+#@{bio-page},
+#@{services-page} {
     div .row.sqs-row {
-      margin-left: 0 !important;
-      margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
-  }
+}
 
-  div #@{bio-page-header},
-  div #@{services-page-header}  {
+div #@{bio-page-header},
+div #@{services-page-header} {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 2.0em;
 
     h2 {
-      margin-bottom: 0;
+        margin-bottom: 0;
     }
-  }
+}
 
 
 /*=====  End of SERVICES & BIO PAGES  ======*/
@@ -452,24 +640,25 @@
 /*====================================================================
 =            FINAL LANDING PAGES for SERVICES & BIO pages            =
 ====================================================================*/
-  #@{bio-my-story},
-  #@{bio-my-work},
-  #@{bio-my-commitment},
-  #@{services-clinical},
-  #@{services-yoga},
-  #@{services-massage}  {
+#@{bio-my-story},
+#@{bio-my-work},
+#@{bio-my-commitment},
+#@{services-clinical},
+#@{services-yoga},
+#@{services-massage} {
+
     // Highlighter title font for em (italic)
     div.image-title p em {
-      font-style: initial !important;
-      font-weight: inherit !important;
-      background: linear-gradient(to top, @uh-ochre-bright 45%, @uh-transp 45%);
+        font-style: initial !important;
+        font-weight: inherit !important;
+        background: linear-gradient(to top, @uh-ochre-bright 45%, @uh-transp 45%);
     }
 
     //  Fonts  
     div.image-title-wrapper,
     div.image-subtitle-wrapper {
-      text-align: left !important;
-      padding-right: 0 !important;
+        text-align: left !important;
+        padding-right: 0 !important;
     }
 
     div #@{bio-my-story-header},
@@ -477,13 +666,15 @@
     div #@{bio-my-commitment-header},
     div #@{services-clinical-header},
     div #@{services-yoga-header},
-    div #@{services-massage-header}  {
-      h2 {
-        margin-bottom: 0;
-      }
-      padding-bottom: 2.0em;
+    div #@{services-massage-header} {
+        h2 {
+            margin-bottom: 0;
+        }
+
+        padding-bottom: 2.0em;
     }
-  /*     
+
+    /*     
     .markdown-block:first-of-type h2 {
       text-align:center;
       white-space:pre-wrap;
@@ -494,66 +685,198 @@
 
     // pullquote using markdown block
     blockquote {
-      font-size: 1.35em;
-      line-height: 2.0em;
-      // -ms-hyphens: auto;
-      // -webkit-hyphens: auto;
-      // hyphens: auto;
-      overflow: hidden;
-      padding: 0.35em 0 0.35em;
-      border: none;
+        font-size: 1.35em;
+        line-height: 2.0em;
+        // -ms-hyphens: auto;
+        // -webkit-hyphens: auto;
+        // hyphens: auto;
+        overflow: hidden;
+        padding: 0.35em 0 0.35em;
+        border: none;
     }
-    
+
     // fix indent for float left wrapped lists
-    ol, ul {
-      overflow: hidden;
+    ol,
+    ul {
+        overflow: hidden;
     }
 
     // add margin to float image
     .sqs-block[class*=float-left] {
-      margin-right: 42px;
+        margin-right: 42px;
     }
 
     // keep paragraphs from breaking when flowing around image
     .sqs-block-content p {
-      overflow: hidden;
+        overflow: hidden;
     }
+
     .sqs-block-content {
-      ol li p,
-      ul li p {
-        overflow: visible;
-      }
+
+        ol li p,
+        ul li p {
+            overflow: visible;
+        }
     }
-    
+
     // keep markdown-block quote below float
     .markdown-block {
-      overflow: hidden;
+        overflow: hidden;
 
     }
-  }
+}
 
 
-  /*----------  MOBILE  ----------*/
+/*----------  MOBILE  ----------*/
 
 
-  // MOBILE: remove margin float image
-  @media screen and (max-width: 640px) {
+// MOBILE: remove margin float image
+@media screen and (max-width: 640px) {
+
     #@{bio-my-story},
     #@{bio-my-work},
     #@{bio-my-commitment},
     #@{services-clinical},
     #@{services-yoga},
-    #@{services-massage}  {
-      .sqs-block[class*=float-left] {
-        margin-right: 0;
-      }
+    #@{services-massage} {
+        .sqs-block[class*=float-left] {
+            margin-right: 0;
+        }
     }
-  }
+}
 
 /*=====  End of FINAL LANDING PAGES for SERVICES & BIO pages  ======*/
+/*#endregion SERVICES & BIO PAGES */
+
+/*#region NEWSLETTER FORM BLOCK */
+/*=============================================
+=            NEWSLETTER FORM BLOCK            =
+=============================================*/
+
+/*----------  Side-by-side fields  ----------*/
 
 
+#newsletter-sign-up {
+    background-color: @uh-ochre-bright  !important;
+}
 
+#newsletter-sign-up .sqs-block-form {
+    padding-top: 0;
+}
+
+
+#newsletter-sign-up div.Index-page-content {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+#newsletter-sign-up h2 {
+    font-family: 'Notera';
+    font-size: 3em;
+    line-height: 0.5em;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 0em;
+    margin-top: 0.25em;
+    margin-bottom: 0em !important;
+    text-transform: none;
+    padding-top: 12px;
+}
+
+/* change inherent margins above heading and subhead block  */
+#block-5df1830890c9a20b873a46f0 p {
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+
+/* remove sqs field labels above each field box */
+#newsletter-sign-up label.title {
+    display: none !important;
+}
+
+/* field contents font */
+#newsletter-sign-up form input.field-element {
+    font-family: 'Nunito' !important;
+    font-size: 0.9em !important;
+    border: none !important;
+    border-radius: 0px !important;
+    border: none;
+    height: 45px;
+}
+
+/* Submit Button */
+#newsletter-sign-up form input.button {
+    //  border: none !important;
+    //  border-radius: 3px !important;
+    font-weight: 700;
+    font-size: 12.5px;
+    background-color: @uh-teal;
+    height: 45px;
+}
+
+
+/* margin below each field */
+#newsletter-sign-up .form-wrapper .field-list .field,
+#newsletter-sign-up .form-button-wrapper {
+    margin-bottom: 12px !important;
+}
+
+/* margin above each field element */
+#newsletter-sign-up .form-wrapper .field-list .field-element {
+    margin-top: 0px !important;
+}
+
+
+/* Form error colour */
+#newsletter-sign-up .field-error {
+    background: @uh-coral url('//assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png') no-repeat 9px 50%;
+}
+
+/*----------  DESKTOP only  -  fields side by side  ----------*/
+
+@media only screen and (min-width: 851px) {
+    #newsletter-sign-up .form {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #newsletter-sign-up .sqs-block-form {
+        width: 100%;
+    }
+
+    #newsletter-sign-up .field-list.clear {
+        text-align: right;
+        display: inline-block;
+        width: 74.5%;
+    }
+
+    #newsletter-sign-up .form-item.field.email,
+    #newsletter-sign-up .form-item.field.text {
+        display: inline-block;
+        min-width: 47.5%;
+        text-align: left;
+        margin: 0 0;
+        margin-right: 2%;
+    }
+
+    #newsletter-sign-up .form-item.field.email {
+        min-width: 47.5%;
+        margin-right: 2%;
+    }
+
+    #newsletter-sign-up .form-button-wrapper {
+        width: 25%;
+        margin: 0;
+        float: right;
+        text-align: left;
+    }
+}
+
+/*=====  End of NEWSLETTER FORM BLOCK  ======*/
+/*#endregion NEWSLETTER FORM BLOCK */
+
+/*#region old site stuff */
 
 /*====================================================
 =            SUMMARY BLOCKS AS PAGE TITLES            =
@@ -567,465 +890,321 @@
 /*=====  End of SUMMARY BLOCK AS PAGE TITLES  ======*/
 
 
-
-
-/*=====================================================
-=            FEATURED BLOG POST INDEX PAGE            =
-=====================================================*/
-  #featured-blog-posts .sqs-block-image .design-layout-collage .intrinsic {
-    left: 0;
-    width: 100%;
-  }
-
-  #featured-blog-posts .sqs-block-image .design-layout-collage .image-card-wrapper {
-    width: 100%;
-    margin-top: inherit;
-  }
-
-  #featured-blog-posts .sqs-block-image .design-layout-collage .image-card {
-    padding: 10px 0 0 0;
-    background-color: rgba(255,255,255,0);
-  }
-
-  #featured-blog-posts .sqs-block.image-block.sqs-block-image.sqs-text-ready {
-    padding-bottom: 0 !important;
-  }
-
-  #featured-blog-posts h3 a, #featured-blog-posts p a {
-    border: none;
-  }
-
-  /* Blog post Headline font */
-  #featured-blog-posts h3, #featured-blog-posts h3 a,
-  #featured-blog-posts h6, #featured-blog-posts h6 a {
-    font-family: haboro-soft-condensed;
-    font-weight: 600;
-    font-size: 15px;
-    //line-height: 1.4em;
-    letter-spacing: .1em;
-    //background: red;
-  }
-
-  /* Blog post Category font */
-  #featured-blog-posts h6, #featured-blog-posts h6 a {
-    text-transform: uppercase;
-    font-family: haboro-soft-extended;
-    font-size: 11px !important;
-    font-weight: 400;
-    color: #737373;
-    margin: 0;
-  }
-  #featured-blog-posts h6 a {
-    background-color: @uh-grey-light;
-    padding: 3px 5px;
-  }
-  #featured-blog-posts h6 a:hover {
-    color: @uh-grey-dark;
-    transition: color .15s ease-out;
-  }
-
-
-  /* Blog post Category spacing (markdown)  */
-  #featured-blog-posts div .markdown-block {
-    // margin-top: -9px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    color: yellow !important;
-  }
-
-  /* remove spacing from Blog Headline  */
-  #featured-blog-posts {
-    div h3, div h3 a {
-      margin-top: -9px;
-      margin-bottom: 0px;
-    }
-  }
-
-  /* remove spacing from 'read more'  */
-  #featured-blog-posts div.sqs-block-content p, 
-  #featured-blog-posts div.sqs-block-content p a {
-    margin-top: .25em;
-  }
-
-/*=====  End of FEATURED BLOG POST INDEX PAGE  ======*/
-
-
-
-
-/*=============================================
-=            NEWSLETTER FORM BLOCK            =
-=============================================*/
-
-  /*----------  Side-by-side fields  ----------*/
-
-
-  #newsletter-sign-up {
-  background-color:@uh-ochre-bright !important;
-  }
-
-  #newsletter-sign-up .sqs-block-form {
-    padding-top: 0;
-  }
-
-
-  #newsletter-sign-up div.Index-page-content {
-    padding-top: 16px !important;
-    padding-bottom: 16px !important;
-  }
-
-  #newsletter-sign-up h2 {
-    font-family: 'Notera';
-    font-size: 3em;
-    line-height: 0.5em;
-    font-style: normal;
-    font-weight:100; 
-    letter-spacing:0em;
-    margin-top: 0.25em; 
-    margin-bottom:0em !important;
-    text-transform: none;
-    padding-top: 12px;
-  }
-
-  /* change inherent margins above heading and subhead block  */
-  #block-5df1830890c9a20b873a46f0 p {
-    margin-top: .75em;
-    margin-bottom: .75em;
-  }
-
-  /* remove sqs field labels above each field box */
-  #newsletter-sign-up label.title {
-    display:none !important;
-  }
-
-  /* field contents font */
-  #newsletter-sign-up form input.field-element {
-    font-family: 'Nunito' !important;  
-    font-size: 0.9em !important;
-    border: none !important;
-    border-radius: 0px !important;
-    border: none;
-    height: 45px;
-  }
-
-  /* Submit Button */
-  #newsletter-sign-up form input.button {
-  //  border: none !important;
-  //  border-radius: 3px !important;
-    font-weight: 700;
-    font-size: 12.5px;
-    background-color: @uh-teal;
-    height: 45px;
-  }
-
-
-  /* margin below each field */
-  #newsletter-sign-up .form-wrapper .field-list .field,
-  #newsletter-sign-up .form-button-wrapper {
-    margin-bottom: 12px !important;
-  }
-
-  /* margin above each field element */
-  #newsletter-sign-up .form-wrapper .field-list .field-element {  margin-top: 0px !important;
-  }
-
-
-  /* Form error colour */
-  #newsletter-sign-up .field-error {
-    background: @uh-coral url('//assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png') no-repeat 9px 50%;
-  }
-
-  /*----------  DESKTOP only  -  fields side by side  ----------*/
-
-  @media only screen and (min-width: 851px) {
-    #newsletter-sign-up .form {
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;  
-    }
-
-    #newsletter-sign-up .sqs-block-form {
-    width: 100%;
-    }
-    #newsletter-sign-up .field-list.clear {
-      text-align:right;
-      display:inline-block;
-      width:74.5%;
-    }
-    #newsletter-sign-up .form-item.field.email, #newsletter-sign-up .form-item.field.text  {
-    display: inline-block;
-    min-width: 47.5%;
-      text-align:left;
-      margin: 0 0;
-      margin-right: 2%;
-    }
-    #newsletter-sign-up .form-item.field.email {
-    min-width: 47.5%;
-    margin-right: 2%;
-    }
-    #newsletter-sign-up .form-button-wrapper {
-      width:25%;
-      margin: 0;
-      float:right;
-      text-align: left;
-    }
-  }
-
-/*=====  End of NEWSLETTER FORM BLOCK  ======*/
-
-
-
-
 /*=============================================
 =            OLD HOME PAGE            =
 =============================================*/
 
-  /* PAGE: Home Page
+/* PAGE: Home Page
     News-Latest-Posts background colour */
-  #section-news-latest-posts {
+#section-news-latest-posts {
     background-color: #F8F8F7 !important;
-  }
+}
 
 
-  /* PAGE: Home Page
+/* PAGE: Home Page
     HEALING WITH HERBS text header 
     links: remove underlines */
-  h2 a { border-bottom-style: none !important; }
-  /* padding reduction */
-  #block-yui_3_17_2_5_1509555956994_4640 { margin-top: -20px !important; margin-bottom: -10px }
-  /* change only this h2 header link size */
-  #block-yui_3_17_2_5_1509555956994_4640 h2 {font-size:133%;} 
-  /* change only on mobile  */
-  @media only screen and (max-width: 740px) { 
-    #block-yui_3_17_2_5_1509555956994_4640 h2 {font-size:105%;} 
-    #block-yui_3_17_2_5_1509555956994_4640  { margin-top: -33px !important;} 
+h2 a {
+    border-bottom-style: none !important;
+}
 
-  }
+/* padding reduction */
+#block-yui_3_17_2_5_1509555956994_4640 {
+    margin-top: -20px !important;
+    margin-bottom: -10px
+}
+
+/* change only this h2 header link size */
+#block-yui_3_17_2_5_1509555956994_4640 h2 {
+    font-size: 133%;
+}
+
+/* change only on mobile  */
+@media only screen and (max-width: 740px) {
+    #block-yui_3_17_2_5_1509555956994_4640 h2 {
+        font-size: 105%;
+    }
+
+    #block-yui_3_17_2_5_1509555956994_4640 {
+        margin-top: -33px !important;
+    }
+
+}
 
 
 
-  /* PAGE: Healing Herbal Medicine
+/* PAGE: Healing Herbal Medicine
     links: remove underlines */
 
-  #block-yui_3_17_2_2_1508949894256_9134 h2 a,
-  #block-yui_3_17_2_2_1508949894256_9134 p a {
-        border-bottom-style: none !important;
-  }
+#block-yui_3_17_2_2_1508949894256_9134 h2 a,
+#block-yui_3_17_2_2_1508949894256_9134 p a {
+    border-bottom-style: none !important;
+}
 
-  #block-yui_3_17_2_2_1508949894256_9134 p a {
+#block-yui_3_17_2_2_1508949894256_9134 p a {
     color: inherit !important;
-  }
+}
+
 /*=====  End of OLD HOME PAGE  ======*/
 
+/*#endregion old site stuff */
 
-
+/*#region BLOG-LIST */
 /*=============================================
 =            BLOG-LIST            =
 =============================================*/
 
-  //  BLOG ENTRY Padding (desktop & mobile)
-  .BlogItem {
+//  BLOG ENTRY Padding (desktop & mobile)
+.BlogItem {
     padding-left: 21.8%;
     padding-right: 21.8%;
-    }
-  @media screen and (max-width: 1189px) {
-    .BlogItem {
-      padding-left: 18%;
-      padding-right: 18%;
-    }
-  }  
-  @media screen and (max-width: 1127px) {
-    .BlogItem {
-      padding-left: 13%;
-      padding-right: 13%;
-    }
-  }  
-  @media screen and (max-width: 480px) {
-    .BlogItem {
-      padding-left: 0%;
-      padding-right: 0%;
-    }
-  }  
+}
 
-  header .BlogList-filter,
-  .BlogList-item-meta a {
+@media screen and (max-width: 1189px) {
+    .BlogItem {
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+}
+
+@media screen and (max-width: 1127px) {
+    .BlogItem {
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .BlogItem {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
+
+header .BlogList-filter,
+.BlogList-item-meta a {
     background-color: @uh-grey-light;
     padding: 3px 5px;
-  }
+}
 
-  // Blog list padding top
-    .Main--blog-list  {
+// Blog list padding top
+.Main--blog-list {
     padding-top: 20px !important;
-  }
+}
 
 /*=====  End of BLOG-LIST  ======*/
+/*#endregion BLOG-LIST */
+
+/*#region SHOP */
+/*=============================================
+=            SHOP                             =
+=============================================*/
+	#@{shop-page} {
+		
+		/* li.ProductList-filter-list-item:hover a.ProductList-filter-list-item-link {
+			color: @uh-teal-med !important;
+		} */
+/* 		li.ProductList-filter-list-item.ProductList-filter-list-item--active a.ProductList-filter-list-item-link {
+			color: @uh-teal !important;
+		}
+ */	}
 
 
+/*=====  End of SHOP                   ======*/
+/*#endregion SHOP */
+
+/*#region FOOTER */
 /*=============================================
 =            FOOTER            =
 =============================================*/
 
-  .Footer-blocks--top { display: none !important }
+.Footer-blocks--top {
+    display: none !important
+}
 
-  .sqs-licensed-asset-preview-bar { display: none !important }
+.sqs-licensed-asset-preview-bar {
+    display: none !important
+}
 
-  .Footer-blocks--middle { padding: 1px !important; }
+.Footer-blocks--middle {
+    padding: 1px !important;
+}
 
 /*=====  End of FOOTER  ======*/
+/*#endregion FOOTER */
 
-
+/*#region TESTIMONIALS */
 
 /*=============================================================
 =            TESTIMONIAL SLIDER from SquareStud.io            =
 =============================================================*/
 
-  .sqs-gallery-thumbnails.sqs-gallery-design-strip {
-      left: 0 !important;
-      width: auto !important;
-      .sqs-wrapper {
-          display: block !important;
-          left: 50% !important;
-          transform: translateX(-50%) !important;
-          -ms-transform: translateX(-50%) !important;
-          -moz-transform: translateX(-50%) !important;
-          -webkit-transform: translateX(-50%) !important;
-          float: left !important;
-          width: auto !important;
-      }
-      img {
-          height: 10px !important;
-          width: 10px !important;
-          margin-right: 5px;
-          border-radius: 100%;
-          -webkit-filter: brightness(100) !important;
-          -moz-filter: brightness(100) !important;
-          -ms-filter: brightness(100) !important;
-          filter: brightness(100) !important;
-      }
-  }
+.sqs-gallery-thumbnails.sqs-gallery-design-strip {
+    left: 0 !important;
+    width: auto !important;
 
-  .sqs-gallery-block-slideshow:before {
-      content: "x";
-      font-size: 0px;
-      height: 46px;
-      width: 46px;
-      background: url('http://static1.squarespace.com/static/54dcf1f3e4b03174c3dc75f5/t/56ccc38001dbaeafab2370bd/1456259968882/quotemarks.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      letter-spacing: -1px;
-      display: block;
-      position: absolute;
-      text-align: center !important;
-      width: 100% !important;
-      top: 0 !important;
-      filter: invert(100%) !important;
-  }
+    .sqs-wrapper {
+        display: block !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        -ms-transform: translateX(-50%) !important;
+        -moz-transform: translateX(-50%) !important;
+        -webkit-transform: translateX(-50%) !important;
+        float: left !important;
+        width: auto !important;
+    }
 
-  .sqs-gallery-block-slideshow {
-      padding-top: 40px;
-      background: none;
-      max-height: 180px !important;
-      overflow: hidden !important;
-      .slide {
-          max-height: 180px;
-      }
-      .sqs-gallery-design-stacked-slide {
-          overflow: hidden;
-          img {
-              display: none;
-          }
-      }
-      .meta {
-          background: none !important;
-          width: 60% !important;
-          text-align: center;
-          left: 50% !important;
-          transform: translate(-50%, 0%) !important;
-          -moz-transform: translate(-50%, 0%) !important;
-          -ms-transform: translate(-50%, 0%) !important;
-          -webkit-transform: translate(-50%, 0%) !important;
-          top: 0px !important;
-          .meta-inside {
-              padding: 0 !important;
-              position: absolute;
-              width: 80% !important;
-              overflow: hidden !important;
-              top: 50% !important;
-              left: 50% !important;
-              -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-              -moz-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-          }
-          .meta-title {
-              color: #444;
-              font-weight: 400;
-              letter-spacing: 1.2px;
-              line-height: 24px;
-              font-size: 16px;
-              margin-bottom: 18px;
-          }
-          .meta-description p {
-              color: #333;
-              text-transform: uppercase;
-              letter-spacing: 2px;
-              font-weight: 900;
-              font-size: 12px;
-          }
-      }
-      .sqs-gallery-controls {
-          .previous,
-          .next {
-              background: none;
-              color: #888 !important;
-              top: 40% !important;
-              width: 10px !important;
-              transition: all ease-in-out 400ms !important;
-          }
-          .previous:before,
-          .next:before {
-              font-size: 16px;
-          }
-          .previous:hover,
-          .next:hover {
-              background: none !important;
-              color: #000 !important;
-          }
-      }
-  }
+    img {
+        height: 10px !important;
+        width: 10px !important;
+        margin-right: 5px;
+        border-radius: 100%;
+        -webkit-filter: brightness(100) !important;
+        -moz-filter: brightness(100) !important;
+        -ms-filter: brightness(100) !important;
+        filter: brightness(100) !important;
+    }
+}
 
-  @media (min-width:668px) and (max-width:1024px) {
-      .sqs-gallery-block-slideshow {
-          max-height: 210px !important;
-          .slide {
-              max-height: 210px !important;
-          }
-          .meta {
-              display: block !important;
-              max-width: 100% !important;
-              height: 100% !important;
-              width: 80% !important;
-          }
-      }
-  }
+.sqs-gallery-block-slideshow:before {
+    content: "x";
+    font-size: 0px;
+    height: 46px;
+    width: 46px;
+    background: url('http://static1.squarespace.com/static/54dcf1f3e4b03174c3dc75f5/t/56ccc38001dbaeafab2370bd/1456259968882/quotemarks.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    letter-spacing: -1px;
+    display: block;
+    position: absolute;
+    text-align: center !important;
+    width: 100% !important;
+    top: 0 !important;
+    filter: invert(100%) !important;
+}
 
-  @media (max-width:667px) {
-      .sqs-gallery-block-slideshow {
-          .sqs-gallery-design-stacked {
-              height: 260px !important;
-          }
-          max-height: 260px !important;
-          .slide {
-              max-height: 260px !important;
-          }
-          .meta {
-              display: block !important;
-              max-width: 100% !important;
-              height: 100% !important;
-              width: 100% !important;
-          }
-      }
-  }
+.sqs-gallery-block-slideshow {
+    padding-top: 40px;
+    background: none;
+    max-height: 180px !important;
+    overflow: hidden !important;
+
+    .slide {
+        max-height: 180px;
+    }
+
+    .sqs-gallery-design-stacked-slide {
+        overflow: hidden;
+
+        img {
+            display: none;
+        }
+    }
+
+    .meta {
+        background: none !important;
+        width: 60% !important;
+        text-align: center;
+        left: 50% !important;
+        transform: translate(-50%, 0%) !important;
+        -moz-transform: translate(-50%, 0%) !important;
+        -ms-transform: translate(-50%, 0%) !important;
+        -webkit-transform: translate(-50%, 0%) !important;
+        top: 0px !important;
+
+        .meta-inside {
+            padding: 0 !important;
+            position: absolute;
+            width: 80% !important;
+            overflow: hidden !important;
+            top: 50% !important;
+            left: 50% !important;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .meta-title {
+            color: #444;
+            font-weight: 400;
+            letter-spacing: 1.2px;
+            line-height: 24px;
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+
+        .meta-description p {
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+            font-size: 12px;
+        }
+    }
+
+    .sqs-gallery-controls {
+
+        .previous,
+        .next {
+            background: none;
+            color: #888 !important;
+            top: 40% !important;
+            width: 10px !important;
+            transition: all ease-in-out 400ms !important;
+        }
+
+        .previous:before,
+        .next:before {
+            font-size: 16px;
+        }
+
+        .previous:hover,
+        .next:hover {
+            background: none !important;
+            color: #000 !important;
+        }
+    }
+}
+
+@media (min-width:668px) and (max-width:1024px) {
+    .sqs-gallery-block-slideshow {
+        max-height: 210px !important;
+
+        .slide {
+            max-height: 210px !important;
+        }
+
+        .meta {
+            display: block !important;
+            max-width: 100% !important;
+            height: 100% !important;
+            width: 80% !important;
+        }
+    }
+}
+
+@media (max-width:667px) {
+    .sqs-gallery-block-slideshow {
+        .sqs-gallery-design-stacked {
+            height: 260px !important;
+        }
+
+        max-height: 260px !important;
+
+        .slide {
+            max-height: 260px !important;
+        }
+
+        .meta {
+            display: block !important;
+            max-width: 100% !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+    }
+}
 
 
 /*=====  End of TESTIMONIAL SLIDER from SquareStud.io  ======*/
@@ -1035,20 +1214,22 @@
 =            TESTIMONIALS SECTION            =
 ============================================*/
 
-  #testimonials { * {
-      color: white !important;
+#testimonials {
+    * {
+        color: white !important;
     }
-  }
-  #testimonials {
+}
+
+#testimonials {
     margin-top: 6em;
     margin-bottom: 6em;
-  }
+}
 
-  /* PAGE: Home Page
+/* PAGE: Home Page
     old Newsletter box */
-    #subscribe-newsletter {
-      padding-top: 16px !important;
-    }
-    
-/*=====  End of TESTIMONIALS SECTION  ======*/
+#subscribe-newsletter {
+    padding-top: 16px !important;
+}
 
+/*=====  End of TESTIMONIALS SECTION  ======*/
+/*#endregion TESTIMONIALS */
