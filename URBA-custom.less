@@ -1,5 +1,5 @@
 /* UH Website CSS */
-/* 2020-04-28  */
+/* 2020-04-29  */
 
 /*#region FONTS & HEADER */
 /* Fix font flicker on load (from silvabokis.com) */
@@ -328,7 +328,6 @@
 
 
 /*#region FEATURED JOURNAL POSTS INDEX SECTION */
-
 /*=====================================================
 =            FEATURED JOURNAL POST INDEX SECTION         =
 =====================================================*/
@@ -340,8 +339,8 @@
 
 		/* Blog post Category spacing (markdown)  */
 		div.markdown-block {
-			padding-top: 0.5em;
-			padding-bottom: 0.5em;
+			padding-top: 0.825em;
+			padding-bottom: 0em;
 			// color: yellow !important;
 		}
 
@@ -355,118 +354,59 @@
 		/* remove spacing from 'read more'  */
 		div.sqs-block-content p,
 		div.sqs-block-content p a {
-			margin-top: .25em;
+			margin-top: .65em;
 		}
 
 		h3 a,
 		p a {
 			border: none;
 		}
+		
+		/* Blog post Headline font */
+		h3,
+		h3 a {
+			font-family: haboro-soft-condensed;
+			font-weight: 600;
+			font-size: 15px;
+			letter-spacing: .1em;
+		}
 
+		
+		/* Read More font */
+		p, p a {
+			font-size: 14px;
+		}
+		
+		
 		/* Blog post Category font */
 		div.markdown-block h6,
 		div.markdown-block h6 a {
 			text-transform: uppercase;
-			font-family: haboro-soft-extended;
-			font-size: 11px !important;
+			font-family: haboro-soft !important;
+			font-size: 10px !important;
 			font-weight: 400;
-			color: #737373;
-			margin: 0;
+			letter-spacing: .1em;
+			color: rgba(29,29,29,.4);
+			-webkit-transition: color .15s ease-in-out;
+			-moz-transition: color .15s ease-in-out;
+			-ms-transition: color .15s ease-in-out;
+			-o-transition: color .15s ease-in-out;
+			transition: color .15s ease-in-out;
 		}
-		div.markdown-block h6 a {
-			background-color: @uh-grey-light;
-			padding: 3px 5px;
-		}
+		// div.markdown-block h6 a {
+		// 	background-color: @uh-grey-light;
+		// 	padding: 3px 5px;
+		// }
 
 		div.markdown-block h6 a:hover {
-			color: @uh-grey-dark;
-			transition: color .15s ease-out;
+			// color: @uh-grey-dark;
+			// transition: color .15s ease-out;
+			color: rgba(29,29,29,.2);
 		}
 
-		/* Blog post Headline font */
-		h3,
-		h3 a,
-		h6,
-		h6 a {
-			font-family: haboro-soft-condensed;
-			font-weight: 600;
-			font-size: 15px;
-			//line-height: 1.4em;
-			letter-spacing: .1em;
-			//background: red;
-		}
+	
 	}	
 
-
-	// testing new colours for categories
-
-	#featured-blog-posts {
-		div .markdown-block h6,
-		div .markdown-block h6 a {
-			text-transform: uppercase;
-			font-family: haboro-soft-extended;
-			font-size: 11px !important;
-			font-weight: 400;
-			color: white;
-			margin: 0;
-		}
-		div.markdown-block h6 a {
-			background-color: @uh-teal-bg;
-			padding: 3px 5px;
-		}
-	}
-
-	// test 2
-	#featured-blog-posts {
-		div .markdown-block h6,
-		div .markdown-block h6 a {
-			text-transform: uppercase;
-			font-family: haboro-soft-extended;
-			font-size: 11px !important;
-			font-weight: 400;
-			color: @uh-grey-dark;
-			margin: 0;
-		}
-		div.markdown-block h6 a {
-			background-color: @uh-teal-light;
-			padding: 3px 5px;
-		}
-	}
-
-	// test 3
-	#featured-blog-posts {
-		div .markdown-block h6,
-		div .markdown-block h6 a {
-			text-transform: uppercase;
-			font-family: haboro-soft-extended;
-			font-size: 11px !important;
-			font-weight: 400;
-			color: white;
-			margin: 0;
-		}
-		div.markdown-block h6 a {
-			background-color: @uh-teal-med;
-			padding: 3px 5px;
-		}
-	} 
-/* 
-	// test 4
-	#featured-blog-posts {
-		div .markdown-block h6,
-		div .markdown-block h6 a {
-			text-transform: uppercase;
-			font-family: haboro-soft-extended;
-			font-size: 11px !important;
-			font-weight: 400;
-			color: @uh-teal;
-			margin: 0;
-		}
-		div.markdown-block h6 a {
-			background-color: @uh-grey-light;
-			padding: 3px 5px;
-		}
-	}
- */
 /*=====  End of FEATURED JOURNAL POST INDEX SECTION  ======*/
 /*#endregion FEATURED JOURNAL POST INDEX SECTION */
 
@@ -981,11 +921,16 @@ h2 a {
     }
 }
 
-header .BlogList-filter,
-.BlogList-item-meta a {
-    background-color: @uh-grey-light;
-    padding: 3px 5px;
+
+/* Blog List Filter Header */
+header .BlogList-filter {
 }
+
+
+// .BlogList-item-meta a {
+//     background-color: @uh-grey-light;
+//     padding: 3px 5px;
+// }
 
 // Blog list padding top
 .Main--blog-list {

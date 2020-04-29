@@ -1,5 +1,5 @@
 /* UH Website CSS */
-/* 2020-04-28  */
+/* 2020-04-29  */
 /*#region FONTS & HEADER */
 /* Fix font flicker on load (from silvabokis.com) */
 #desktopNav,
@@ -223,15 +223,16 @@ h2 strong {
   /* Blog post Category spacing (markdown)  */
   /* remove spacing from Blog Headline  */
   /* remove spacing from 'read more'  */
-  /* Blog post Category font */
   /* Blog post Headline font */
+  /* Read More font */
+  /* Blog post Category font */
 }
 #featured-blog-posts .sqs-block.image-block.sqs-block-image.sqs-text-ready {
   padding-bottom: 0 !important;
 }
 #featured-blog-posts div.markdown-block {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.825em;
+  padding-bottom: 0em;
 }
 #featured-blog-posts div h3,
 #featured-blog-posts div h3 a {
@@ -240,95 +241,40 @@ h2 strong {
 }
 #featured-blog-posts div.sqs-block-content p,
 #featured-blog-posts div.sqs-block-content p a {
-  margin-top: 0.25em;
+  margin-top: 0.65em;
 }
 #featured-blog-posts h3 a,
 #featured-blog-posts p a {
   border: none;
 }
-#featured-blog-posts div.markdown-block h6,
-#featured-blog-posts div.markdown-block h6 a {
-  text-transform: uppercase;
-  font-family: haboro-soft-extended;
-  font-size: 11px !important;
-  font-weight: 400;
-  color: #737373;
-  margin: 0;
-}
-#featured-blog-posts div.markdown-block h6 a {
-  background-color: hsl(0, 0%, 96%);
-  padding: 3px 5px;
-}
-#featured-blog-posts div.markdown-block h6 a:hover {
-  color: #545454;
-  transition: color 0.15s ease-out;
-}
 #featured-blog-posts h3,
-#featured-blog-posts h3 a,
-#featured-blog-posts h6,
-#featured-blog-posts h6 a {
+#featured-blog-posts h3 a {
   font-family: haboro-soft-condensed;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 0.1em;
 }
-#featured-blog-posts div .markdown-block h6,
-#featured-blog-posts div .markdown-block h6 a {
-  text-transform: uppercase;
-  font-family: haboro-soft-extended;
-  font-size: 11px !important;
-  font-weight: 400;
-  color: white;
-  margin: 0;
+#featured-blog-posts p,
+#featured-blog-posts p a {
+  font-size: 14px;
 }
+#featured-blog-posts div.markdown-block h6,
 #featured-blog-posts div.markdown-block h6 a {
-  background-color: hsl(164, 37.3%, 49.4%);
-  padding: 3px 5px;
-}
-#featured-blog-posts div .markdown-block h6,
-#featured-blog-posts div .markdown-block h6 a {
   text-transform: uppercase;
-  font-family: haboro-soft-extended;
-  font-size: 11px !important;
+  font-family: haboro-soft !important;
+  font-size: 10px !important;
   font-weight: 400;
-  color: #545454;
-  margin: 0;
+  letter-spacing: 0.1em;
+  color: rgba(29, 29, 29, 0.4);
+  -webkit-transition: color 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out;
+  -ms-transition: color 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
 }
-#featured-blog-posts div.markdown-block h6 a {
-  background-color: hsl(163, 55%, 85%);
-  padding: 3px 5px;
+#featured-blog-posts div.markdown-block h6 a:hover {
+  color: rgba(29, 29, 29, 0.2);
 }
-#featured-blog-posts div .markdown-block h6,
-#featured-blog-posts div .markdown-block h6 a {
-  text-transform: uppercase;
-  font-family: haboro-soft-extended;
-  font-size: 11px !important;
-  font-weight: 400;
-  color: white;
-  margin: 0;
-}
-#featured-blog-posts div.markdown-block h6 a {
-  background-color: hsl(164, 42%, 64%);
-  padding: 3px 5px;
-}
-/* 
-	// test 4
-	#featured-blog-posts {
-		div .markdown-block h6,
-		div .markdown-block h6 a {
-			text-transform: uppercase;
-			font-family: haboro-soft-extended;
-			font-size: 11px !important;
-			font-weight: 400;
-			color: @uh-teal;
-			margin: 0;
-		}
-		div.markdown-block h6 a {
-			background-color: @uh-grey-light;
-			padding: 3px 5px;
-		}
-	}
- */
 /*=====  End of FEATURED JOURNAL POST INDEX SECTION  ======*/
 /*#endregion FEATURED JOURNAL POST INDEX SECTION */
 /*#endregion NEW HOME INDEX PAGE*/
@@ -810,11 +756,7 @@ h2 a {
     padding-right: 0%;
   }
 }
-header .BlogList-filter,
-.BlogList-item-meta a {
-  background-color: hsl(0, 0%, 96%);
-  padding: 3px 5px;
-}
+/* Blog List Filter Header */
 .Main--blog-list {
   padding-top: 20px !important;
 }
