@@ -337,21 +337,21 @@
 			padding-bottom: 0 !important;
 		}
 
-		/* Blog post Category spacing (markdown)  */
+		// Blog post Category spacing (markdown) 
 		div.markdown-block {
 			padding-top: 0.825em;
 			padding-bottom: 0em;
 			// color: yellow !important;
 		}
 
-		/* remove spacing from Blog Headline  */
+		// remove spacing from Blog Headline 
 		div h3,
 		div h3 a {
 			margin-top: -9px;
 			margin-bottom: 0px;
 		}
 
-		/* remove spacing from 'read more'  */
+		// remove spacing from 'read more' 
 		div.sqs-block-content p,
 		div.sqs-block-content p a {
 			margin-top: .65em;
@@ -362,7 +362,7 @@
 			border: none;
 		}
 		
-		/* Blog post Headline font */
+		// Blog post Headline font
 		h3,
 		h3 a {
 			font-family: haboro-soft-condensed;
@@ -372,13 +372,13 @@
 		}
 
 		
-		/* Read More font */
+		// Read More font
 		p, p a {
 			font-size: 14px;
 		}
 		
 		
-		/* Blog post Category font */
+		// Blog post Category font
 		div.markdown-block h6,
 		div.markdown-block h6 a {
 			text-transform: uppercase;
@@ -614,14 +614,6 @@ div #@{services-page-header} {
         padding-bottom: 2.0em;
     }
 
-    /*     
-    .markdown-block:first-of-type h2 {
-      text-align:center;
-      white-space:pre-wrap;
-      padding-bottom: .5em;
-      padding-top: 0.35em;
-    }
-  */
 
     // pullquote using markdown block
     blockquote {
@@ -688,7 +680,7 @@ div #@{services-page-header} {
 /*=====  End of FINAL LANDING PAGES for SERVICES & BIO pages  ======*/
 /*#endregion SERVICES & BIO PAGES */
 
-/*#region NEWSLETTER FORM BLOCK */
+/*#region INDEX NEWSLETTER FORM BLOCK */
 /*=============================================
 =            NEWSLETTER FORM BLOCK            =
 =============================================*/
@@ -813,8 +805,8 @@ div #@{services-page-header} {
     }
 }
 
-/*=====  End of NEWSLETTER FORM BLOCK  ======*/
-/*#endregion NEWSLETTER FORM BLOCK */
+/*=====  End of INDEX NEWSLETTER FORM BLOCK  ======*/
+/*#endregion INDEX NEWSLETTER FORM BLOCK */
 
 /*#region old site stuff */
 
@@ -944,15 +936,7 @@ header .BlogList-filter {
 /*=============================================
 =            SHOP                             =
 =============================================*/
-	#@{shop-page} {
-		
-		/* li.ProductList-filter-list-item:hover a.ProductList-filter-list-item-link {
-			color: @uh-teal-med !important;
-		} */
-/* 		li.ProductList-filter-list-item.ProductList-filter-list-item--active a.ProductList-filter-list-item-link {
-			color: @uh-teal !important;
-		}
- */	}
+
 
 
 /*=====  End of SHOP                   ======*/
@@ -963,17 +947,17 @@ header .BlogList-filter {
 =            FOOTER            =
 =============================================*/
 
-.Footer-blocks--top {
-    // display: none !important
-}
+// .Footer-blocks--top {
+//     // display: none !important
+// }
 
-.sqs-licensed-asset-preview-bar {
-    // display: none !important
-}
+// .sqs-licensed-asset-preview-bar {
+//     // display: none !important
+// }
 
-.Footer-blocks--middle {
-    padding: 1px !important;
-}
+// .Footer-blocks--middle {
+//     padding: 1px !important;
+// }
 
 /*=====  End of FOOTER  ======*/
 /*#endregion FOOTER */
@@ -1178,3 +1162,194 @@ header .BlogList-filter {
 
 /*=====  End of TESTIMONIALS SECTION  ======*/
 /*#endregion TESTIMONIALS */
+
+
+/*#region FOOTER TOP  NEWSLETTER FORM BLOCK */
+/*=============================================
+=       FOOTER TOP NEWSLETTER FORM BLOCK      =
+=============================================*/
+
+
+/*----------  Move padding from .Footer-inner to its children  ----------*/
+	div.Footer-inner.clear {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	div.Footer-blocks--middle {
+		padding: 1px !important;
+	}
+
+	div#footerBlocksTop,
+	div.footerMiddle,
+	div#footerBlocksBottom,
+	div.Footer-nav-group {
+		padding: 0px 74px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		div#footerBlocksTop,
+		div.footerMiddle,
+		div#footerBlocksBottom,
+		div.Footer-nav-group {
+			padding-left: 64px;
+			padding-right: 64px;
+		}
+	}
+
+	@media screen and (max-width: 960px) {
+		div#footerBlocksTop,
+		div.footerMiddle,
+		div#footerBlocksBottom,
+		div.Footer-nav-group {
+			padding-left: 48px;
+			padding-right: 48px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		div#footerBlocksTop,
+		div.footerMiddle,
+		div#footerBlocksBottom,
+		div.Footer-nav-group {
+			padding-left: 36px;
+			padding-right: 36px;
+		}
+	}
+
+	@media screen and (max-width: 640px) {
+		div#footerBlocksTop,
+		div.footerMiddle,
+		div#footerBlocksBottom,
+		div.Footer-nav-group {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+
+/*----------  Side-by-side fields  ----------*/
+#footerBlocksTop {
+    background-color: @uh-ochre-bright  !important;
+}
+
+#footerBlocksTop .sqs-block-form {
+    padding-top: 0;
+}
+
+
+#footerBlocksTop div.Index-page-content {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+#footerBlocksTop h2 {
+    font-family: 'Notera';
+    font-size: 3em;
+    line-height: 0.5em;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 0em;
+    margin-top: 0.25em;
+    margin-bottom: 0em !important;
+    text-transform: none;
+	padding-top: 12px;
+	color: @uh-grey-dark;
+}
+#footerBlocksTop p {
+	color: @uh-grey-dark;
+}
+
+
+/* change inherent margins above heading and subhead block  */
+#block-yui_3_17_2_1_1588199541873_11029 p {
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+
+/* remove sqs field labels above each field box */
+#footerBlocksTop label.title {
+    display: none !important;
+}
+
+/* field contents font */
+#footerBlocksTop form input.field-element {
+    font-family: 'Nunito' !important;
+    font-size: 0.9em !important;
+    border: none !important;
+    border-radius: 0px !important;
+    border: none;
+    height: 45px;
+}
+
+/* Submit Button */
+#footerBlocksTop form input.button {
+    //  border: none !important;
+    //  border-radius: 3px !important;
+    font-weight: 700;
+    font-size: 12.5px;
+    background-color: @uh-teal;
+    height: 45px;
+}
+
+
+/* margin below each field */
+#footerBlocksTop .form-wrapper .field-list .field,
+#footerBlocksTop .form-button-wrapper {
+    margin-bottom: 12px !important;
+}
+
+/* margin above each field element */
+#footerBlocksTop .form-wrapper .field-list .field-element {
+    margin-top: 0px !important;
+}
+
+
+/* Form error colour */
+#footerBlocksTop .field-error {
+    background: @uh-coral url('//assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png') no-repeat 9px 50%;
+}
+
+/*----------  DESKTOP only  -  fields side by side  ----------*/
+
+@media only screen and (min-width: 851px) {
+    #footerBlocksTop .form {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #footerBlocksTop .sqs-block-form {
+        width: 100%;
+    }
+
+    #footerBlocksTop .field-list.clear {
+        text-align: right;
+        display: inline-block;
+        width: 74.5%;
+    }
+
+    #footerBlocksTop .form-item.field.email,
+    #footerBlocksTop .form-item.field.text {
+        display: inline-block;
+        min-width: 47.5%;
+        text-align: left;
+        margin: 0 0;
+        margin-right: 2%;
+    }
+
+    #footerBlocksTop .form-item.field.email {
+        min-width: 47.5%;
+        margin-right: 2%;
+    }
+
+    #footerBlocksTop .form-button-wrapper {
+        width: 25%;
+        margin: 0;
+        float: right;
+        text-align: left;
+    }
+}
+
+/*=====  End of FOOTER TOP NEWSLETTER FORM BLOCK  ======*/
+/*#endregion FOOTER TOP NEWSLETTER FORM BLOCK */

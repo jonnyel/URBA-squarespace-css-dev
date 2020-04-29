@@ -219,14 +219,6 @@ h2 strong {
 /*=====================================================
 =            FEATURED JOURNAL POST INDEX SECTION         =
 =====================================================*/
-#featured-blog-posts {
-  /* Blog post Category spacing (markdown)  */
-  /* remove spacing from Blog Headline  */
-  /* remove spacing from 'read more'  */
-  /* Blog post Headline font */
-  /* Read More font */
-  /* Blog post Category font */
-}
 #featured-blog-posts .sqs-block.image-block.sqs-block-image.sqs-text-ready {
   padding-bottom: 0 !important;
 }
@@ -385,21 +377,6 @@ div #block-a3a5220cc9896ff94759 h2 {
 /*====================================================================
 =            FINAL LANDING PAGES for SERVICES & BIO pages            =
 ====================================================================*/
-#collection-5e4331f5383ee71bf8193c3e,
-#collection-5e433289e1841065260285e6,
-#collection-5e4333f8f0d10522284cb551,
-#collection-5e39b9749234572a14d9b8aa,
-#collection-5e39b9a59234572a14d9ca78,
-#collection-5e43425618e6e3448f09e57f {
-  /*     
-    .markdown-block:first-of-type h2 {
-      text-align:center;
-      white-space:pre-wrap;
-      padding-bottom: .5em;
-      padding-top: 0.35em;
-    }
-  */
-}
 #collection-5e4331f5383ee71bf8193c3e div.image-title p em,
 #collection-5e433289e1841065260285e6 div.image-title p em,
 #collection-5e4333f8f0d10522284cb551 div.image-title p em,
@@ -578,7 +555,7 @@ div #block-a3a5220cc9896ff94759 h2 {
 }
 /*=====  End of FINAL LANDING PAGES for SERVICES & BIO pages  ======*/
 /*#endregion SERVICES & BIO PAGES */
-/*#region NEWSLETTER FORM BLOCK */
+/*#region INDEX NEWSLETTER FORM BLOCK */
 /*=============================================
 =            NEWSLETTER FORM BLOCK            =
 =============================================*/
@@ -677,8 +654,8 @@ div #block-a3a5220cc9896ff94759 h2 {
     text-align: left;
   }
 }
-/*=====  End of NEWSLETTER FORM BLOCK  ======*/
-/*#endregion NEWSLETTER FORM BLOCK */
+/*=====  End of INDEX NEWSLETTER FORM BLOCK  ======*/
+/*#endregion INDEX NEWSLETTER FORM BLOCK */
 /*#region old site stuff */
 /*====================================================
 =            SUMMARY BLOCKS AS PAGE TITLES            =
@@ -766,24 +743,12 @@ h2 a {
 /*=============================================
 =            SHOP                             =
 =============================================*/
-#collection-5bc5005e4192023031781698 {
-  /* li.ProductList-filter-list-item:hover a.ProductList-filter-list-item-link {
-			color: @uh-teal-med !important;
-		} */
-  /* 		li.ProductList-filter-list-item.ProductList-filter-list-item--active a.ProductList-filter-list-item-link {
-			color: @uh-teal !important;
-		}
- */
-}
 /*=====  End of SHOP                   ======*/
 /*#endregion SHOP */
 /*#region FOOTER */
 /*=============================================
 =            FOOTER            =
 =============================================*/
-.Footer-blocks--middle {
-  padding: 1px !important;
-}
 /*=====  End of FOOTER  ======*/
 /*#endregion FOOTER */
 /*#region TESTIMONIALS */
@@ -950,3 +915,158 @@ h2 a {
 }
 /*=====  End of TESTIMONIALS SECTION  ======*/
 /*#endregion TESTIMONIALS */
+/*#region FOOTER TOP  NEWSLETTER FORM BLOCK */
+/*=============================================
+=       FOOTER TOP NEWSLETTER FORM BLOCK      =
+=============================================*/
+/*----------  Move padding from .Footer-inner to its children  ----------*/
+div.Footer-inner.clear {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+div.Footer-blocks--middle {
+  padding: 1px !important;
+}
+div#footerBlocksTop,
+div.footerMiddle,
+div#footerBlocksBottom,
+div.Footer-nav-group {
+  padding: 0px 74px;
+}
+@media screen and (max-width: 1024px) {
+  div#footerBlocksTop,
+  div.footerMiddle,
+  div#footerBlocksBottom,
+  div.Footer-nav-group {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+@media screen and (max-width: 960px) {
+  div#footerBlocksTop,
+  div.footerMiddle,
+  div#footerBlocksBottom,
+  div.Footer-nav-group {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  div#footerBlocksTop,
+  div.footerMiddle,
+  div#footerBlocksBottom,
+  div.Footer-nav-group {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+@media screen and (max-width: 640px) {
+  div#footerBlocksTop,
+  div.footerMiddle,
+  div#footerBlocksBottom,
+  div.Footer-nav-group {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/*----------  Side-by-side fields  ----------*/
+#footerBlocksTop {
+  background-color: hsl(48, 100%, 68%) !important;
+}
+#footerBlocksTop .sqs-block-form {
+  padding-top: 0;
+}
+#footerBlocksTop div.Index-page-content {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+#footerBlocksTop h2 {
+  font-family: 'Notera';
+  font-size: 3em;
+  line-height: 0.5em;
+  font-style: normal;
+  font-weight: 100;
+  letter-spacing: 0em;
+  margin-top: 0.25em;
+  margin-bottom: 0em !important;
+  text-transform: none;
+  padding-top: 12px;
+  color: #545454;
+}
+#footerBlocksTop p {
+  color: #545454;
+}
+/* change inherent margins above heading and subhead block  */
+#block-yui_3_17_2_1_1588199541873_11029 p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+/* remove sqs field labels above each field box */
+#footerBlocksTop label.title {
+  display: none !important;
+}
+/* field contents font */
+#footerBlocksTop form input.field-element {
+  font-family: 'Nunito' !important;
+  font-size: 0.9em !important;
+  border: none !important;
+  border-radius: 0px !important;
+  border: none;
+  height: 45px;
+}
+/* Submit Button */
+#footerBlocksTop form input.button {
+  font-weight: 700;
+  font-size: 12.5px;
+  background-color: hsl(164, 38%, 49%);
+  height: 45px;
+}
+/* margin below each field */
+#footerBlocksTop .form-wrapper .field-list .field,
+#footerBlocksTop .form-button-wrapper {
+  margin-bottom: 12px !important;
+}
+/* margin above each field element */
+#footerBlocksTop .form-wrapper .field-list .field-element {
+  margin-top: 0px !important;
+}
+/* Form error colour */
+#footerBlocksTop .field-error {
+  background: hsl(354, 85%, 65%) url('//assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png') no-repeat 9px 50%;
+}
+/*----------  DESKTOP only  -  fields side by side  ----------*/
+@media only screen and (min-width: 851px) {
+  #footerBlocksTop .form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #footerBlocksTop .sqs-block-form {
+    width: 100%;
+  }
+  #footerBlocksTop .field-list.clear {
+    text-align: right;
+    display: inline-block;
+    width: 74.5%;
+  }
+  #footerBlocksTop .form-item.field.email,
+  #footerBlocksTop .form-item.field.text {
+    display: inline-block;
+    min-width: 47.5%;
+    text-align: left;
+    margin: 0 0;
+    margin-right: 2%;
+  }
+  #footerBlocksTop .form-item.field.email {
+    min-width: 47.5%;
+    margin-right: 2%;
+  }
+  #footerBlocksTop .form-button-wrapper {
+    width: 25%;
+    margin: 0;
+    float: right;
+    text-align: left;
+  }
+}
+/*=====  End of FOOTER TOP NEWSLETTER FORM BLOCK  ======*/
+/*#endregion FOOTER TOP NEWSLETTER FORM BLOCK */
