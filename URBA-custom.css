@@ -925,7 +925,14 @@ div.Footer-inner.clear {
   padding-right: 0 !important;
 }
 div.Footer-blocks--middle {
-  padding: 1px !important;
+  padding: 0px !important;
+}
+nav.Footer-nav {
+  margin-right: 0px !important;
+}
+#footerBlocksMiddle div.row.sqs-row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 div#footerBlocksTop,
 div.footerMiddle,
@@ -972,6 +979,15 @@ div.Footer-nav-group {
 /*----------  Side-by-side fields  ----------*/
 #footerBlocksTop {
   background-color: hsl(48, 100%, 68%) !important;
+  padding-top: 1.1em !important;
+  padding-bottom: 0.5em !important;
+  /* change inherent margins above heading and subhead block  */
+  /* remove sqs field labels above each field box */
+  /* field contents font */
+  /* Submit Button */
+  /* margin below each field */
+  /* margin above each field element */
+  /* Form error colour */
 }
 #footerBlocksTop .sqs-block-form {
   padding-top: 0;
@@ -996,16 +1012,13 @@ div.Footer-nav-group {
 #footerBlocksTop p {
   color: #545454;
 }
-/* change inherent margins above heading and subhead block  */
-#block-yui_3_17_2_1_1588199541873_11029 p {
+#footerBlocksTop #block-yui_3_17_2_1_1588199541873_11029 p {
   margin-top: 0.75em;
   margin-bottom: 0.75em;
 }
-/* remove sqs field labels above each field box */
 #footerBlocksTop label.title {
   display: none !important;
 }
-/* field contents font */
 #footerBlocksTop form input.field-element {
   font-family: 'Nunito' !important;
   font-size: 0.9em !important;
@@ -1014,25 +1027,24 @@ div.Footer-nav-group {
   border: none;
   height: 45px;
 }
-/* Submit Button */
 #footerBlocksTop form input.button {
   font-weight: 700;
   font-size: 12.5px;
   background-color: hsl(164, 38%, 49%);
   height: 45px;
 }
-/* margin below each field */
 #footerBlocksTop .form-wrapper .field-list .field,
 #footerBlocksTop .form-button-wrapper {
   margin-bottom: 12px !important;
 }
-/* margin above each field element */
 #footerBlocksTop .form-wrapper .field-list .field-element {
   margin-top: 0px !important;
 }
-/* Form error colour */
 #footerBlocksTop .field-error {
   background: hsl(354, 85%, 65%) url('//assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png') no-repeat 9px 50%;
+}
+#footerBlocksTop div.form-submission-text p {
+  text-align: center;
 }
 /*----------  DESKTOP only  -  fields side by side  ----------*/
 @media only screen and (min-width: 851px) {

@@ -1177,8 +1177,19 @@ header .BlogList-filter {
 	}
 
 	div.Footer-blocks--middle {
-		padding: 1px !important;
+		padding: 0px !important;
 	}
+	
+	//  fix width
+	nav.Footer-nav {
+		margin-right: 0px !important;
+	}
+	#footerBlocksMiddle div.row.sqs-row {
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	} 
+	//  end fix
+
 
 	div#footerBlocksTop,
 	div.footerMiddle,
@@ -1229,127 +1240,136 @@ header .BlogList-filter {
 
 
 /*----------  Side-by-side fields  ----------*/
-#footerBlocksTop {
-    background-color: @uh-ochre-bright  !important;
-}
+	#footerBlocksTop {
+		background-color: @uh-ochre-bright  !important;
+		padding-top: 1.1em !important;
+		padding-bottom: 0.5em !important;
 
-#footerBlocksTop .sqs-block-form {
-    padding-top: 0;
-}
-
-
-#footerBlocksTop div.Index-page-content {
-    padding-top: 16px !important;
-    padding-bottom: 16px !important;
-}
-
-#footerBlocksTop h2 {
-    font-family: 'Notera';
-    font-size: 3em;
-    line-height: 0.5em;
-    font-style: normal;
-    font-weight: 100;
-    letter-spacing: 0em;
-    margin-top: 0.25em;
-    margin-bottom: 0em !important;
-    text-transform: none;
-	padding-top: 12px;
-	color: @uh-grey-dark;
-}
-#footerBlocksTop p {
-	color: @uh-grey-dark;
-}
+		.sqs-block-form {
+			padding-top: 0;
+		}
 
 
-/* change inherent margins above heading and subhead block  */
-#block-yui_3_17_2_1_1588199541873_11029 p {
-    margin-top: .75em;
-    margin-bottom: .75em;
-}
+		div.Index-page-content {
+			padding-top: 16px !important;
+			padding-bottom: 16px !important;
+		}
 
-/* remove sqs field labels above each field box */
-#footerBlocksTop label.title {
-    display: none !important;
-}
-
-/* field contents font */
-#footerBlocksTop form input.field-element {
-    font-family: 'Nunito' !important;
-    font-size: 0.9em !important;
-    border: none !important;
-    border-radius: 0px !important;
-    border: none;
-    height: 45px;
-}
-
-/* Submit Button */
-#footerBlocksTop form input.button {
-    //  border: none !important;
-    //  border-radius: 3px !important;
-    font-weight: 700;
-    font-size: 12.5px;
-    background-color: @uh-teal;
-    height: 45px;
-}
+		h2 {
+			font-family: 'Notera';
+			font-size: 3em;
+			line-height: 0.5em;
+			font-style: normal;
+			font-weight: 100;
+			letter-spacing: 0em;
+			margin-top: 0.25em;
+			margin-bottom: 0em !important;
+			text-transform: none;
+			padding-top: 12px;
+			color: @uh-grey-dark;
+		}
+		p {
+			color: @uh-grey-dark;
+		}
 
 
-/* margin below each field */
-#footerBlocksTop .form-wrapper .field-list .field,
-#footerBlocksTop .form-button-wrapper {
-    margin-bottom: 12px !important;
-}
+		/* change inherent margins above heading and subhead block  */
+		#block-yui_3_17_2_1_1588199541873_11029 p {
+			margin-top: .75em;
+			margin-bottom: .75em;
+		}
 
-/* margin above each field element */
-#footerBlocksTop .form-wrapper .field-list .field-element {
-    margin-top: 0px !important;
-}
+		/* remove sqs field labels above each field box */
+		label.title {
+			display: none !important;
+		}
+
+		/* field contents font */
+		form input.field-element {
+			font-family: 'Nunito' !important;
+			font-size: 0.9em !important;
+			border: none !important;
+			border-radius: 0px !important;
+			border: none;
+			height: 45px;
+		}
+
+		/* Submit Button */
+		form input.button {
+			//  border: none !important;
+			//  border-radius: 3px !important;
+			font-weight: 700;
+			font-size: 12.5px;
+			background-color: @uh-teal;
+			height: 45px;
+		}
 
 
-/* Form error colour */
-#footerBlocksTop .field-error {
-    background: @uh-coral url('//assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png') no-repeat 9px 50%;
-}
+		/* margin below each field */
+		.form-wrapper .field-list .field,
+		.form-button-wrapper {
+			margin-bottom: 12px !important;
+		}
+
+		/* margin above each field element */
+		.form-wrapper .field-list .field-element {
+			margin-top: 0px !important;
+		}
+
+
+		/* Form error colour */
+		.field-error {
+			background: @uh-coral url('//assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png') no-repeat 9px 50%;
+		}
+
+		// form submission text
+		div.form-submission-text p {
+			text-align: center;
+		}
+	}
 
 /*----------  DESKTOP only  -  fields side by side  ----------*/
+	@media only screen and (min-width: 851px) {
+		#footerBlocksTop {
+			.form {
+				display: inline-block;
+				margin-left: auto;
+				margin-right: auto;
+			}
 
-@media only screen and (min-width: 851px) {
-    #footerBlocksTop .form {
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+			.sqs-block-form {
+				width: 100%;
+			}
 
-    #footerBlocksTop .sqs-block-form {
-        width: 100%;
-    }
+			.field-list.clear {
+				text-align: right;
+				display: inline-block;
+				width: 74.5%;
+			}
 
-    #footerBlocksTop .field-list.clear {
-        text-align: right;
-        display: inline-block;
-        width: 74.5%;
-    }
+			.form-item.field.email,
+			.form-item.field.text {
+				display: inline-block;
+				min-width: 47.5%;
+				text-align: left;
+				margin: 0 0;
+				margin-right: 2%;
+		}
 
-    #footerBlocksTop .form-item.field.email,
-    #footerBlocksTop .form-item.field.text {
-        display: inline-block;
-        min-width: 47.5%;
-        text-align: left;
-        margin: 0 0;
-        margin-right: 2%;
-    }
+			.form-item.field.email {
+				min-width: 47.5%;
+				margin-right: 2%;
+			}
 
-    #footerBlocksTop .form-item.field.email {
-        min-width: 47.5%;
-        margin-right: 2%;
-    }
+			.form-button-wrapper {
+				width: 25%;
+				margin: 0;
+				float: right;
+				text-align: left;
+			}
+		}
+	}
 
-    #footerBlocksTop .form-button-wrapper {
-        width: 25%;
-        margin: 0;
-        float: right;
-        text-align: left;
-    }
-}
 
 /*=====  End of FOOTER TOP NEWSLETTER FORM BLOCK  ======*/
 /*#endregion FOOTER TOP NEWSLETTER FORM BLOCK */
