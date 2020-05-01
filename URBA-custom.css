@@ -1,9 +1,9 @@
 /* UH Website CSS */
 /* 2020-04-30  */
-/*#region FONTS & HEADER */
+/*#region NAV, FONTS & HEADER */
+/*----------  NAV hide top page in Folder dropdowns  ----------*/
 /* Fix font flicker on load (from silvabokis.com) */
-#desktopNav,
-.title-desc-inner {
+body {
   animation: fade-me-in 1.5s;
 }
 @keyframes fade-me-in {
@@ -84,7 +84,7 @@ h2 strong {
   padding-bottom: 0px;
 }
 /*=====  End of HEADER  ======*/
-/*#endregion FONTS & HEADER */
+/*#endregion NAV, FONTS & HEADER */
 /*#region NEW HOME INDEX PAGE*/
 /*===========================================
 =            NEW HOME INDEX PAGE            =
