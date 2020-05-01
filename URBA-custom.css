@@ -966,6 +966,7 @@ div.Footer-nav-group :nth-last-child(1) {
 }
 #footerBlocksTop p {
   color: #545454;
+  font-size: 0.9rem;
 }
 #footerBlocksTop #block-yui_3_17_2_1_1588199541873_11029 p {
   margin-top: 0.75em;
