@@ -728,7 +728,7 @@ div #@{services-page-header} {
 
 /* field contents font */
 #newsletter-sign-up form input.field-element {
-    font-family: 'Nunito' !important;
+    font-family: 'Times' !important;
     font-size: 0.9em !important;
     border: none !important;
     border-radius: 0px !important;
@@ -883,34 +883,41 @@ h2 a {
 
 /*#region BLOG-LIST */
 /*=============================================
-=            BLOG-LIST            =
+=            BLOG POSTS  &  BLOG-LISTS        =
 =============================================*/
 
 //  BLOG ENTRY Padding (desktop & mobile)
 .BlogItem {
-    padding-left: 21.8%;
-    padding-right: 21.8%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-@media screen and (max-width: 1189px) {
+@media screen and (max-width: 1024px) {
     .BlogItem {
-        padding-left: 18%;
-        padding-right: 18%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
-@media screen and (max-width: 1127px) {
-    .BlogItem {
-        padding-left: 13%;
-        padding-right: 13%;
+@media screen and (max-width: 960px) {
+	.BlogItem {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .BlogItem {
-        padding-left: 0%;
-        padding-right: 0%;
+@media screen and (max-width: 768px) {
+	.BlogItem {
+        padding-left: 0;
+        padding-right: 0;
     }
+}
+
+@media screen and (max-width: 640px) {
+	.BlogItem {
+        padding-left: 0;
+        padding-right: 0;
+    }	
 }
 
 
@@ -1286,7 +1293,7 @@ header .BlogList-filter {
 
 		/* field contents font */
 		form input.field-element {
-			font-family: 'Nunito' !important;
+			font-family: 'nunito-sans' !important;
 			font-size: 0.9em !important;
 			border: none !important;
 			border-radius: 0px !important;
