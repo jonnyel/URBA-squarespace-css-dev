@@ -219,7 +219,6 @@ h2 strong {
   }
 }
 /*=====  End of FEATURED PRODUCTS  ======*/
-/*#region FEATURED JOURNAL POSTS INDEX SECTION */
 /*=====================================================
 =            FEATURED JOURNAL POST INDEX SECTION         =
 =====================================================*/
@@ -271,8 +270,29 @@ h2 strong {
 #featured-blog-posts div.markdown-block h6 a:hover {
   color: rgba(29, 29, 29, 0.2);
 }
+#featured-blog-posts div .row .sqs-block-html p:nth-child(1) {
+  padding-top: 0.825em;
+  padding-bottom: 0.75em;
+  margin-top: -9px;
+}
+#featured-blog-posts div .row .sqs-block-html p:nth-child(1),
+#featured-blog-posts div .row .sqs-block-html p:nth-child(1) a {
+  text-transform: uppercase;
+  font-family: haboro-soft !important;
+  font-size: 10px !important;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: rgba(29, 29, 29, 0.4);
+  -webkit-transition: color 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out;
+  -ms-transition: color 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+#featured-blog-posts div .row .sqs-block-html p:nth-child(1) a:hover {
+  color: rgba(29, 29, 29, 0.2);
+}
 /*=====  End of FEATURED JOURNAL POST INDEX SECTION  ======*/
-/*#endregion FEATURED JOURNAL POST INDEX SECTION */
 /*#endregion NEW HOME INDEX PAGE*/
 /*#region IMAGE CARDS */
 /*===================================
@@ -345,7 +365,7 @@ div.image-title p strong {
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width) figcaption.image-card-wrapper {
     width: 100% !important;
   }
-  .sqs-block-image .design-layout-card:not(.sqs-narrow-width) > div:first-child {
+  .sqs-block-image .design-layout-card:not(.sqs-narrow-width) > div:nth-child(1) {
     width: 100% !important;
   }
   #value-statement .image-card-wrapper,
@@ -369,8 +389,8 @@ div.image-title p strong {
 }
 div #block-4fa84b67d2fef18c03fc,
 div #block-a3a5220cc9896ff94759 {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 2em;
 }
 div #block-4fa84b67d2fef18c03fc h2,
@@ -600,7 +620,7 @@ h2 a {
 }
 /* padding reduction */
 #block-yui_3_17_2_5_1509555956994_4640 {
-  margin-top: -20px !important;
+  margin-top: -30px !important;
   margin-bottom: -10px;
 }
 /* change only this h2 header link size */
@@ -889,18 +909,27 @@ div.Footer-nav-group {
   div.footerMiddle,
   div#footerBlocksBottom,
   div.Footer-nav-group {
-    padding-left: 47px;
-    padding-right: 47px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media screen and (max-width: 640px) {
   div#footerBlocksTop,
-  div.footerMiddle,
-  div#footerBlocksBottom,
-  div.Footer-nav-group {
-    padding-left: 47px;
-    padding-right: 47px;
+  div#footerBlocksBottom {
+    padding-left: 30px;
+    padding-right: 30px;
   }
+  div.Footer-middle {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  div.Footer-nav-group {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+div.Footer-nav-group :nth-last-child(1) {
+  padding-right: 0;
 }
 /*----------  Side-by-side fields  ----------*/
 #footerBlocksTop {
@@ -947,7 +976,7 @@ div.Footer-nav-group {
 }
 #footerBlocksTop form input.field-element {
   font-family: 'nunito-sans' !important;
-  font-size: 0.9em !important;
+  font-size: 0.9rem !important;
   border: none !important;
   border-radius: 0px !important;
   border: none;
@@ -1030,7 +1059,7 @@ div.Footer-nav-group {
   }
 }
 /*----------  Fix spacing on Mobile nav menu  ----------*/
-nav.Mobile-overlay-nav--secondary a.Mobile-overlay-nav-item:first-child {
+nav.Mobile-overlay-nav--secondary a.Mobile-overlay-nav-item:nth-child(1) {
   padding-top: 0 !important;
 }
 /*===End of DESKTOP, TABLET & MOBILE ADJUSTMENTS =====*/
