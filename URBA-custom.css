@@ -1025,5 +1025,9 @@ div.Footer-nav-group {
     padding-bottom: 48px;
   }
 }
+/*----------  Fix spacing on Mobile nav menu  ----------*/
+nav.Mobile-overlay-nav--secondary a.Mobile-overlay-nav-item:first-child {
+  padding-top: 0 !important;
+}
 /*===End of DESKTOP, TABLET & MOBILE ADJUSTMENTS =====*/
 /*#endregion  DESKTOP, TABLET & MOBILE ADJUSTMENTS  */
