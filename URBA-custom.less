@@ -680,134 +680,6 @@ div #@{services-page-header} {
 /*=====  End of FINAL LANDING PAGES for SERVICES & BIO pages  ======*/
 /*#endregion SERVICES & BIO PAGES */
 
-/*#region INDEX NEWSLETTER FORM BLOCK */
-/*=============================================
-=            NEWSLETTER FORM BLOCK            =
-=============================================*/
-
-/*----------  Side-by-side fields  ----------*/
-
-
-#newsletter-sign-up {
-    background-color: @uh-ochre-bright  !important;
-}
-
-#newsletter-sign-up .sqs-block-form {
-    padding-top: 0;
-}
-
-
-#newsletter-sign-up div.Index-page-content {
-    padding-top: 16px !important;
-    padding-bottom: 16px !important;
-}
-
-#newsletter-sign-up h2 {
-    font-family: 'Notera';
-    font-size: 3em;
-    line-height: 0.5em;
-    font-style: normal;
-    font-weight: 100;
-    letter-spacing: 0em;
-    margin-top: 0.25em;
-    margin-bottom: 0em !important;
-    text-transform: none;
-    padding-top: 12px;
-}
-
-/* change inherent margins above heading and subhead block  */
-#block-5df1830890c9a20b873a46f0 p {
-    margin-top: .75em;
-    margin-bottom: .75em;
-}
-
-/* remove sqs field labels above each field box */
-#newsletter-sign-up label.title {
-    display: none !important;
-}
-
-/* field contents font */
-#newsletter-sign-up form input.field-element {
-    font-family: 'Times' !important;
-    font-size: 0.9em !important;
-    border: none !important;
-    border-radius: 0px !important;
-    border: none;
-    height: 45px;
-}
-
-/* Submit Button */
-#newsletter-sign-up form input.button {
-    //  border: none !important;
-    //  border-radius: 3px !important;
-    font-weight: 700;
-    font-size: 12.5px;
-    background-color: @uh-teal;
-    height: 45px;
-}
-
-
-/* margin below each field */
-#newsletter-sign-up .form-wrapper .field-list .field,
-#newsletter-sign-up .form-button-wrapper {
-    margin-bottom: 12px !important;
-}
-
-/* margin above each field element */
-#newsletter-sign-up .form-wrapper .field-list .field-element {
-    margin-top: 0px !important;
-}
-
-
-/* Form error colour */
-#newsletter-sign-up .field-error {
-    background: @uh-coral url('//assets.squarespace.com/universal/images-v6/standard/icon_close_7_light.png') no-repeat 9px 50%;
-}
-
-/*----------  DESKTOP only  -  fields side by side  ----------*/
-
-@media only screen and (min-width: 851px) {
-    #newsletter-sign-up .form {
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #newsletter-sign-up .sqs-block-form {
-        width: 100%;
-    }
-
-    #newsletter-sign-up .field-list.clear {
-        text-align: right;
-        display: inline-block;
-        width: 74.5%;
-    }
-
-    #newsletter-sign-up .form-item.field.email,
-    #newsletter-sign-up .form-item.field.text {
-        display: inline-block;
-        min-width: 47.5%;
-        text-align: left;
-        margin: 0 0;
-        margin-right: 2%;
-    }
-
-    #newsletter-sign-up .form-item.field.email {
-        min-width: 47.5%;
-        margin-right: 2%;
-    }
-
-    #newsletter-sign-up .form-button-wrapper {
-        width: 25%;
-        margin: 0;
-        float: right;
-        text-align: left;
-    }
-}
-
-/*=====  End of INDEX NEWSLETTER FORM BLOCK  ======*/
-/*#endregion INDEX NEWSLETTER FORM BLOCK */
-
 /*#region old site stuff */
 
 /*====================================================
@@ -881,13 +753,14 @@ h2 a {
 
 /*#endregion old site stuff */
 
-/*#region BLOG-LIST */
+/*#region BLOG POSTS & BLOG-LIST */
 /*=============================================
 =            BLOG POSTS  &  BLOG-LISTS        =
 =============================================*/
 
 //  BLOG ENTRY Padding (desktop & mobile)
 .BlogItem {
+	font-size: 0.9em;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -948,26 +821,6 @@ header .BlogList-filter {
 
 /*=====  End of SHOP                   ======*/
 /*#endregion SHOP */
-
-/*#region FOOTER */
-/*=============================================
-=            FOOTER            =
-=============================================*/
-
-// .Footer-blocks--top {
-//     // display: none !important
-// }
-
-// .sqs-licensed-asset-preview-bar {
-//     // display: none !important
-// }
-
-// .Footer-blocks--middle {
-//     padding: 1px !important;
-// }
-
-/*=====  End of FOOTER  ======*/
-/*#endregion FOOTER */
 
 /*#region TESTIMONIALS */
 
@@ -1170,7 +1023,6 @@ header .BlogList-filter {
 /*=====  End of TESTIMONIALS SECTION  ======*/
 /*#endregion TESTIMONIALS */
 
-
 /*#region FOOTER TOP  NEWSLETTER FORM BLOCK */
 /*=============================================
 =       FOOTER TOP NEWSLETTER FORM BLOCK      =
@@ -1195,6 +1047,10 @@ header .BlogList-filter {
 		margin-right: 0 !important;
 		margin-left: 0 !important;
 	} 
+	#block-yui_3_17_2_1_1588199541873_5014 {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
 	//  end fix
 
 
@@ -1220,8 +1076,8 @@ header .BlogList-filter {
 		div.footerMiddle,
 		div#footerBlocksBottom,
 		div.Footer-nav-group {
-			padding-left: 48px;
-			padding-right: 48px;
+			padding-left: 47px;
+			padding-right: 47px;
 		}
 	}
 
@@ -1230,8 +1086,8 @@ header .BlogList-filter {
 		div.footerMiddle,
 		div#footerBlocksBottom,
 		div.Footer-nav-group {
-			padding-left: 36px;
-			padding-right: 36px;
+			padding-left: 47px;
+			padding-right: 47px;
 		}
 	}
 
@@ -1240,8 +1096,8 @@ header .BlogList-filter {
 		div.footerMiddle,
 		div#footerBlocksBottom,
 		div.Footer-nav-group {
-			padding-left: 20px;
-			padding-right: 20px;
+			padding-left: 47px;
+			padding-right: 47px;
 		}
 	}
 
@@ -1336,7 +1192,7 @@ header .BlogList-filter {
 	}
 
 /*----------  DESKTOP only  -  fields side by side  ----------*/
-	@media only screen and (min-width: 851px) {
+	@media only screen and (min-width: 769px) {
 		#footerBlocksTop {
 			.form {
 				display: inline-block;
@@ -1357,15 +1213,15 @@ header .BlogList-filter {
 			.form-item.field.email,
 			.form-item.field.text {
 				display: inline-block;
-				min-width: 47.5%;
+				min-width: 47%;
 				text-align: left;
 				margin: 0 0;
-				margin-right: 2%;
+				margin-right: 1.5%;
 		}
 
 			.form-item.field.email {
-				min-width: 47.5%;
-				margin-right: 2%;
+				min-width: 47%;
+				margin-right: 1.5%;
 			}
 
 			.form-button-wrapper {
@@ -1380,3 +1236,23 @@ header .BlogList-filter {
 
 /*=====  End of FOOTER TOP NEWSLETTER FORM BLOCK  ======*/
 /*#endregion FOOTER TOP NEWSLETTER FORM BLOCK */
+
+/*#region  TABLET & MOBILE ADJUSTMENTS  */
+/*=============================================
+=        TABLET & MOBILE ADJUSTMENTS          =
+=============================================*/
+@media screen and (max-width:768px) {
+    .Main-content {
+        padding-left: 36px;
+        padding-right: 36px
+    }
+}
+
+@media screen and (max-width:640px) {
+    .Main-content {
+        padding-left: 30px;
+        padding-right: 30px
+    }
+}
+/*===End of TABLET & MOBILE ADJUSTMENTS =====*/
+/*#endregion  MOBILE ADJUSTMENTS  */
