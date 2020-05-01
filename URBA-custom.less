@@ -203,15 +203,15 @@ body {
 
 	/* Text transformation & Font Colours */
 	#welcome-banner p {
-		font-size: 1.33rem;
-		line-height: 1.6rem;
+		font-size: 1.33em;
+		line-height: 1.6em;
 		color: white;
-		margin-top: -1rem !important;
+		margin-top: -1em !important;
 	}
 
 	#welcome-banner h5 {
-		font-size: 5.25rem;
-		// line-height:1.6rem;
+		font-size: 5.25em;
+		// line-height:1.6em;
 		text-transform: none;
 		color: white;
 	}
@@ -316,18 +316,16 @@ body {
 		}
 	}
 
-	// MOBILE: reduce width of #featured-products and #featured-blog-posts sections
+	// MOBILE: reduce width of #featured-products section
 	@media screen and (max-width:640px) {
 
-		#featured-products,
-		#featured-blog-posts {
-
+		#featured-products {
 			.sqs-block.sqs-block-image,
 			.sqs-block-markdown,
 			.sqs-block-html h3,
 			.sqs-block-html p {
-				margin-left: 2em;
-				margin-right: 2em;
+				margin-left: 32px;
+				margin-right: 32px;
 				hyphens: none !important;
 				-webkit-hyphens: none !important;
 				-ms-hyphens: none !important;
@@ -417,19 +415,19 @@ body {
 		// Blog Post CATEGORY settings WITHOUT a Markdown block 
 
 		div .row .sqs-block-html p:nth-child(1) {
-			padding-top: 0.825em;
-			padding-bottom: 0.75em;
-			margin-top: -9px;
+			padding-top: 0.5rem !important;
+			padding-bottom: 0.3rem !important;
+			margin-top: -9px !important;
 		}
 	
 		div .row .sqs-block-html p:nth-child(1),
 		div .row .sqs-block-html p:nth-child(1) a  {
-			text-transform: uppercase;
+			text-transform: uppercase !important;
 			font-family: haboro-soft !important;
 			font-size: 10px !important;
-			font-weight: 400;
-			letter-spacing: .1em;
-			color: rgba(29,29,29,.4);
+			font-weight: 400 !important;
+			letter-spacing: .1em !important;
+			color: rgba(29,29,29,.4) !important;
 			-webkit-transition: color .15s ease-in-out;
 			-moz-transition: color .15s ease-in-out;
 			-ms-transition: color .15s ease-in-out;
@@ -438,10 +436,28 @@ body {
 		}
 	
 		div .row .sqs-block-html p:nth-child(1) a:hover {
-			color: rgba(29,29,29,.2);
+			color: rgba(29,29,29,.2) !important;
 		}
-	
 	}	
+
+	// MOBILE: reduce width of #featured-blog-posts section
+	@media screen and (max-width:640px) {
+
+		#featured-blog-posts {
+			.sqs-block.sqs-block-image,
+			.sqs-block-markdown,
+			.sqs-block-html h3,
+			.sqs-block-html p {
+				margin-left: 32px;
+				margin-right: 32px;
+				hyphens: none !important;
+				-webkit-hyphens: none !important;
+				-ms-hyphens: none !important;
+			}
+		}
+	}
+
+
 
 /*=====  End of FEATURED JOURNAL POST INDEX SECTION  ======*/
 
@@ -803,7 +819,8 @@ h2 a {
 
 //  BLOG ENTRY Padding (desktop & mobile)
 .BlogItem {
-	font-size: 0.9em;
+	font-size: 1.2em;
+	line-height: 1.6em;
     padding-left: 10%;
     padding-right: 10%;
 }
