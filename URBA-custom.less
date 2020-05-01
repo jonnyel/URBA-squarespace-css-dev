@@ -1,5 +1,5 @@
 /* UH Website CSS */
-/* 2020-04-29  */
+/* 2020-04-30  */
 
 /*#region FONTS & HEADER */
 /* Fix font flicker on load (from silvabokis.com) */
@@ -40,6 +40,7 @@
 	@services-massage: collection-5e43425618e6e3448f09e57f;
 	@services-massage-header: block-4176da6257aae14a264d;
 	@shop-page: collection-5bc5005e4192023031781698;
+	@connect-page: collection-59e58334bff2008e8dfa4947;
 
 /* DEFINE UH Brand Colour variables */
 	@uh-coral: hsl(354, 85%, 65%);
@@ -654,8 +655,15 @@ div #@{services-page-header} {
     // keep markdown-block quote below float
     .markdown-block {
         overflow: hidden;
-
-    }
+	}
+	
+	// reduce top padding of Quote Block and surrounding element
+	div.sqs-block.quote-block.sqs-block-quote {
+		padding-top: 0;
+		blockquote {
+			padding-top: 0;
+		}
+	}
 }
 
 
@@ -670,7 +678,8 @@ div #@{services-page-header} {
     #@{bio-my-commitment},
     #@{services-clinical},
     #@{services-yoga},
-    #@{services-massage} {
+	#@{services-massage},
+	#@{connect-page} {
         .sqs-block[class*=float-left] {
             margin-right: 0;
         }
@@ -817,6 +826,10 @@ header .BlogList-filter {
 =            SHOP                             =
 =============================================*/
 
+
+/*----------  Hide Newsletter in footers on shop pages  ----------*/
+// hidden in sqs admin shop page settings:
+//   Advanced - Page Header Code Injection
 
 
 /*=====  End of SHOP                   ======*/
@@ -1028,7 +1041,6 @@ header .BlogList-filter {
 =       FOOTER TOP NEWSLETTER FORM BLOCK      =
 =============================================*/
 
-
 /*----------  Move padding from .Footer-inner to its children  ----------*/
 	div.Footer-inner.clear {
 		padding-left: 0 !important;
@@ -1105,7 +1117,7 @@ header .BlogList-filter {
 /*----------  Side-by-side fields  ----------*/
 	#footerBlocksTop {
 		background-color: @uh-ochre-bright  !important;
-		padding-top: 1.1em !important;
+		padding-top: 0.9em !important;
 		padding-bottom: 0.5em !important;
 
 		.sqs-block-form {
@@ -1237,22 +1249,28 @@ header .BlogList-filter {
 /*=====  End of FOOTER TOP NEWSLETTER FORM BLOCK  ======*/
 /*#endregion FOOTER TOP NEWSLETTER FORM BLOCK */
 
-/*#region  TABLET & MOBILE ADJUSTMENTS  */
+/*#region  DESKTOP, TABLET & MOBILE ADJUSTMENTS  */
 /*=============================================
-=        TABLET & MOBILE ADJUSTMENTS          =
+=        DESKTOP, TABLET & MOBILE ADJUSTMENTS          =
 =============================================*/
+.Main-content {
+	padding-bottom: 64px;
+}
+
 @media screen and (max-width:768px) {
     .Main-content {
         padding-left: 36px;
-        padding-right: 36px
+		padding-right: 36px;
+		padding-bottom: 64px;
     }
 }
 
 @media screen and (max-width:640px) {
     .Main-content {
         padding-left: 30px;
-        padding-right: 30px
+		padding-right: 30px;
+		padding-bottom: 48px;
     }
 }
-/*===End of TABLET & MOBILE ADJUSTMENTS =====*/
-/*#endregion  MOBILE ADJUSTMENTS  */
+/*===End of DESKTOP, TABLET & MOBILE ADJUSTMENTS =====*/
+/*#endregion  DESKTOP, TABLET & MOBILE ADJUSTMENTS  */

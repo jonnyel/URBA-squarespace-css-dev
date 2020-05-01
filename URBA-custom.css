@@ -1,5 +1,5 @@
 /* UH Website CSS */
-/* 2020-04-29  */
+/* 2020-04-30  */
 /*#region FONTS & HEADER */
 /* Fix font flicker on load (from silvabokis.com) */
 #desktopNav,
@@ -542,6 +542,22 @@ div #block-a3a5220cc9896ff94759 h2 {
 #collection-5e43425618e6e3448f09e57f .markdown-block {
   overflow: hidden;
 }
+#collection-5e4331f5383ee71bf8193c3e div.sqs-block.quote-block.sqs-block-quote,
+#collection-5e433289e1841065260285e6 div.sqs-block.quote-block.sqs-block-quote,
+#collection-5e4333f8f0d10522284cb551 div.sqs-block.quote-block.sqs-block-quote,
+#collection-5e39b9749234572a14d9b8aa div.sqs-block.quote-block.sqs-block-quote,
+#collection-5e39b9a59234572a14d9ca78 div.sqs-block.quote-block.sqs-block-quote,
+#collection-5e43425618e6e3448f09e57f div.sqs-block.quote-block.sqs-block-quote {
+  padding-top: 0;
+}
+#collection-5e4331f5383ee71bf8193c3e div.sqs-block.quote-block.sqs-block-quote blockquote,
+#collection-5e433289e1841065260285e6 div.sqs-block.quote-block.sqs-block-quote blockquote,
+#collection-5e4333f8f0d10522284cb551 div.sqs-block.quote-block.sqs-block-quote blockquote,
+#collection-5e39b9749234572a14d9b8aa div.sqs-block.quote-block.sqs-block-quote blockquote,
+#collection-5e39b9a59234572a14d9ca78 div.sqs-block.quote-block.sqs-block-quote blockquote,
+#collection-5e43425618e6e3448f09e57f div.sqs-block.quote-block.sqs-block-quote blockquote {
+  padding-top: 0;
+}
 /*----------  MOBILE  ----------*/
 @media screen and (max-width: 640px) {
   #collection-5e4331f5383ee71bf8193c3e .sqs-block[class*=float-left],
@@ -549,7 +565,8 @@ div #block-a3a5220cc9896ff94759 h2 {
   #collection-5e4333f8f0d10522284cb551 .sqs-block[class*=float-left],
   #collection-5e39b9749234572a14d9b8aa .sqs-block[class*=float-left],
   #collection-5e39b9a59234572a14d9ca78 .sqs-block[class*=float-left],
-  #collection-5e43425618e6e3448f09e57f .sqs-block[class*=float-left] {
+  #collection-5e43425618e6e3448f09e57f .sqs-block[class*=float-left],
+  #collection-59e58334bff2008e8dfa4947 .sqs-block[class*=float-left] {
     margin-right: 0;
   }
 }
@@ -649,6 +666,7 @@ h2 a {
 /*=============================================
 =            SHOP                             =
 =============================================*/
+/*----------  Hide Newsletter in footers on shop pages  ----------*/
 /*=====  End of SHOP                   ======*/
 /*#endregion SHOP */
 /*#region TESTIMONIALS */
@@ -883,7 +901,7 @@ div.Footer-nav-group {
 /*----------  Side-by-side fields  ----------*/
 #footerBlocksTop {
   background-color: hsl(48, 100%, 68%) !important;
-  padding-top: 1.1em !important;
+  padding-top: 0.9em !important;
   padding-bottom: 0.5em !important;
   /* change inherent margins above heading and subhead block  */
   /* remove sqs field labels above each field box */
@@ -986,21 +1004,26 @@ div.Footer-nav-group {
 }
 /*=====  End of FOOTER TOP NEWSLETTER FORM BLOCK  ======*/
 /*#endregion FOOTER TOP NEWSLETTER FORM BLOCK */
-/*#region  TABLET & MOBILE ADJUSTMENTS  */
+/*#region  DESKTOP, TABLET & MOBILE ADJUSTMENTS  */
 /*=============================================
-=        TABLET & MOBILE ADJUSTMENTS          =
+=        DESKTOP, TABLET & MOBILE ADJUSTMENTS          =
 =============================================*/
+.Main-content {
+  padding-bottom: 64px;
+}
 @media screen and (max-width: 768px) {
   .Main-content {
     padding-left: 36px;
     padding-right: 36px;
+    padding-bottom: 64px;
   }
 }
 @media screen and (max-width: 640px) {
   .Main-content {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 48px;
   }
 }
-/*===End of TABLET & MOBILE ADJUSTMENTS =====*/
-/*#endregion  MOBILE ADJUSTMENTS  */
+/*===End of DESKTOP, TABLET & MOBILE ADJUSTMENTS =====*/
+/*#endregion  DESKTOP, TABLET & MOBILE ADJUSTMENTS  */
