@@ -126,13 +126,13 @@ h2 strong {
 ======================================*/
 /* Text transformation & Font Colours */
 #welcome-banner p {
-  font-size: 1.33em;
-  line-height: 1.6em;
+  font-size: 1.33rem;
+  line-height: 1.6rem;
   color: white;
-  margin-top: -1em !important;
+  margin-top: -1rem !important;
 }
 #welcome-banner h5 {
-  font-size: 5.25em;
+  font-size: 5.25rem;
   text-transform: none;
   color: white;
 }
@@ -916,8 +916,8 @@ div.Footer-nav-group {
 @media screen and (max-width: 640px) {
   div#footerBlocksTop,
   div#footerBlocksBottom {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 47px;
+    padding-right: 47px;
   }
   div.Footer-middle {
     padding-left: 0;
