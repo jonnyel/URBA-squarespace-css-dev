@@ -160,6 +160,8 @@ h2 strong {
   hyphens: none !important;
   -webkit-hyphens: none !important;
   -ms-hyphens: none !important;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 /* Reduce h2  on mobile */
 @media screen and (max-width: 640px) {
