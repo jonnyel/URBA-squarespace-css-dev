@@ -208,8 +208,8 @@ h2 strong {
   #featured-products .sqs-block-markdown,
   #featured-products .sqs-block-html h3,
   #featured-products .sqs-block-html p {
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
     hyphens: none !important;
     -webkit-hyphens: none !important;
     -ms-hyphens: none !important;
@@ -294,8 +294,8 @@ h2 strong {
   #featured-blog-posts .sqs-block-markdown,
   #featured-blog-posts .sqs-block-html h3,
   #featured-blog-posts .sqs-block-html p {
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
     hyphens: none !important;
     -webkit-hyphens: none !important;
     -ms-hyphens: none !important;
