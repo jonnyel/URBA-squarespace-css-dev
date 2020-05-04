@@ -182,7 +182,7 @@ h2 strong {
 #featured-products div.image-caption a strong {
   font-family: haboro-soft-extended;
   color: #545454;
-  font-size: 1.3em;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.1em;
@@ -194,10 +194,9 @@ h2 strong {
 }
 #featured-products div.image-caption strong,
 #featured-products div.image-caption a strong {
-  font-family: haboro-soft !important;
-  font-weight: 600 !important;
-  font-size: 14px !important;
-  letter-spacing: 0.13em !important;
+  font-family: haboro-soft-condensed;
+  font-weight: 600;
+  letter-spacing: 0.12em;
 }
 #featured-products div.image-caption p,
 #featured-products div.image-caption p a {
@@ -242,10 +241,10 @@ h2 strong {
 }
 #featured-blog-posts h3,
 #featured-blog-posts h3 a {
-  font-family: haboro-soft;
+  font-family: haboro-soft-condensed;
   font-weight: 600;
   font-size: 14px;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.12em;
 }
 #featured-blog-posts p,
 #featured-blog-posts p a {
